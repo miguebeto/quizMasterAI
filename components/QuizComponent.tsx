@@ -1,108 +1,188 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Quiz } from '@/lib/types';
+import { useState } from "react";
+import { Quiz } from "@/lib/types";
+import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogTitle,
+} from "./ui/alert-dialog";
+import { Button } from "./ui/button";
 
 export default function QuizComponent({ quiz }: { quiz: Quiz }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
+  const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [showExplanation, setShowExplanation] = useState(false);
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
+  const [showResult, setShowResult] = useState(false);
+  const [totalCorrect, setTotalCorrect] = useState(0);
 
-  const currentQuestion = quiz.questions[currentQuestionIndex];
+  const currentQuestion = quiz.exam[currentQuestionIndex];
 
-  const handleAnswerSelect = (answer: string) => {
-    const newSelectedAnswers = [...selectedAnswers];
-    const answerIndex = newSelectedAnswers.indexOf(answer);
-    if (answerIndex > -1) {
-      newSelectedAnswers.splice(answerIndex, 1);
+  const handleAnswerSelect = (index: number) => {
+    if (currentQuestion.correctAnswers.length === 1) {
+      setSelectedAnswers([index]);
     } else {
-      newSelectedAnswers.push(answer);
+      setSelectedAnswers((prev) =>
+        prev.includes(index)
+          ? prev.filter((i) => i !== index)
+          : [...prev, index]
+      );
     }
-    setSelectedAnswers(newSelectedAnswers);
   };
 
   const handleSubmit = () => {
+    const isCorrect =
+      currentQuestion.correctAnswers.every((answer) =>
+        selectedAnswers.includes(answer)
+      ) && selectedAnswers.length === currentQuestion.correctAnswers.length;
+
+    if (isCorrect) {
+      setTotalCorrect((prev) => prev + 1);
+    }
+    setShowResult(true);
     setShowExplanation(true);
-    if (currentQuestionIndex === quiz.questions.length - 1) {
+  };
+
+  const handleNext = () => {
+    if (currentQuestionIndex < quiz.exam.length - 1) {
+      setCurrentQuestionIndex((prev) => prev + 1);
+      setSelectedAnswers([]);
+      setShowResult(false);
+      setShowExplanation(false);
+    } else {
       setIsQuizCompleted(true);
     }
   };
 
-  const handleNext = () => {
-    setCurrentQuestionIndex(currentQuestionIndex + 1);
+  const handleReset = () => {
     setSelectedAnswers([]);
+    setShowResult(false);
     setShowExplanation(false);
   };
 
   const calculateScore = () => {
-    let score = 0;
-    quiz.questions.forEach((question, index) => {
-      const correctAnswers = question.answers.filter(a => a.isCorrect).map(a => a.text);
-      const userAnswers = selectedAnswers[index] || [];
-      if (JSON.stringify(correctAnswers.sort()) === JSON.stringify(userAnswers.sort())) {
-        score++;
-      }
-    });
-    return (score / quiz.questions.length) * 100;
+    return Math.round((totalCorrect / quiz.exam.length) * 100);
   };
 
   if (isQuizCompleted) {
     return (
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h2 className="text-2xl font-bold mb-4">Quiz Completed!</h2>
-        <p className="mb-4">Your score: {calculateScore().toFixed(2)}%</p>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          onClick={() => window.location.reload()}
-        >
-          Restart Quiz
-        </button>
-      </div>
+      <AlertDialog>
+        <AlertDialog open={isQuizCompleted} onOpenChange={setIsQuizCompleted}>
+          <AlertDialogContent>
+            <AlertDialogTitle>Quiz Completed!</AlertDialogTitle>
+            <AlertDialogDescription>
+              Your score: {calculateScore()}%
+            </AlertDialogDescription>
+            <Button color="gray">Cancel</Button>
+            <AlertDialogAction onClick={() => window.location.reload()}>
+              Restart Quiz
+            </AlertDialogAction>
+          </AlertDialogContent>
+        </AlertDialog>
+      </AlertDialog>
     );
   }
 
   return (
     <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <h2 className="text-xl font-bold mb-4">Question {currentQuestionIndex + 1}</h2>
-      <p className="mb-4">{currentQuestion.text}</p>
+      <h2 className="text-xl font-bold mb-4">
+        Question {currentQuestionIndex + 1}/{quiz.exam.length}
+      </h2>
+      <span className="absolute right-4 top-4 text-sm text-gray-500">
+        {calculateScore()}%
+      </span>
+      <p className="mb-4">{currentQuestion?.text}</p>
       <div className="mb-4">
-        {currentQuestion.answers.map((answer, index) => (
+        {currentQuestion.options.map((option, index) => (
           <div key={index} className="mb-2">
-            <label className="inline-flex items-center">
+            <label
+              className={`flex items-center p-2 rounded ${
+                showResult
+                  ? currentQuestion.correctAnswers.includes(index)
+                    ? "bg-green-100"
+                    : selectedAnswers.includes(index)
+                    ? "bg-red-100"
+                    : ""
+                  : "hover:bg-gray-100"
+              }`}
+            >
               <input
-                type="checkbox"
-                className="form-checkbox"
-                checked={selectedAnswers.includes(answer.text)}
-                onChange={() => handleAnswerSelect(answer.text)}
-                disabled={showExplanation}
+                type={
+                  currentQuestion.correctAnswers.length === 1
+                    ? "radio"
+                    : "checkbox"
+                }
+                name="answer"
+                value={index}
+                checked={selectedAnswers.includes(index)}
+                onChange={() => handleAnswerSelect(index)}
+                disabled={showResult}
+                className="mr-2"
               />
-              <span className="ml-2">{answer.text}</span>
+              <span
+                className={`${
+                  showResult && selectedAnswers.includes(index)
+                    ? currentQuestion.correctAnswers.includes(index)
+                      ? "text-green-700"
+                      : "text-red-700"
+                    : ""
+                }`}
+              >
+                {option}
+              </span>
             </label>
           </div>
         ))}
       </div>
-      {!showExplanation ? (
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          onClick={handleSubmit}
-        >
+      {!showResult ? (
+        <Button onClick={handleSubmit} disabled={selectedAnswers.length === 0}>
           Submit
-        </button>
+        </Button>
       ) : (
         <div>
-          <p className="mb-4">
-            {currentQuestion.answers.filter(a => a.isCorrect).map(a => a.text).join(', ')}
-          </p>
-          <p className="mb-4">{currentQuestion.explanation}</p>
-          {currentQuestionIndex < quiz.questions.length - 1 && (
+          <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
+            onClick={handleNext}
+          >
+            Next Question
+          </button>
+          {!currentQuestion.correctAnswers.every((answer) =>
+            selectedAnswers.includes(answer)
+          ) && (
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              onClick={handleNext}
+              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              onClick={handleReset}
             >
-              Next Question
+              Reset
             </button>
           )}
+          <div className="mt-4">
+            <button
+              onClick={() => setShowExplanation(!showExplanation)}
+              className="flex items-center text-blue-500 hover:text-blue-600"
+            >
+              {showExplanation ? (
+                <>
+                  <ChevronUpIcon className="w-4 h-4 mr-1" />
+                  Hide Explanation
+                </>
+              ) : (
+                <>
+                  <ChevronDownIcon className="w-4 h-4 mr-1" />
+                  Show Explanation
+                </>
+              )}
+            </button>
+            {showExplanation && (
+              <p className="mt-2 p-2 bg-gray-100 rounded">
+                {currentQuestion.explanation}
+              </p>
+            )}
+          </div>
         </div>
       )}
     </div>

@@ -1,22 +1,26 @@
-export interface Answer {
-  text: string;
-  isCorrect: boolean;
-}
-
-export interface Question {
-  text: string;
-  answers: Answer[];
-  explanation: string;
+export interface Category {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  quizzes: Quiz[];
 }
 
 export interface Quiz {
-  slug: string;
+  id: number;
   title: string;
-  categorySlug: string;
-  questions: Question[];
+  slug: string;
+  subtitle: string;
+  description: string;
+  categoryId: string;
+  category: string;
+  exam: Question[];
 }
 
-export interface Category {
-  slug: string;
-  name: string;
+export interface Question {
+  id: number;
+  text: string;
+  options: string[];
+  correctAnswers: number[];
+  explanation: string;
 }
