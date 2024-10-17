@@ -11,6 +11,7 @@ import {
   AlertDialogTitle,
 } from "./ui/alert-dialog";
 import { Button } from "./ui/button";
+import { useRouter, useParams } from "next/navigation";
 
 export default function QuizComponent({ quiz }: { quiz: Quiz }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -64,6 +65,13 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
     setShowExplanation(false);
   };
 
+  const { replace } = useRouter();
+  const firstParam = useParams()?.slug;
+
+  const handleRedirect = () => {
+    replace(`/category/${firstParam}`);
+  };
+
   const calculateScore = () => {
     return Math.round((totalCorrect / quiz.exam.length) * 100);
   };
@@ -77,7 +85,9 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
             <AlertDialogDescription>
               Your score: {calculateScore()}%
             </AlertDialogDescription>
-            <Button color="gray">Cancel</Button>
+            <Button onClick={handleRedirect} color="gray">
+              Back to Category
+            </Button>
             <AlertDialogAction onClick={() => window.location.reload()}>
               Restart Quiz
             </AlertDialogAction>
