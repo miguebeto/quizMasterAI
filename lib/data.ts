@@ -9454,6 +9454,659 @@ export const exam16: Question[] = [
   },
 ];
 
+const exam17: Question[] = [
+  {
+    id: uuidv5("aws-question-1152", uuidv5.URL),
+    text: "What time-savings advantage is offered with the use of Amazon Rekognition?",
+    options: [
+      "Amazon Rekognition provides automatic watermarking of images.",
+      "Amazon Rekognition provides automatic detection of objects appearing in pictures.",
+      "Amazon Rekognition provides the ability to resize millions of images automatically.",
+      "Amazon Rekognition uses Amazon Mechanical Turk to allow humans to bid on object detection jobs."
+    ],
+    correctAnswers: [1],
+    explanation: "Amazon Rekognition is an image recognition service that detects objects, scenes, and faces; extracts text; recognizes celebrities; and identifies inappropriate content in images. The other options do not reflect the core capabilities of Amazon Rekognition."
+  },
+  {
+    id: uuidv5("aws-question-1153", uuidv5.URL),
+    text: "When comparing AWS with on-premises Total Cost of Ownership (TCO), what costs are included?",
+    options: [
+      "Data center security",
+      "Business analysis",
+      "Project management",
+      "Operating system administration"
+    ],
+    correctAnswers: [0],
+    explanation: "AWS TCO includes data center security costs, as AWS is responsible for securing physical infrastructure. The other costs, such as business analysis and project management, are typically internal business expenses not directly covered by AWS."
+  },
+  {
+    id: uuidv5("aws-question-1154", uuidv5.URL),
+    text: "According to the AWS shared responsibility model, what is AWS responsible for?",
+    options: [
+      "Configuring Amazon VPC",
+      "Managing application code",
+      "Maintaining application traffic",
+      "Managing the network infrastructure"
+    ],
+    correctAnswers: [3],
+    explanation: "Under the AWS shared responsibility model, AWS is responsible for managing the network infrastructure, including security and maintenance. Customers are responsible for configuring services such as Amazon VPC and managing their own application code."
+  },
+  {
+    id: uuidv5("aws-question-1155", uuidv5.URL),
+    text: "Which service should be used to estimate the costs of running a new project on AWS?",
+    options: [
+      "AWS TCO Calculator",
+      "AWS Simple Monthly Calculator",
+      "AWS Cost Explorer API",
+      "AWS Budgets"
+    ],
+    correctAnswers: [2],
+    explanation: "AWS Cost Explorer is the tool used to estimate and analyze costs. Other tools like AWS TCO Calculator are used for comparing AWS with on-premises costs, and AWS Budgets is for tracking spending."
+  },
+  {
+    id: uuidv5("aws-question-1156", uuidv5.URL),
+    text: "Which AWS tool will identify security groups that grant unrestricted Internet access to a limited list of ports?",
+    options: [
+      "AWS Organizations",
+      "AWS Trusted Advisor",
+      "AWS Usage Report",
+      "Amazon EC2 dashboard"
+    ],
+    correctAnswers: [1],
+    explanation: "AWS Trusted Advisor checks security groups for configurations that allow unrestricted access, helping users identify potential vulnerabilities. The other tools do not offer this specific functionality."
+  },
+  {
+    id: uuidv5("aws-question-1157", uuidv5.URL),
+    text: "Which AWS service can be used to generate alerts based on an estimated monthly bill?",
+    options: [
+      "AWS Config",
+      "Amazon CloudWatch",
+      "AWS X-Ray",
+      "AWS CloudTrail"
+    ],
+    correctAnswers: [1],
+    explanation: "Amazon CloudWatch can monitor estimated AWS charges and generate alerts when certain thresholds are met. Other services focus on configuration management, tracing, and logging, which are unrelated to billing alerts."
+  },
+  {
+    id: uuidv5("aws-question-1158", uuidv5.URL),
+    text: "Which Amazon EC2 pricing model offers the MOST significant discount when compared to On-Demand Instances?",
+    options: [
+      "Partial Upfront Reserved Instances for a 1-year term",
+      "All Upfront Reserved Instances for a 1-year term",
+      "All Upfront Reserved Instances for a 3-year term",
+      "No Upfront Reserved Instances for a 3-year term"
+    ],
+    correctAnswers: [2],
+    explanation: "All Upfront Reserved Instances for a 3-year term provide the highest discount, as AWS offers the best rates for longer commitments. Other options provide savings but not as significant."
+  },
+  {
+    id: uuidv5("aws-question-1159", uuidv5.URL),
+    text: "Which of the following is the responsibility of AWS?",
+    options: [
+      "Setting up AWS Identity and Access Management (IAM) users and groups",
+      "Physically destroying storage media at end of life",
+      "Patching guest operating systems",
+      "Configuring security settings on Amazon EC2 instances"
+    ],
+    correctAnswers: [1],
+    explanation: "AWS is responsible for securely decommissioning storage media at the end of its lifecycle, following industry best practices like NIST 800-88. The other tasks are the customer's responsibility."
+  },
+  {
+    id: uuidv5("aws-question-1160", uuidv5.URL),
+    text: "Which of the following is an advantage of using AWS?",
+    options: [
+      "AWS audits user data.",
+      "Data is automatically secure.",
+      "There is no guessing on capacity needs.",
+      "AWS manages compliance needs."
+    ],
+    correctAnswers: [2],
+    explanation: "AWS provides scalable resources, allowing customers to adjust capacity as needed without overprovisioning. Other options are incorrect because AWS does not audit user data automatically, security requires proper configuration, and compliance management is a shared responsibility."
+  },
+  {
+    id: uuidv5("aws-question-1161", uuidv5.URL),
+    text: "Which AWS service would a customer use with a static website to achieve lower latency and high transfer speeds?",
+    options: [
+      "AWS Lambda",
+      "Amazon DynamoDB Accelerator",
+      "Amazon Route 53",
+      "Amazon CloudFront"
+    ],
+    correctAnswers: [3],
+    explanation: "Amazon CloudFront is a CDN service that reduces latency and improves transfer speeds for content delivery. Other services focus on compute, database acceleration, or DNS management, which do not directly impact website performance in the same way."
+  },
+  {
+    id: uuidv5("aws-question-1162", uuidv5.URL),
+    text: "Which services manage and automate application deployments on AWS? (Choose two.)",
+    options: [
+      "AWS Elastic Beanstalk",
+      "AWS CodeCommit",
+      "AWS Data Pipeline",
+      "AWS CloudFormation",
+      "AWS Config"
+    ],
+    correctAnswers: [0, 3],
+    explanation:
+      "AWS Elastic Beanstalk automates the deployment of applications, handling provisioning, load balancing, and scaling. AWS CloudFormation allows infrastructure to be defined as code and deployed using templates. The other options do not manage or automate application deployments."
+  },
+  {
+    id: uuidv5("aws-question-1163", uuidv5.URL),
+    text: "A user wants guidance on possible savings when migrating from on-premises to AWS. Which tool is suitable for this scenario?",
+    options: [
+      "AWS Budgets",
+      "Cost Explorer",
+      "AWS Total Cost of Ownership (TCO) Calculator",
+      "AWS Well-Architected Tool"
+    ],
+    correctAnswers: [2],
+    explanation:
+      "The AWS TCO Calculator provides an estimate of potential cost savings when migrating to AWS. It helps customers compare the cost of on-premises infrastructure with AWS services. The other tools focus on cost monitoring, budgeting, or architectural best practices rather than migration cost assessment."
+  },
+  {
+    id: uuidv5("aws-question-1164", uuidv5.URL),
+    text: "Which principles are used to architect applications for reliability on the AWS Cloud? (Choose two.)",
+    options: [
+      "Design for automated failure recovery",
+      "Use multiple Availability Zones",
+      "Manage changes via documented processes",
+      "Test for moderate demand to ensure reliability",
+      "Backup recovery to an on-premises environment"
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "Designing for automated failure recovery and using multiple Availability Zones help ensure application reliability. Documenting processes, moderate demand testing, and backing up to on-premises environments are not key AWS reliability principles."
+  },
+  {
+    id: uuidv5("aws-question-1165", uuidv5.URL),
+    text: "What tasks should a customer perform when that customer suspects an AWS account has been compromised? (Choose two.)",
+    options: [
+      "Rotate passwords and access keys.",
+      "Remove MFA tokens.",
+      "Move resources to a different AWS Region.",
+      "Delete AWS CloudTrail Resources.",
+      "Contact AWS Support."
+    ],
+    correctAnswers: [0, 4],
+    explanation:
+      "Rotating credentials and contacting AWS Support are critical steps in responding to a compromised AWS account. Removing MFA tokens, moving resources, or deleting CloudTrail logs would not mitigate the issue and could make recovery more difficult."
+  },
+  {
+    id: uuidv5("aws-question-1166", uuidv5.URL),
+    text: "What is an example of high availability in the AWS Cloud?",
+    options: [
+      "Consulting AWS technical support at any time day or night",
+      "Ensuring an application remains accessible, even if a resource fails",
+      "Making any AWS service available for use by paying on demand",
+      "Deploying in any part of the world using AWS Regions"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "High availability ensures an application remains accessible despite failures. AWS support, pricing models, or global deployment do not directly define high availability."
+  },
+  {
+    id: uuidv5("aws-question-1167", uuidv5.URL),
+    text: "Which AWS security service protects applications from distributed denial of service attacks with always-on detection and automatic inline mitigations?",
+    options: [
+      "Amazon Inspector",
+      "AWS Web Application Firewall (AWS WAF)",
+      "Elastic Load Balancing (ELB)",
+      "AWS Shield"
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Shield provides always-on DDoS protection with automatic mitigation. AWS WAF protects against web threats, but not DDoS. ELB balances traffic but does not mitigate attacks. Amazon Inspector is a security assessment tool."
+  },
+  {
+    id: uuidv5("aws-question-1168", uuidv5.URL),
+    text: "A company wants to monitor the CPU usage of its Amazon EC2 resources. Which AWS service should the company use?",
+    options: [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Cost and Usage report",
+      "Amazon Simple Notification Service (Amazon SNS)"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon CloudWatch monitors EC2 instances, including CPU usage. CloudTrail tracks API activity, Cost and Usage reports financial data, and SNS provides notifications."
+  },
+  {
+    id: uuidv5("aws-question-1169", uuidv5.URL),
+    text: "What is an AWS Identity and Access Management (IAM) role?",
+    options: [
+      "A user associated with an AWS resource",
+      "A group associated with an AWS resource",
+      "An entity that defines a set of permissions for use with an AWS resource",
+      "An authentication credential associated with a multi-factor authentication (MFA) token"
+    ],
+    correctAnswers: [2],
+    explanation:
+      "An IAM role is an entity that defines a set of permissions for AWS resources. It is not a user, group, or MFA credential but provides temporary access permissions."
+  },
+  {
+    id: uuidv5("aws-question-1170", uuidv5.URL),
+    text: "What are the advantages of Reserved Instances? (Choose two.)",
+    options: [
+      "They provide a discount over on-demand pricing.",
+      "They provide access to additional instance types.",
+      "They provide additional networking capability.",
+      "Customers can upgrade instances as new types become available.",
+      "Customers can reserve capacity in an Availability Zone."
+    ],
+    correctAnswers: [0, 4],
+    explanation:
+      "Reserved Instances offer cost savings and the ability to reserve capacity. They do not provide new instance types, enhanced networking, or automatic upgrades."
+  },
+  {
+    id: uuidv5("aws-question-1171", uuidv5.URL),
+    text: "How do Amazon EC2 Auto Scaling groups help achieve high availability for a web application?",
+    options: [
+      "They automatically add more instances across multiple AWS Regions based on global demand of the application.",
+      "They automatically add or replace instances across multiple Availability Zones when the application needs it.",
+      "They enable the application's static content to reside closer to end users.",
+      "They are able to distribute incoming requests across a tier of web server instances."
+    ],
+    correctAnswers: [1],
+    explanation:
+      "EC2 Auto Scaling helps maintain high availability by replacing failing instances and distributing them across multiple Availability Zones. It does not distribute traffic (which is the role of ELB) or manage global demand."
+  },
+  {
+    id: uuidv5("aws-question-1172", uuidv5.URL),
+    text: "How can one AWS account use Reserved Instances from another AWS account?",
+    options: [
+      "By using Amazon EC2 Dedicated Instances",
+      "By using AWS Organizations consolidated billing",
+      "By using the AWS Cost Explorer tool",
+      "By using AWS Budgets",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "The account that originally purchased the Reserved Instance receives the discount first. If the purchasing account doesn't have any instances that match the terms of the Reserved Instance, the discount for the Reserved Instance is assigned to any matching usage on another account in the organization. AWS Organizations consolidated billing enables this cost-sharing mechanism.",
+  },
+  {
+    id: uuidv5("aws-question-1173", uuidv5.URL),
+    text: "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds. For how much time will the customer be billed?",
+    options: [
+      "3 hours, 5 minutes",
+      "3 hours, 5 minutes, and 6 seconds",
+      "3 hours, 6 minutes",
+      "4 hours",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS bills On-Demand EC2 instances per second, with a minimum of 60 seconds. Therefore, the customer will be billed exactly for 3 hours, 5 minutes, and 6 seconds, rather than rounding up to the next full minute or hour.",
+  },
+  {
+    id: uuidv5("aws-question-1174", uuidv5.URL),
+    text: "Which of the following AWS services provide compute resources? (Choose two.)",
+    options: [
+      "AWS Lambda",
+      "Amazon Elastic Container Service (Amazon ECS)",
+      "AWS CodeDeploy",
+      "Amazon Glacier",
+      "AWS Organizations",
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "AWS Lambda and Amazon ECS provide compute resources. AWS Lambda runs code without provisioning or managing servers, while Amazon ECS allows users to run and manage Docker containers on a cluster of EC2 instances or with AWS Fargate. The other options do not provide compute capabilities.",
+  },
+  {
+    id: uuidv5("aws-question-1175", uuidv5.URL),
+    text: "Which AWS service enables users to deploy infrastructure as code by automating the process of provisioning resources?",
+    options: [
+      "Amazon GameLift",
+      "AWS CloudFormation",
+      "AWS Data Pipeline",
+      "AWS Glue",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS CloudFormation enables infrastructure as code, allowing users to define AWS resources in templates and provision them automatically. The other services do not provide this capability.",
+  },
+  {
+    id: uuidv5("aws-question-1176", uuidv5.URL),
+    text: "Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Choose two.)",
+    options: [
+      "Amazon EBS",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Storage Gateway",
+      "Amazon Connect",
+    ],
+    correctAnswers: [1, 3],
+    explanation:
+      "AWS Direct Connect provides a dedicated network connection from on-premises to AWS, and AWS Storage Gateway allows integration between on-premises storage and AWS Cloud storage. The other options do not extend on-premises environments to AWS.",
+  },
+  {
+    id: uuidv5("aws-question-1177", uuidv5.URL),
+    text: "Which of the following allows users to provision a dedicated network connection from their internal network to AWS?",
+    options: [
+      "AWS CloudHSM",
+      "AWS Direct Connect",
+      "AWS VPN",
+      "Amazon Connect",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Direct Connect provides a dedicated physical network connection from an on-premises network to AWS, improving bandwidth and reducing latency. AWS VPN provides encrypted tunnels over the internet but is not a dedicated connection.",
+  },
+  {
+    id: uuidv5("aws-question-1178", uuidv5.URL),
+    text: "Which services use AWS edge locations? (Choose two.)",
+    options: [
+      "Amazon CloudFront",
+      "AWS Shield",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon ElastiCache",
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "Amazon CloudFront is a content delivery network that caches content at edge locations to reduce latency. AWS Shield provides DDoS protection at AWS edge locations. The other services do not utilize edge locations.",
+  },
+  {
+    id: uuidv5("aws-question-1179", uuidv5.URL),
+    text: "Which service would provide network connectivity in a hybrid architecture that includes the AWS Cloud?",
+    options: [
+      "Amazon VPC",
+      "AWS Direct Connect",
+      "AWS Directory Service",
+      "Amazon API Gateway",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon VPC allows users to create a logically isolated network in AWS, supporting hybrid connectivity using VPN or Direct Connect. While Direct Connect provides a dedicated link, VPC is the core service for hybrid networking.",
+  },
+  {
+    id: uuidv5("aws-question-1180", uuidv5.URL),
+    text: "Which tool can be used to compare the costs of running a web application in a traditional hosting environment to running it on AWS?",
+    options: [
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Cost and Usage report",
+      "AWS Total Cost of Ownership (TCO) Calculator",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "The AWS Total Cost of Ownership (TCO) Calculator helps users estimate the cost savings of running applications on AWS compared to traditional hosting. The other tools focus on cost monitoring rather than comparisons.",
+  },
+  {
+    id: uuidv5("aws-question-1181", uuidv5.URL),
+    text: "What is the value of using third-party software from AWS Marketplace instead of installing third-party software on Amazon EC2? (Choose two.)",
+    options: [
+      "Users pay for software by the hour or month depending on licensing.",
+      "AWS Marketplace enables the user to launch applications with 1-Click.",
+      "AWS Marketplace data encryption is managed by a third-party vendor.",
+      "AWS Marketplace eliminates the need to upgrade to newer software versions.",
+      "Users can deploy third-party software without testing.",
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "AWS Marketplace allows users to pay for third-party software based on usage and deploy applications with one click. However, software upgrades are still needed, and users should test software before deployment.",
+  },
+  {
+    id: uuidv5("aws-question-1182", uuidv5.URL),
+    text: "Which of the following is a cloud architectural design principle?",
+    options: [
+      "Scale up, not out.",
+      "Loosely couple components.",
+      "Build monolithic systems.",
+      "Use commercial database software."
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Loosely coupled architectures reduce interdependencies, so that a change or failure in a component does not cascade to other components."
+  },
+  {
+    id: uuidv5("aws-question-1183", uuidv5.URL),
+    text: "Under the shared responsibility model; which of the following areas are the customer's responsibility? (Choose two.)",
+    options: [
+      "Firmware upgrades of network infrastructure",
+      "Patching of operating systems",
+      "Patching of the underlying hypervisor",
+      "Physical security of data centers",
+      "Configuration of the security group"
+    ],
+    correctAnswers: [1, 4],
+    explanation:
+      "Under the shared responsibility model, customers are responsible for patching their operating systems and configuring security groups. AWS manages the infrastructure, including physical security and hypervisor patching."
+  },
+  {
+    id: uuidv5("aws-question-1184", uuidv5.URL),
+    text: "Which service enables customers to audit and monitor changes in AWS resources?",
+    options: [
+      "AWS Trusted Advisor",
+      "Amazon GuardDuty",
+      "Amazon Inspector",
+      "AWS Config"
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Config continuously monitors and records AWS resource configurations, allowing users to audit, assess compliance, and track changes over time."
+  },
+  {
+    id: uuidv5("aws-question-1185", uuidv5.URL),
+    text: "Which AWS service identifies security groups that allow unrestricted access to a user's AWS resources?",
+    options: [
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "Amazon CloudWatch",
+      "Amazon Inspector"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Trusted Advisor provides security checks, including identifying security groups with open access to resources."
+  },
+  {
+    id: uuidv5("aws-question-1186", uuidv5.URL),
+    text: "According to the AWS shared responsibility model, who is responsible for configuration management?",
+    options: [
+      "It is solely the responsibility of the customer.",
+      "It is solely the responsibility of AWS.",
+      "It is shared between AWS and the customer.",
+      "It is not part of the AWS shared responsibility model."
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS maintains the infrastructure configuration, but customers are responsible for managing their own configurations, including operating systems, databases, and applications."
+  },
+  {
+    id: uuidv5("aws-question-1187", uuidv5.URL),
+    text: "Which AWS service is a content delivery network that securely delivers data, video, and applications to users globally with low latency and high speeds?",
+    options: [
+      "AWS CloudFormation",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "Amazon Pinpoint"
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Amazon CloudFront is AWS's content delivery network (CDN) that provides secure, low-latency delivery of data, videos, and applications to users worldwide."
+  },
+  {
+    id: uuidv5("aws-question-1188", uuidv5.URL),
+    text: "Which benefit of the AWS Cloud supports matching the supply of resources with changing workload demands?",
+    options: [
+      "Security",
+      "Reliability",
+      "Elasticity",
+      "High availability"
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Elasticity allows AWS resources to scale up or down dynamically, matching workload demands efficiently."
+  },
+  {
+    id: uuidv5("aws-question-1189", uuidv5.URL),
+    text: "A user is running an application on AWS and notices that one or more AWS-owned IP addresses is involved in a distributed denial-of-service (DDoS) attack. Who should the user contact FIRST about this situation?",
+    options: [
+      "AWS Premium Support",
+      "AWS Technical Account Manager",
+      "AWS Solutions Architect",
+      "AWS Abuse team"
+    ],
+    correctAnswers: [3],
+    explanation:
+      "The AWS Abuse team is responsible for handling reports related to DDoS attacks and other malicious activities involving AWS resources."
+  },
+  {
+    id: uuidv5("aws-question-1190", uuidv5.URL),
+    text: "Which of the following are benefits of hosting infrastructure in the AWS Cloud? (Choose two.)",
+    options: [
+      "There are no upfront commitments.",
+      "AWS manages all security in the cloud.",
+      "Users have the ability to provision resources on demand.",
+      "Users have access to free and unlimited storage.",
+      "Users have control over the physical infrastructure."
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "AWS provides pay-as-you-go pricing, eliminating upfront costs. It also allows users to provision resources on demand, ensuring flexibility and scalability."
+  },
+  {
+    id: uuidv5("aws-question-1191", uuidv5.URL),
+    text: "What AWS service would be used to centrally manage AWS access policies across multiple accounts?",
+    options: [
+      "AWS Service Catalog",
+      "AWS Config",
+      "AWS Trusted Advisor",
+      "AWS Organizations"
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Organizations enables centralized governance and management of multiple AWS accounts, including access policies and billing."
+  }, {
+    id: uuidv5("aws-question-1192", uuidv5.URL),
+    text: "What is AWS Trusted Advisor?",
+    options: [
+      "It is an AWS staff member who provides recommendations and best practices on how to use AWS.",
+      "It is a network of AWS partners who provide recommendations and best practices on how to use AWS.",
+      "It is an online tool with a set of automated checks that provides recommendations on cost optimization, performance, and security.",
+      "It is another name for AWS Technical Account Managers who provide recommendations on cost optimization, performance, and security."
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Trusted Advisor is an online tool that provides real-time guidance to help you provision your resources following AWS best practices. It offers recommendations in areas such as cost optimization, security, and performance, helping users improve their AWS environment. The other options incorrectly describe Trusted Advisor."
+  },
+  {
+    id: uuidv5("aws-question-1193", uuidv5.URL),
+    text: "Which AWS service or feature allows a company to visualize, understand, and manage AWS costs and usage over time?",
+    options: [
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS Organizations",
+      "Consolidated billing"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Cost Explorer provides an interface that allows users to visualize, understand, and manage their AWS costs and usage over time. AWS Budgets is for setting cost and usage limits, AWS Organizations helps manage multiple accounts, and Consolidated Billing allows central billing but does not provide visualization tools."
+  },
+  {
+    id: uuidv5("aws-question-1194", uuidv5.URL),
+    text: "Which AWS service offers on-demand access to AWS security and compliance reports?",
+    options: [
+      "AWS CloudTrail",
+      "AWS Artifact",
+      "AWS Health",
+      "Amazon CloudWatch"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Artifact provides on-demand access to AWS security and compliance reports. It includes SOC reports, PCI reports, and compliance certifications. AWS CloudTrail records API activity, AWS Health provides service health updates, and Amazon CloudWatch is used for monitoring and observability."
+  },
+  {
+    id: uuidv5("aws-question-1195", uuidv5.URL),
+    text: "What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Choose two.)",
+    options: [
+      "Companies can deploy applications in multiple AWS Regions to reduce latency.",
+      "Amazon Translate automatically translates third-party website interfaces into multiple languages.",
+      "Amazon CloudFront has multiple edge locations around the world to reduce latency.",
+      "Amazon Comprehend allows users to build applications that can respond to user requests in many languages.",
+      "Elastic Load Balancing can distribute application web traffic to multiple AWS Regions around the world, which reduces latency."
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "Deploying applications in multiple AWS Regions and using Amazon CloudFront edge locations help reduce latency for global users. Amazon Translate and Amazon Comprehend are language-related services, not directly tied to global performance. Elastic Load Balancing operates within a region and does not distribute traffic across multiple AWS Regions."
+  },
+  {
+    id: uuidv5("aws-question-1196", uuidv5.URL),
+    text: "Which AWS service handles the deployment details of capacity provisioning, load balancing, Auto Scaling, and application health monitoring?",
+    options: [
+      "AWS Config",
+      "AWS Elastic Beanstalk",
+      "Amazon Route 53",
+      "Amazon CloudFront"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Elastic Beanstalk simplifies application deployment by automatically handling capacity provisioning, load balancing, auto-scaling, and health monitoring. AWS Config monitors AWS resource configurations, Route 53 manages DNS, and CloudFront provides content delivery."
+  },
+  {
+    id: uuidv5("aws-question-1197", uuidv5.URL),
+    text: "Which AWS service provides inbound and outbound network ACLs to harden external connectivity to Amazon EC2?",
+    options: [
+      "AWS IAM",
+      "Amazon Connect",
+      "Amazon VPC",
+      "Amazon API Gateway"
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Amazon VPC provides network ACLs to control inbound and outbound traffic for EC2 instances. AWS IAM manages identity and access but not network security, Amazon Connect is a contact center service, and API Gateway handles API management."
+  },
+  {
+    id: uuidv5("aws-question-1198", uuidv5.URL),
+    text: "When a company provisions web servers in multiple AWS Regions, what is being increased?",
+    options: [
+      "Coupling",
+      "Availability",
+      "Security",
+      "Durability"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Deploying web servers in multiple AWS Regions increases availability by reducing the impact of regional failures. It does not necessarily improve security or durability, and coupling refers to system dependencies rather than availability."
+  },
+  {
+    id: uuidv5("aws-question-1199", uuidv5.URL),
+    text: "The pay-as-you-go pricing model for AWS services:",
+    options: [
+      "reduces capital expenditures.",
+      "requires payment up front for AWS services.",
+      "is relevant only for Amazon EC2, Amazon S3, and Amazon RDS.",
+      "reduces operational expenditures."
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS's pay-as-you-go model reduces capital expenditures (CapEx) by eliminating upfront costs. It does not require upfront payments, applies to many AWS services beyond EC2, S3, and RDS, and primarily impacts CapEx rather than operational expenditures."
+  },
+  {
+    id: uuidv5("aws-question-1200", uuidv5.URL),
+    text: "Under the AWS shared responsibility model, AWS is responsible for which security-related task?",
+    options: [
+      "Lifecycle management of IAM credentials",
+      "Physical security of global infrastructure",
+      "Encryption of Amazon EBS volumes",
+      "Firewall configuration"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS is responsible for the physical security of its global infrastructure under the shared responsibility model. Customers are responsible for IAM credential management, EBS encryption, and firewall configurations."
+  },
+  {
+    id: uuidv5("aws-question-1201", uuidv5.URL),
+    text: "Which AWS service enables users to consolidate billing across multiple accounts?",
+    options: [
+      "Amazon QuickSight",
+      "AWS Organizations",
+      "AWS Budgets",
+      "Amazon Forecast"
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Organizations allows consolidated billing, letting users manage costs across multiple accounts. QuickSight is a BI tool, AWS Budgets helps monitor costs, and Amazon Forecast provides forecasting insights."
+  }
+];
+
 export const quizzes: Quiz[] = [
   {
     id: 1,
@@ -9615,4 +10268,14 @@ export const quizzes: Quiz[] = [
     category: "AWS Management",
     exam: exam16,
   },
+  {
+    id: 17,
+    title: "Practice Exam 17",
+    slug: "aws",
+    subtitle: `${exam17.length} Questions`,
+    description: "Test your knowledge of AWS management services.",
+    categoryId: "aws-management",
+    category: "AWS Management",
+    exam: exam17,
+  }
 ];
