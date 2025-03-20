@@ -11413,6 +11413,658 @@ export const exam19: Question[] = [
   },
 ];
 
+const exam20: Question[] = [
+  {
+    id: uuidv5("aws-question-1312", uuidv5.URL),
+    text: "Which AWS service helps identify malicious or unauthorized activities in AWS accounts and workloads?",
+    options: [
+      "Amazon Rekognition",
+      "AWS Trusted Advisor",
+      "Amazon GuardDuty",
+      "Amazon CloudWatch",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Amazon GuardDuty is a threat detection service that continuously monitors for malicious or unauthorized behavior to help protect your AWS accounts and workloads. The other services do not provide this level of threat detection: Amazon Rekognition is used for image and video analysis, AWS Trusted Advisor provides recommendations to optimize AWS resources, and Amazon CloudWatch is used for monitoring and observability, but not specifically for threat detection. https://aws.amazon.com/guardduty/",
+  },
+  {
+    id: uuidv5("aws-question-1313", uuidv5.URL),
+    text: "A company wants to try a third-party ecommerce solution before deciding to use it long term. Which AWS service or tool will support this effort?",
+    options: [
+      "AWS Marketplace",
+      "AWS Partner Network (APN)",
+      "AWS Managed Services",
+      "AWS Service Catalog",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS Marketplace is a curated digital catalog that makes it easy for customers to find, test, buy, and deploy third-party software that runs on AWS. The AWS Partner Network connects partners, but doesn't provide direct trial access. AWS Managed Services help with operational support, and AWS Service Catalog helps manage approved services but is not designed for testing third-party solutions. https://aws.amazon.com/about-aws/whats-new/2019/09/aws-marketplace-easier-to-find-solutions-from-aws-console/",
+  },
+  {
+    id: uuidv5("aws-question-1314", uuidv5.URL),
+    text: "Which AWS service is a managed NoSQL database?",
+    options: [
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Aurora",
+      "Amazon RDS for MariaDB",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon DynamoDB is a fully managed NoSQL database service. Amazon Redshift is a data warehouse, Amazon Aurora and Amazon RDS for MariaDB are relational databases, not NoSQL solutions. https://aws.amazon.com/dynamodb/",
+  },
+  {
+    id: uuidv5("aws-question-1315", uuidv5.URL),
+    text: "Which AWS service should be used to create a billing alarm?",
+    options: [
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "Amazon QuickSight",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Amazon CloudWatch allows you to create billing alarms based on your estimated charges. AWS Trusted Advisor provides optimization insights, AWS CloudTrail logs API calls, and Amazon QuickSight is for data visualization. https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html",
+  },
+  {
+    id: uuidv5("aws-question-1316", uuidv5.URL),
+    text: "A company is hosting a web application in a Docker container on Amazon EC2. AWS is responsible for which of the following tasks?",
+    options: [
+      "Scaling the web application and services developed with Docker",
+      "Provisioning or scheduling containers to run on clusters and maintain their availability",
+      "Performing hardware maintenance in the AWS facilities that run the AWS Cloud",
+      "Managing the guest operating system, including updates and security patches",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS is responsible for the hardware maintenance of the infrastructure running EC2 instances. The other tasks, including scaling, container orchestration, and OS management, are the responsibility of the customer in this scenario. https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/",
+  },
+  {
+    id: uuidv5("aws-question-1317", uuidv5.URL),
+    text: "Users are reporting latency when connecting to a website with a global customer base. Which AWS service will improve the customer experience by reducing latency?",
+    options: [
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon EC2 Auto Scaling",
+      "AWS Transit Gateway",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon CloudFront is a content delivery network (CDN) that helps deliver data with low latency to users across the globe. AWS Direct Connect is used for dedicated connections, EC2 Auto Scaling manages compute resources, and AWS Transit Gateway helps with network management, not content delivery. https://aws.amazon.com/getting-started/tutorials/deliver-content-faster/",
+  },
+  {
+    id: uuidv5("aws-question-1318", uuidv5.URL),
+    text: "Which actions represent best practices for using AWS IAM? (Choose two.)",
+    options: [
+      "Configure a strong password policy",
+      "Share the security credentials among users of AWS accounts who are in the same Region",
+      "Use access keys to log in to the AWS Management Console",
+      "Rotate access keys on a regular basis",
+      "Avoid using IAM roles to delegate permissions",
+    ],
+    correctAnswers: [0, 3],
+    explanation:
+      "Best practices for AWS IAM include configuring a strong password policy to enhance account security and rotating access keys regularly to minimize exposure in case they are compromised. Sharing credentials, using access keys for console login, and avoiding IAM roles are all insecure practices and go against AWS best practices. https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+  },
+  {
+    id: uuidv5("aws-question-1319", uuidv5.URL),
+    text: "Which AWS feature or service can be used to capture information about incoming and outgoing traffic in an AWS VPC infrastructure?",
+    options: [
+      "AWS Config",
+      "VPC Flow Logs",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "VPC Flow Logs capture information about IP traffic going to and from network interfaces in your VPC. AWS Config tracks configuration changes, AWS Trusted Advisor offers best-practice checks, and AWS CloudTrail records API calls but does not monitor network traffic. https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html",
+  },
+  {
+    id: uuidv5("aws-question-1320", uuidv5.URL),
+    text: "A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability. Which service will support these requirements?",
+    options: [
+      "Amazon Inspector",
+      "Amazon CloudWatch",
+      "AWS Global Accelerator",
+      "Amazon CloudFront",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Global Accelerator monitors the health of your endpoints and routes traffic to healthy regional endpoints to improve availability and performance. Amazon Inspector assesses application security, Amazon CloudWatch provides metrics and monitoring, and Amazon CloudFront is a CDN that does not manage endpoint health. https://aws.amazon.com/global-accelerator/?blogs-global-accelerator.sort-by=item.additionalFields.createdDate&blogs-global-accelerator.sort-order=desc&aws-global-accelerator-wn.sort-by=item.additionalFields.postDateTime&aws-global-accelerator-wn.sort-order=desc",
+  },
+  {
+    id: uuidv5("aws-question-1321", uuidv5.URL),
+    text: "According to the AWS Well-Architected Framework, what change management steps should be taken to achieve reliability in the AWS Cloud? (Choose two.)",
+    options: [
+      "Use AWS Config to generate an inventory of AWS resources",
+      "Use service limits to prevent users from creating or making changes to AWS resources",
+      "Use AWS CloudTrail to record AWS API calls into an auditable log file",
+      "Use AWS Certificate Manager to whitelist approved AWS resources and services",
+      "Use Amazon GuardDuty to validate configuration changes made to AWS resources",
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "According to the AWS Well-Architected Framework, maintaining an inventory of AWS resources with AWS Config and recording API calls with AWS CloudTrail are key change management steps for ensuring reliability. Service limits, whitelisting with ACM, and using GuardDuty for configuration validation are not part of the defined best practices in this area. https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+  },
+  {
+    id: uuidv5("aws-question-1322", uuidv5.URL),
+    text: "Which service can be used to monitor and receive alerts for AWS account root user AWS Management Console sign-in events?",
+    options: [
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS Trusted Advisor",
+      "AWS IAM",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon CloudWatch can be configured to monitor and send alerts for root user AWS Management Console sign-in events by setting up metrics and alarms. This helps enhance account security by notifying administrators of potentially risky activity. The other options do not provide this monitoring and alert capability directly. https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/",
+  },
+  {
+    id: uuidv5("aws-question-1323", uuidv5.URL),
+    text: "Which design principle should be considered when architecting in the AWS Cloud?",
+    options: [
+      "Think of servers as non-disposable resources",
+      "Use synchronous integration of services",
+      "Design loosely coupled components",
+      "Implement the least permissive rules for security groups",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Designing loosely coupled components ensures that individual components can fail or change without affecting the entire system, improving flexibility and scalability. The other options either contradict AWS best practices or are too specific compared to this foundational principle. https://www.botmetric.com/blog/aws-cloud-architecture-design-principles/",
+  },
+  {
+    id: uuidv5("aws-question-1324", uuidv5.URL),
+    text: "Which AWS services can be used to move data from on-premises data centers to AWS? (Choose two.)",
+    options: [
+      "AWS Snowball",
+      "AWS Lambda",
+      "AWS ElastiCache",
+      "AWS Database Migration Service (AWS DMS)",
+      "Amazon API Gateway",
+    ],
+    correctAnswers: [0, 3],
+    explanation:
+      "AWS Snowball is used for large-scale data transfer by physically shipping secure devices, while AWS Database Migration Service (AWS DMS) helps migrate databases from on-premises to AWS with minimal downtime. The other services do not provide this data transfer capability. https://aws.amazon.com/snowball/",
+  },
+  {
+    id: uuidv5("aws-question-1325", uuidv5.URL),
+    text: "A batch workload takes 5 hours to finish on an Amazon EC2 instance. The amount of data to be processed doubles monthly and the processing time is proportional. What is the best cloud architecture to address this consistently growing demand?",
+    options: [
+      "Run the application on a bigger EC2 instance size.",
+      "Switch to an EC2 instance family that better matches batch requirements.",
+      "Distribute the application across multiple EC2 instances and run the workload in parallel.",
+      "Run the application on a bare metal EC2 instance.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Distributing the application across multiple EC2 instances and running workloads in parallel provides horizontal scaling, which effectively addresses exponential data growth. Increasing instance size or changing instance family has limitations and won't scale indefinitely.",
+  },
+  {
+    id: uuidv5("aws-question-1326", uuidv5.URL),
+    text: "Each department within a company has its own independent AWS account and its own payment method. New company leadership wants to centralize departmental governance and consolidate payments. How can this be achieved using AWS services or features?",
+    options: [
+      "Forward monthly invoices for each account. Then create IAM roles to allow cross-account access.",
+      "Create a new AWS account. Then configure AWS Organizations and invite all existing accounts to join.",
+      "Configure AWS Organizations in each of the existing accounts. Then link all accounts together.",
+      "Use Cost Explorer to combine costs from all accounts. Then replicate IAM policies across accounts.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Creating a new AWS account and configuring AWS Organizations allows centralized management of billing, accounts, and governance. Other methods do not provide the same level of integrated control. https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts.html",
+  },
+  {
+    id: uuidv5("aws-question-1327", uuidv5.URL),
+    text: "The ability to horizontally scale Amazon EC2 instances based on demand is an example of which concept in the AWS Cloud value proposition?",
+    options: ["Economy of scale", "Elasticity", "High availability", "Agility"],
+    correctAnswers: [1],
+    explanation:
+      "Elasticity refers to the ability to scale resources up or down automatically based on demand, a core AWS benefit.",
+  },
+  {
+    id: uuidv5("aws-question-1328", uuidv5.URL),
+    text: "An ecommerce company anticipates a huge increase in web traffic for two very popular upcoming shopping holidays. Which AWS service or feature can be configured to dynamically adjust resources to meet this change in demand?",
+    options: [
+      "AWS CloudTrail",
+      "Amazon EC2 Auto Scaling",
+      "Amazon Forecast",
+      "AWS Config",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon EC2 Auto Scaling dynamically adjusts resources to meet changes in demand, ensuring application availability and cost efficiency. https://aws.amazon.com/autoscaling/",
+  },
+  {
+    id: uuidv5("aws-question-1329", uuidv5.URL),
+    text: "Which AWS service enables users to securely connect to AWS resources over the public internet?",
+    options: [
+      "Amazon VPC peering",
+      "AWS Direct Connect",
+      "AWS VPN",
+      "Amazon Pinpoint",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS VPN allows secure connections to AWS resources over the public internet, enabling encrypted communication. https://d1.awsstatic.com/whitepapers/aws-security-whitepaper.pdf",
+  },
+  {
+    id: uuidv5("aws-question-1330", uuidv5.URL),
+    text: "Which tool is used to forecast AWS spending?",
+    options: [
+      "AWS Trusted Advisor",
+      "AWS Organizations",
+      "Cost Explorer",
+      "Amazon Inspector",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Cost Explorer allows users to visualize, analyze, and forecast AWS spending, helping with budget planning. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-forecast.html",
+  },
+  {
+    id: uuidv5("aws-question-1331", uuidv5.URL),
+    text: "A company is running an ecommerce application hosted in Europe. To decrease latency for users who access the website from other parts of the world, the company would like to cache frequently accessed static content closer to the users. Which AWS service will support these requirements?",
+    options: [
+      "Amazon ElastiCache",
+      "Amazon CloudFront",
+      "Amazon Elastic File System (Amazon EFS)",
+      "Amazon Elastic Block Store (Amazon EBS)",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon CloudFront uses a global network of edge locations and regional edge caches to cache static content closer to users, reducing latency and improving performance. https://aws.amazon.com/cloudfront/faqs/",
+  },
+  {
+    id: uuidv5("aws-question-1332", uuidv5.URL),
+    text: "Which of the following is a component of the AWS Global Infrastructure?",
+    options: [
+      "Amazon Alexa",
+      "AWS Regions",
+      "Amazon Lightsail",
+      "AWS Organizations",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Regions are fundamental components of the AWS Global Infrastructure, consisting of multiple, physically separated, and isolated Availability Zones. These allow users to build highly available and fault-tolerant applications. The other options are services or features not part of the infrastructure itself. https://aws.amazon.com/about-aws/global-infrastructure/",
+  },
+  {
+    id: uuidv5("aws-question-1333", uuidv5.URL),
+    text: "Which AWS service will help users determine if an application running on an Amazon EC2 instance has sufficient CPU capacity?",
+    options: [
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS CloudTrail",
+      "Amazon Inspector",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon CloudWatch allows monitoring of AWS resources and applications in real-time, including CPU utilization metrics for EC2 instances. The other services do not provide direct resource monitoring metrics. https://aws.amazon.com/ec2/faqs/",
+  },
+  {
+    id: uuidv5("aws-question-1334", uuidv5.URL),
+    text: "Why is it beneficial to use Elastic Load Balancers with applications?",
+    options: [
+      "They allow for the conversion from Application Load Balancers to Classic Load Balancers.",
+      "They are capable of handling constant changes in network traffic patterns.",
+      "They automatically adjust capacity.",
+      "They are provided at no charge to users.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Elastic Load Balancers are designed to handle varying network traffic patterns and distribute incoming traffic efficiently across multiple targets. This helps maintain application availability and performance. The other options are incorrect or misleading. https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
+  },
+  {
+    id: uuidv5("aws-question-1335", uuidv5.URL),
+    text: "Which tasks are the customer's responsibility in the AWS shared responsibility model? (Choose two.)",
+    options: [
+      "Infrastructure facilities access management",
+      "Cloud infrastructure hardware lifecycle management",
+      "Configuration management of user's applications",
+      "Networking infrastructure protection",
+      "Security groups configuration",
+    ],
+    correctAnswers: [2, 4],
+    explanation:
+      "Under the AWS shared responsibility model, AWS manages the security of the cloud, while customers are responsible for the security in the cloud, including application configuration and security group settings. The other options fall under AWS's responsibilities. https://cloudacademy.com/blog/aws-shared-responsibility-model-security/",
+  },
+  {
+    id: uuidv5("aws-question-1336", uuidv5.URL),
+    text: "IT systems should be designed to reduce interdependencies, so that a change or failure in one component does not cascade to other components. This is an example of which principle of cloud architecture design?",
+    options: [
+      "Scalability",
+      "Loose coupling",
+      "Automation",
+      "Automatic scaling",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Loose coupling refers to designing systems with minimal dependencies between components, allowing for better fault isolation and easier updates. The other options refer to different architectural principles. https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf",
+  },
+  {
+    id: uuidv5("aws-question-1337", uuidv5.URL),
+    text: "Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Choose two.)",
+    options: [
+      "AWS WAF",
+      "AWS Trusted Advisor",
+      "AWS Direct Connect",
+      "AWS Organizations",
+      "Network ACLs",
+    ],
+    correctAnswers: [0, 4],
+    explanation:
+      "AWS WAF allows you to filter and block malicious web traffic at the application layer, and Network ACLs can control inbound and outbound traffic at the subnet level. The other options do not serve this purpose. https://aws.amazon.com/waf/ and https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
+  },
+  {
+    id: uuidv5("aws-question-1338", uuidv5.URL),
+    text: "An application runs on multiple Amazon EC2 instances that access a shared file system simultaneously. Which AWS storage service should be used?",
+    options: ["Amazon EBS", "Amazon EFS", "Amazon S3", "AWS Artifact"],
+    correctAnswers: [1],
+    explanation:
+      "Amazon EFS (Elastic File System) allows multiple EC2 instances to access the same file system simultaneously with shared access, making it ideal for applications requiring concurrent file system access. The other services do not meet this requirement. https://aws.amazon.com/efs/",
+  },
+  {
+    id: uuidv5("aws-question-1339", uuidv5.URL),
+    text: "A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. Which security measures fall under the responsibility of AWS? (Choose two.)",
+    options: [
+      "Running a virus scan on EC2 instances",
+      "Protecting against IP spoofing and packet sniffing",
+      "Installing the latest security patches on the RDS instance",
+      "Encrypting communication between the EC2 instances and the Elastic Load Balancer",
+      "Configuring a security group and a network access control list (NACL) for EC2",
+    ],
+    correctAnswers: [1, 2],
+    explanation:
+      "AWS is responsible for protecting against IP spoofing and for maintaining the security of managed services like RDS, including patching the underlying infrastructure. The other responsibilities fall to the customer. https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1340", uuidv5.URL),
+    text: "What is the benefit of elasticity in the AWS Cloud?",
+    options: [
+      "Ensure web traffic is automatically spread across multiple AWS Regions.",
+      "Minimize storage costs by automatically archiving log data.",
+      "Enable AWS to automatically select the most cost-effective services.",
+      "Automatically adjust the required compute capacity to maintain consistent performance.",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Elasticity allows AWS to automatically scale resources up or down based on demand, ensuring consistent performance and cost efficiency. The other options do not reflect this principle. https://aimconsulting.com/insights/blog/the-elastic-cloud-opportunity/",
+  },
+  {
+    id: uuidv5("aws-question-1341", uuidv5.URL),
+    text: "The continual reduction of AWS Cloud pricing is due to:",
+    options: [
+      "pay-as-you go pricing",
+      "the AWS global infrastructure",
+      "economies of scale",
+      "reserved storage pricing",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "The reduction in AWS pricing over time is largely due to economies of scale, allowing AWS to pass on cost savings to customers. The other options are either pricing models or features but not the reason for price reductions. https://aws.amazon.com/economies-of-scale/",
+  },
+  {
+    id: uuidv5("aws-question-1342", uuidv5.URL),
+    text: "A company needs an Amazon S3 bucket that cannot have any public objects due to compliance requirements. How can this be accomplished?",
+    options: [
+      "Enable S3 Block Public Access from the AWS Management Console.",
+      "Hold a team meeting to discuss the importance if only uploading private S3 objects.",
+      "Require all S3 objects to be manually approved before uploading.",
+      "Create a service to monitor all S3 uploads and remove any public uploads.",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "The correct way to prevent public access to S3 buckets is by enabling S3 Block Public Access. This setting blocks public access to buckets and objects across an entire AWS account or at the bucket level. This approach is secure and does not rely on human oversight. Reference: https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html",
+  },
+  {
+    id: uuidv5("aws-question-1343", uuidv5.URL),
+    text: "A Cloud Practitioner identifies a billing issue after examining the AWS Cost and Usage report in the AWS Management Console. Which action can be taken to resolve this?",
+    options: [
+      "Open a detailed case related to billing and submit it to AWS Support for help.",
+      "Upload data describing the issue to a new object in a private Amazon S3 bucket.",
+      "Create a pricing application and deploy it to a right-sized Amazon EC2 instance for more information.",
+      "Proceed with creating a new dashboard in Amazon QuickSight.",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "If a billing issue is identified, the correct approach is to open a detailed billing case with AWS Support. AWS Support provides assistance with account and billing inquiries. Reference: https://docs.aws.amazon.com/awssupport/latest/user/case-management.html",
+  },
+  {
+    id: uuidv5("aws-question-1344", uuidv5.URL),
+    text: "What does the AWS Simple Monthly Calculator do?",
+    options: [
+      "Compares on-premises costs to colocation environments",
+      "Estimates monthly billing based on projected usage",
+      "Estimates power consumption at existing data centers",
+      "Estimates CPU utilization",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "The AWS Simple Monthly Calculator allows users to estimate their monthly AWS bill based on expected usage of services. Reference: https://aws.amazon.com/blogs/aws/estimate-your-c/",
+  },
+  {
+    id: uuidv5("aws-question-1345", uuidv5.URL),
+    text: "Who is responsible for patching the guest operating system for Amazon RDS?",
+    options: [
+      "The AWS Product team",
+      "The customer Database Administrator",
+      "Managed partners",
+      "AWS Support",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Under the shared responsibility model, patching and maintaining the guest operating system, including databases, is the customer's responsibility for Amazon RDS. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1346", uuidv5.URL),
+    text: "Which AWS services may be scaled using AWS Auto Scaling? (Choose two.)",
+    options: [
+      "Amazon EC2",
+      "Amazon DynamoDB",
+      "Amazon S3",
+      "Amazon Route 53",
+      "Amazon Redshift",
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "AWS Auto Scaling can be used to automatically adjust capacity for both EC2 instances and DynamoDB throughput. Reference: https://aws.amazon.com/autoscaling/faqs/",
+  },
+  {
+    id: uuidv5("aws-question-1347", uuidv5.URL),
+    text: "Which of the following are benefits of AWS Global Accelerator? (Choose two.)",
+    options: [
+      "Reduced cost to run services on AWS",
+      "Improved availability of applications deployed on AWS",
+      "Higher durability of data stored on AWS",
+      "Decreased latency to reach applications deployed on AWS",
+      "Higher security of data stored on AWS",
+    ],
+    correctAnswers: [1, 3],
+    explanation:
+      "AWS Global Accelerator improves application availability and decreases latency by directing traffic through the AWS global network. Reference: https://aws.amazon.com/global-accelerator/faqs/",
+  },
+  {
+    id: uuidv5("aws-question-1348", uuidv5.URL),
+    text: "A user who wants to get help with billing and reactivate a suspended account should submit an account and billing request to:",
+    options: [
+      "the AWS Support forum",
+      "AWS Abuse",
+      "an AWS Solutions Architect",
+      "AWS Support",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "To resolve account suspension and billing issues, users should submit an account and billing request to AWS Support. Reference: https://aws.amazon.com/premiumsupport/knowledge-center/reactivate-suspended-account/",
+  },
+  {
+    id: uuidv5("aws-question-1349", uuidv5.URL),
+    text: "Which AWS Cloud best practice uses the elasticity and agility of cloud computing?",
+    options: [
+      "Provision capacity based on past usage and theoretical peaks",
+      "Dynamically and predictively scale to meet usage demands",
+      "Build the application and infrastructure in a data center that grants physical access",
+      "Break apart the application into loosely coupled components",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Dynamically and predictively scaling to meet demand is a key cloud best practice that takes advantage of AWS elasticity and agility. This allows organizations to avoid overprovisioning or underprovisioning.",
+  },
+  {
+    id: uuidv5("aws-question-1350", uuidv5.URL),
+    text: "Which method helps to optimize costs of users moving to the AWS Cloud?",
+    options: [
+      "Paying only for what is used",
+      "Purchasing hardware before it is needed",
+      "Manually provisioning cloud resources",
+      "Purchasing for the maximum possible load",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "A key cost optimization benefit of AWS is that users pay only for what they use, reducing unnecessary expenditures. Reference: https://www.cloudmanagementinsider.com/ways-to-optimize-aws-cost/",
+  },
+  {
+    id: uuidv5("aws-question-1351", uuidv5.URL),
+    text: "Under the AWS shared responsibility model, which of the following is a customer responsibility?",
+    options: [
+      "Installing security patches for the Xen and KVM hypervisors",
+      "Installing operating system patches for Amazon DynamoDB",
+      "Installing operating system security patches for Amazon EC2 database instances",
+      "Installing operating system security patches for Amazon RDS database instances",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "The customer is responsible for installing operating system security patches for EC2 instances, including database instances that run on EC2. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1352", uuidv5.URL),
+    text: "The AWS Cost Management tools give users the ability to do which of the following? (Choose two.)",
+    options: [
+      "Terminate all AWS resources automatically if budget thresholds are exceeded.",
+      "Break down AWS costs by day, service, and linked AWS account.",
+      "Create budgets and receive notifications if current of forecasted usage exceeds the budgets.",
+      "Switch automatically to Reserved Instances or Spot Instances, whichever is most cost-effective.",
+      "Move data stored in Amazon S3 to a more cost-effective storage class.",
+    ],
+    correctAnswers: [1, 2],
+    explanation:
+      "AWS Cost Management tools allow users to break down costs by day, service, and account, and to create budgets with notifications when thresholds are exceeded. They do not terminate resources or automatically switch instance types. Reference: https://aws.amazon.com/aws-cost-management/",
+  },
+  {
+    id: uuidv5("aws-question-1353", uuidv5.URL),
+    text: "Under the AWS shared responsibility model, the security and patching of the guest operating system is the responsibility of:",
+    options: [
+      "AWS Support",
+      "the customer",
+      "AWS Systems Manager",
+      "AWS Config",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "According to the AWS shared responsibility model, patching and securing the guest operating system is the customer's responsibility. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1354", uuidv5.URL),
+    text: "Which AWS service makes it easy to create and manage AWS users and groups, and provide them with secure access to AWS resources at no charge?",
+    options: [
+      "AWS Direct Connect",
+      "Amazon Connect",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Firewall Manager",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Identity and Access Management (IAM) allows users to securely manage users and groups and grant permissions at no cost. Reference: https://aws.amazon.com/iam/",
+  },
+  {
+    id: uuidv5("aws-question-1355", uuidv5.URL),
+    text: "Which AWS service provides on-demand access to AWS security and compliance documentation?",
+    options: [
+      "AWS Directory Service",
+      "AWS Artifact",
+      "AWS Trusted Advisor",
+      "Amazon Inspector",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Artifact is the on-demand portal for AWS security and compliance reports and documentation. Reference: https://aws.amazon.com/artifact/",
+  },
+  {
+    id: uuidv5("aws-question-1356", uuidv5.URL),
+    text: "Which AWS service can be used to turn text into life-like speech?",
+    options: [
+      "Amazon Polly",
+      "Amazon Transcribe",
+      "Amazon Rekognition",
+      "Amazon Lex",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon Polly converts text to life-like speech using advanced deep learning technologies. Reference: https://aws.amazon.com/polly/",
+  },
+  {
+    id: uuidv5("aws-question-1357", uuidv5.URL),
+    text: "What is one of the core principles to follow when designing a highly available application in the AWS Cloud?",
+    options: [
+      "Design using a serverless architecture",
+      "Assume that all components within an application can fail",
+      "Design AWS Auto Scaling into every application",
+      "Design all components using open-source code",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "A key principle in designing highly available systems is to assume all components can fail and design for resiliency.",
+  },
+  {
+    id: uuidv5("aws-question-1358", uuidv5.URL),
+    text: "A user needs to generate a report that outlines the status of key security checks in an AWS account, including S3 permissions, root MFA status, and unrestricted security groups. Where can this information be found in one location?",
+    options: [
+      "Amazon QuickSight dashboard",
+      "AWS CloudTrail trails",
+      "AWS Trusted Advisor report",
+      "IAM credential report",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Trusted Advisor provides checks and recommendations for security, including S3 bucket permissions, root account MFA, and open security groups. Reference: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/#Security",
+  },
+  {
+    id: uuidv5("aws-question-1359", uuidv5.URL),
+    text: "Which Amazon EC2 pricing model should be used to comply with per-core software license requirements?",
+    options: [
+      "Dedicated Hosts",
+      "On-Demand Instances",
+      "Spot Instances",
+      "Reserved Instances",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Dedicated Hosts allow you to use your own software licenses that are bound to specific physical cores, meeting per-core licensing requirements. Reference: https://aws.amazon.com/ec2/dedicated-hosts/pricing/",
+  },
+  {
+    id: uuidv5("aws-question-1360", uuidv5.URL),
+    text: "Which part of the AWS global infrastructure is used to cache copies of content for faster delivery to users across the globe?",
+    options: [
+      "AWS Regions",
+      "Availability Zones",
+      "Edge locations",
+      "Data centers",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Edge locations are part of AWS's global content delivery network (CDN) and cache content to improve response times globally. Reference: https://aws.amazon.com/caching/",
+  },
+  {
+    id: uuidv5("aws-question-1361", uuidv5.URL),
+    text: "Using AWS Config to record, audit, and evaluate changes to AWS resources to enable traceability is an example of which AWS Well-Architected Framework pillar?",
+    options: [
+      "Security",
+      "Operational excellence",
+      "Performance efficiency",
+      "Cost optimization",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS Config helps ensure security by providing audit trails and resource configuration change tracking, which aligns with the Security pillar of the AWS Well-Architected Framework. Reference: https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf",
+  },
+];
+
 export const quizzes: Quiz[] = [
   {
     id: 1,
@@ -11603,5 +12255,15 @@ export const quizzes: Quiz[] = [
     categoryId: "aws-management",
     category: "AWS Management",
     exam: exam19,
+  },
+  {
+    id: 20,
+    title: "Practice Exam 20",
+    slug: "aws",
+    subtitle: `${exam20.length} Questions`,
+    description: "Test your knowledge of AWS management services.",
+    categoryId: "aws-management",
+    category: "AWS Management",
+    exam: exam20,
   },
 ];
