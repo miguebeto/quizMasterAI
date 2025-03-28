@@ -13343,6 +13343,657 @@ const exam22: Question[] = [
   },
 ];
 
+const exam23: Question[] = [
+  {
+    id: uuidv5("aws-question-1462", uuidv5.URL),
+    text: "A user is planning to migrate an application workload to the AWS Cloud. Which control becomes the responsibility of AWS once the migration is complete?",
+    options: [
+      "Patching the guest operating system",
+      "Maintaining physical and environmental controls",
+      "Protecting communications and maintaining zone security",
+      "Patching specific applications",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Under the AWS Shared Responsibility Model, AWS is responsible for the security of the cloud, which includes maintaining physical and environmental controls. The customer is responsible for security in the cloud, such as patching operating systems and applications. More details: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1463", uuidv5.URL),
+    text: "Which services can be used to deploy applications on AWS? (Choose two.)",
+    options: [
+      "AWS Elastic Beanstalk",
+      "AWS Config",
+      "AWS OpsWorks",
+      "AWS Application Discovery Service",
+      "Amazon Kinesis",
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "AWS Elastic Beanstalk and AWS OpsWorks are services that help deploy and manage applications. AWS Config is for compliance tracking, AWS Application Discovery Service is for migration assessment, and Amazon Kinesis is for data streaming. More details: https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf",
+  },
+  {
+    id: uuidv5("aws-question-1464", uuidv5.URL),
+    text: "Which AWS service can be used to provide an on-demand, cloud-based contact center?",
+    options: [
+      "AWS Direct Connect",
+      "Amazon Connect",
+      "AWS Support Center",
+      "AWS Managed Services",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon Connect is a cloud-based contact center solution that enables businesses to set up customer service operations quickly. More details: https://aws.amazon.com/connect/customers/",
+  },
+  {
+    id: uuidv5("aws-question-1465", uuidv5.URL),
+    text: "What tool enables customers without an AWS account to estimate costs for almost all AWS services?",
+    options: [
+      "Cost Explorer",
+      "TCO Calculator",
+      "AWS Budgets",
+      "AWS Pricing Calculator",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "The AWS Pricing Calculator allows customers to estimate costs for AWS services without needing an AWS account. More details: https://calculator.aws/#/",
+  },
+  {
+    id: uuidv5("aws-question-1466", uuidv5.URL),
+    text: "Which component must be attached to a VPC to enable inbound Internet access?",
+    options: [
+      "NAT gateway",
+      "VPC endpoint",
+      "VPN connection",
+      "Internet gateway",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "An Internet gateway is required to allow inbound and outbound traffic between a VPC and the internet. More details: https://d1.awsstatic.com/whitepapers/aws-security-whitepaper.pdf",
+  },
+  {
+    id: uuidv5("aws-question-1467", uuidv5.URL),
+    text: "Which pricing model would result in maximum Amazon Elastic Compute Cloud (Amazon EC2) savings for a database server that must be online for one year?",
+    options: [
+      "Spot Instance",
+      "On-Demand Instance",
+      "Partial Upfront Reserved Instance",
+      "No Upfront Reserved Instance",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Partial Upfront Reserved Instances offer significant cost savings for workloads that require continuous usage over a period, such as database servers. More details: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html",
+  },
+  {
+    id: uuidv5("aws-question-1468", uuidv5.URL),
+    text: "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage. Which set of tasks would meet this requirement?",
+    options: [
+      "Add an Application Load Balancer in front of the EC2 instance",
+      "Configure EC2 Auto Recovery to move the instance to another Availability Zone",
+      "Migrate to Amazon RDS and enable Multi-AZ",
+      "Enable termination protection for the EC2 instance to avoid outages",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Amazon RDS with Multi-AZ deployment provides automatic failover and higher availability for databases. More details: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html",
+  },
+  {
+    id: uuidv5("aws-question-1469", uuidv5.URL),
+    text: "A company wants to ensure that AWS Management Console users are meeting password complexity requirements. How can the company configure password complexity?",
+    options: [
+      "Using an AWS IAM user policy",
+      "Using an AWS Organizations service control policy (SCP)",
+      "Using an AWS IAM account password policy",
+      "Using an AWS Security Hub managed insight",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "An AWS IAM account password policy allows administrators to enforce password complexity requirements. More details: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
+  },
+  {
+    id: uuidv5("aws-question-1470", uuidv5.URL),
+    text: "Under the AWS shared responsibility model, which of the following is the customer's responsibility?",
+    options: [
+      "Patching guest OS and applications",
+      "Patching and fixing flaws in the infrastructure",
+      "Physical and environmental controls",
+      "Configuration of AWS infrastructure devices",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Under the shared responsibility model, customers are responsible for security in the cloud, including patching the guest operating system and applications. AWS is responsible for infrastructure security. More details: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-1471", uuidv5.URL),
+    text: "Which of the following tasks is required to deploy a PCI-compliant workload on AWS?",
+    options: [
+      "Use any AWS service and implement PCI controls at the application layer",
+      "Use an AWS service that is in-scope for PCI compliance and raise an AWS support ticket to enable PCI compliance at the application layer",
+      "Use any AWS service and raise an AWS support ticket to enable PCI compliance on that service",
+      "Use an AWS service that is in scope for PCI compliance and apply PCI controls at the application layer",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "To deploy a PCI-compliant workload, customers must use AWS services that are in-scope for PCI compliance and apply the necessary PCI controls at the application layer. More details: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-pci-controls.html",
+  },
+  {
+    id: "aws-question-1472",
+    text: "A company is building an application that requires the ability to send, store, and receive messages between application components. The company has another requirement to process messages in first-in, first-out (FIFO) order. Which AWS service should the company use?",
+    options: [
+      "AWS Step Functions",
+      "Amazon Simple Notification Service (Amazon SNS)",
+      "Amazon Kinesis Data Streams",
+      "Amazon Simple Queue Service (Amazon SQS)",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Amazon SQS provides a managed message queuing service that supports FIFO queues, ensuring messages are processed in the exact order they are sent. Reference: https://aws.amazon.com/sqs/faqs/",
+  },
+  {
+    id: "aws-question-1473",
+    text: "AnyCompany recently purchased Example Corp. Both companies use AWS resources, and AnyCompany wants a single aggregated bill. Which option allows AnyCompany to receive a single bill?",
+    options: [
+      "Example Corp. must submit a request to its AWS solutions architect or AWS technical account manager to link the accounts and consolidate billing.",
+      "AnyCompany must create a new support case in the AWS Support Center requesting that both bills be combined.",
+      "Send an invitation to join the organization from AnyCompany's AWS Organizations master account to Example Corp.",
+      "Migrate the Example Corp. VPCs, Amazon EC2 instances, and other resources into the AnyCompany AWS account.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Organizations allows companies to consolidate multiple AWS accounts under one billing structure, providing a single bill. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/awsaccountbilling-aboutv2.pdf",
+  },
+  {
+    id: "aws-question-1474",
+    text: "Which tool can be used to create alerts when the actual or forecasted cost of AWS services exceeds a certain threshold?",
+    options: [
+      "Cost Explorer",
+      "AWS Budgets",
+      "AWS Cost and Usage Report",
+      "AWS CloudTrail",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Budgets enables users to set custom cost and usage budgets with alerts when they exceed thresholds. Reference: https://aws.amazon.com/getting-started/hands-on/control-your-costs-free-tier-budgets/",
+  },
+  {
+    id: "aws-question-1475",
+    text: "A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js application in the AWS Cloud. Which service should be used to deploy the application?",
+    options: [
+      "AWS CloudFormation",
+      "AWS Elastic Beanstalk",
+      "Amazon EC2",
+      "AWS OpsWorks",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Elastic Beanstalk is a Platform as a Service (PaaS) solution that simplifies the deployment and scaling of applications. Reference: https://aws.amazon.com/elasticbeanstalk/",
+  },
+  {
+    id: "aws-question-1476",
+    text: "Which AWS Trusted Advisor check is available to all AWS users?",
+    options: [
+      "Core checks",
+      "All checks",
+      "Cost optimization checks",
+      "Fault tolerance checks",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS Trusted Advisor provides core security and performance-related checks for all AWS users, while full checks are available to Business and Enterprise Support plans. Reference: https://www.amazonaws.cn/en/support/trustedadvisor/faq/#checks",
+  },
+  {
+    id: "aws-question-1477",
+    text: "A web developer is concerned that a DDoS attack could target an application. Which AWS services or features can help protect against such an attack? (Choose two.)",
+    options: [
+      "AWS Shield",
+      "AWS CloudTrail",
+      "Amazon CloudFront",
+      "AWS Support Center",
+      "AWS Service Health Dashboard",
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "AWS Shield provides DDoS protection, while Amazon CloudFront helps mitigate attacks by caching content at edge locations. Reference: https://aws.amazon.com/shield/",
+  },
+  {
+    id: "aws-question-1478",
+    text: "Which AWS service gives users on-demand, self-service access to AWS compliance control reports?",
+    options: [
+      "AWS Config",
+      "Amazon GuardDuty",
+      "AWS Trusted Advisor",
+      "AWS Artifact",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Artifact provides access to AWS compliance reports, agreements, and certifications. Reference: https://aws.amazon.com/artifact",
+  },
+  {
+    id: "aws-question-1479",
+    text: "A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)",
+    options: [
+      "Create an IAM user and provide AWS Management Console access only.",
+      "Create an IAM user and provide programmatic access only.",
+      "Create an IAM role and provide AWS Management Console access only.",
+      "Create an IAM policy with administrator access and attach it to the IAM user.",
+      "Create an IAM policy with Amazon RDS access and attach it to the IAM user.",
+    ],
+    correctAnswers: [1, 4],
+    explanation:
+      "Programmatic access should be granted to interact with AWS CLI and SDKs, while a least-privilege IAM policy with Amazon RDS access should be attached. Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html",
+  },
+  {
+    id: "aws-question-1480",
+    text: "A company has a compliance requirement to record and evaluate configuration changes, as well as perform remediation actions on AWS resources. Which AWS service should the company use?",
+    options: [
+      "AWS Config",
+      "AWS Secrets Manager",
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS Config tracks AWS resource configuration changes and enables compliance auditing. Reference: https://aws.amazon.com/config/",
+  },
+  {
+    id: "aws-question-1481",
+    text: "What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Choose two.)",
+    options: [
+      "Preventing a single point of failure",
+      "Reducing the operational costs of the application",
+      "Allowing the application to serve cross-region users with low latency",
+      "Increasing the availability of the application",
+      "Increasing the load of the application",
+    ],
+    correctAnswers: [0, 3],
+    explanation:
+      "Deploying across multiple Availability Zones improves fault tolerance and availability by preventing a single point of failure. Reference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increase-availability.html",
+  },
+  {
+    id: uuidv5("aws-question-1482", uuidv5.URL),
+    text: "A workload on AWS will run for the foreseeable future by using a consistent number of Amazon EC2 instances. What pricing model will minimize cost while ensuring that compute resources remain available?",
+    options: [
+      "Dedicated Hosts",
+      "On-Demand Instances",
+      "Spot Instances",
+      "Reserved Instances",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Reserved Instances provide significant cost savings for workloads with predictable usage patterns. They offer a lower price compared to On-Demand Instances and ensure that the required compute capacity remains available. [Reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html).",
+  },
+  {
+    id: uuidv5("aws-question-1483", uuidv5.URL),
+    text: "Which tool can be used to identify scheduled changes to the AWS infrastructure?",
+    options: [
+      "AWS Personal Health Dashboard",
+      "AWS Trusted Advisor",
+      "Billing Dashboard",
+      "AWS Config",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact your environment. It includes scheduled changes such as maintenance updates. [Reference](https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/).",
+  },
+  {
+    id: uuidv5("aws-question-1484", uuidv5.URL),
+    text: "Which of the following is the customer's responsibility when using Amazon RDS?",
+    options: [
+      "Patching the operating system of underlying hardware",
+      "Controlling traffic to and from the database through security groups",
+      "Running backups that enable point-in-time recovery of a DB instance",
+      "Replacing failed DB instances",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Customers are responsible for managing security groups and access control for their RDS instances. AWS handles the underlying infrastructure, backups (if enabled), and automated failover in Multi-AZ deployments. [Reference](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.html).",
+  },
+  {
+    id: uuidv5("aws-question-1485", uuidv5.URL),
+    text: "What is the customer's responsibility when using AWS Lambda?",
+    options: [
+      "Operating system configuration",
+      "Application management",
+      "Platform management",
+      "Code encryption",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS manages the infrastructure and runtime environment for Lambda. Customers are responsible for managing their application logic and ensuring their code functions as expected. [Reference](https://aws.amazon.com/lambda/security-overview-of-aws-lambda/).",
+  },
+  {
+    id: uuidv5("aws-question-1486", uuidv5.URL),
+    text: "A company wants to be notified when its AWS Cloud costs or usage exceed defined thresholds. Which AWS service will support these requirements?",
+    options: ["AWS Budgets", "Cost Explorer", "AWS CloudTrail", "Amazon Macie"],
+    correctAnswers: [0],
+    explanation:
+      "AWS Budgets allows users to set custom cost and usage budgets and receive alerts when thresholds are exceeded. [Reference](https://aws.amazon.com/aws-cost-management/aws-budgets/).",
+  },
+  {
+    id: uuidv5("aws-question-1487", uuidv5.URL),
+    text: "Which AWS service provides the ability to host a NoSQL database in the AWS Cloud?",
+    options: [
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Redshift",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Amazon DynamoDB is a fully managed NoSQL database service that supports key-value and document-based data models. [Reference](https://aws.amazon.com/nosql/).",
+  },
+  {
+    id: uuidv5("aws-question-1488", uuidv5.URL),
+    text: "Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?",
+    options: [
+      "Reserved Instances",
+      "On-Demand Instances",
+      "Dedicated Instances",
+      "Spot Instances",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Spot Instances allow customers to purchase unused EC2 capacity at a lower price compared to On-Demand pricing, making them cost-effective for flexible, fault-tolerant applications. [Reference](https://aws.amazon.com/ec2/spot/).",
+  },
+  {
+    id: uuidv5("aws-question-1489", uuidv5.URL),
+    text: "Which AWS service or feature requires an internet service provider (ISP) and a colocation facility to be implemented?",
+    options: [
+      "AWS VPN",
+      "Amazon Connect",
+      "AWS Direct Connect",
+      "Internet gateway",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Direct Connect enables dedicated network connections between AWS and on-premises environments, requiring an ISP and a colocation facility. [Reference](https://aws.amazon.com/directconnect/partners/).",
+  },
+  {
+    id: uuidv5("aws-question-1490", uuidv5.URL),
+    text: "Which AWS services offer compute capabilities? (Choose two.)",
+    options: [
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon Elastic Block Store (Amazon EBS)",
+      "Amazon Cognito",
+      "AWS Lambda",
+    ],
+    correctAnswers: [0, 4],
+    explanation:
+      "Amazon EC2 provides scalable compute capacity in the cloud, while AWS Lambda allows users to run code without provisioning servers. [Reference](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html).",
+  },
+  {
+    id: uuidv5("aws-question-1491", uuidv5.URL),
+    text: "Which AWS service can be used to privately store and manage versions of source code?",
+    options: [
+      "AWS CodeBuild",
+      "AWS CodeCommit",
+      "AWS CodePipeline",
+      "AWS CodeStar",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS CodeCommit is a managed source control service that allows users to store and manage Git repositories securely. [Reference](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html).",
+  },
+  {
+    id: "aws-question-1492",
+    text: "Which AWS service should a cloud practitioner use to identify security vulnerabilities of an AWS account?",
+    options: [
+      "AWS Secrets Manager",
+      "Amazon Cognito",
+      "Amazon Macie",
+      "AWS Trusted Advisor",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Trusted Advisor helps users identify security vulnerabilities in an AWS account by providing security checks and best practice recommendations. More details: https://www.coalfire.com/the-coalfire-blog/march-2019/aws-trusted-advisor-for-security-compliance",
+  },
+  {
+    id: "aws-question-1493",
+    text: "A company wants to ensure its infrastructure is designed for fault tolerance and business continuity in the event of an environmental disruption. Which AWS infrastructure component should the company replicate across?",
+    options: [
+      "Edge locations",
+      "Availability Zones",
+      "Regions",
+      "Amazon Route 53",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Replicating workloads across multiple Availability Zones (AZs) ensures fault tolerance and high availability within a single AWS Region. More details: https://d36cz9buwru1tt.cloudfront.net/AWS_Building_Fault_Tolerant_Applications.pdf",
+  },
+  {
+    id: "aws-question-1494",
+    text: "Which AWS service or feature is used to send both text and email messages from distributed applications?",
+    options: [
+      "Amazon Simple Notification Service (Amazon SNS)",
+      "Amazon Simple Email Service (Amazon SES)",
+      "Amazon CloudWatch alerts",
+      "Amazon Simple Queue Service (Amazon SQS)",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon SNS enables applications to send messages via SMS and email. More details: https://aws.amazon.com/sns/faqs/",
+  },
+  {
+    id: "aws-question-1495",
+    text: "Which AWS Cloud design principles can help increase reliability? (Choose two.)",
+    options: [
+      "Using monolithic architecture",
+      "Measuring overall efficiency",
+      "Testing recovery procedures",
+      "Adopting a consumption model",
+      "Automatically recovering from failure",
+    ],
+    correctAnswers: [2, 4],
+    explanation:
+      "Testing recovery procedures and automatically recovering from failure increase system reliability. More details: https://wa.aws.amazon.com/wat.pillar.reliability.en.html",
+  },
+  {
+    id: "aws-question-1496",
+    text: "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
+    options: [
+      "Application Load Balancer",
+      "AWS Global Accelerator",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Lambda",
+    ],
+    correctAnswers: [1, 3],
+    explanation:
+      "AWS Global Accelerator and Amazon CloudFront improve performance and reduce latency for global users. More details: https://aws.amazon.com/cloudfront/faqs/",
+  },
+  {
+    id: "aws-question-1497",
+    text: "A company wants to connect to AWS over a private, low-latency connection from its remote office. What is the recommended method to meet these requirements?",
+    options: [
+      "Create a VPN tunnel",
+      "Connect across the public internet",
+      "Use VPC peering to create a connection.",
+      "Use AWS Direct Connect.",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS Direct Connect provides private, low-latency connections to AWS. More details: https://aws.amazon.com/getting-started/projects/connect-data-center-to-aws/",
+  },
+  {
+    id: "aws-question-1498",
+    text: "Which AWS service can be used to retrieve compliance reports on demand?",
+    options: [
+      "AWS Secrets Manager",
+      "AWS Artifact",
+      "AWS Security Hub",
+      "AWS Certificate Manager",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Artifact provides access to compliance reports and agreements. More details: https://aws.amazon.com/artifact/",
+  },
+  {
+    id: "aws-question-1499",
+    text: "A company has an AWS-hosted website located behind an Application Load Balancer. The company wants to safeguard the website from SQL injection or cross-site scripting. Which AWS service should the company use?",
+    options: [
+      "Amazon GuardDuty",
+      "AWS WAF",
+      "AWS Trusted Advisor",
+      "Amazon Inspector",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS WAF (Web Application Firewall) helps protect web applications against SQL injection and cross-site scripting. More details: https://aws.amazon.com/waf/faq/",
+  },
+  {
+    id: "aws-question-1500",
+    text: "How should a web application be deployed to ensure high availability in the AWS Cloud?",
+    options: [
+      "Deploy multiple instances of the application in multiple Availability Zones.",
+      "Deploy multiple instances of the application in a single Availability Zone.",
+      "Deploy the application to a compute-optimized Amazon EC2 instance in a single Availability Zone.",
+      "Deploy the application in one Amazon EC2 instance in an Auto Scaling group.",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Deploying instances in multiple Availability Zones ensures high availability. More details: https://www.betsol.com/blog/how-to-make-high-availability-web-applications-on-amazon-web-services/",
+  },
+  {
+    id: "aws-question-1501",
+    text: "A company is running a self-managed Oracle database directly on Amazon EC2 for its steady-state database. The company wants to reduce compute costs. Which option should the company use to maximize savings over a 3-year term?",
+    options: [
+      "EC2 Dedicated Instances",
+      "EC2 Spot Instances",
+      "EC2 Reserved Instances",
+      "EC2 On-Demand Instances",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "EC2 Reserved Instances provide significant savings for long-term workloads. More details: https://aws.amazon.com/choosing-a-cloud-platform/",
+  },
+  {
+    id: "aws-question-1502",
+    text: "An external auditor has requested that a company provide a list of all its IAM users, including the status of users' credentials and access keys. What is the SIMPLEST way to provide this information?",
+    options: [
+      "Create an IAM user account for the auditor, granting the auditor administrator permissions.",
+      "Take a screenshot of each user's page in the AWS Management Console, then provide the screenshots to the auditor.",
+      "Download the IAM credential report, then provide the report to the auditor.",
+      "Download the AWS Trusted Advisor report, then provide the report to the auditor.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "The IAM credential report provides a detailed list of all IAM users and their credentials, including access keys and password status. This is the most efficient and secure way to provide this information. [Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html).",
+  },
+  {
+    id: "aws-question-1503",
+    text: "What are the benefits of consolidated billing for AWS Cloud services? (Choose two.)",
+    options: [
+      "Volume discounts",
+      "A minimal additional fee for use",
+      "One bill for multiple accounts",
+      "Installment payment options",
+      "Custom cost and usage budget creation",
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "Consolidated billing allows organizations to manage multiple AWS accounts under a single bill and benefit from volume discounts. [Reference](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html).",
+  },
+  {
+    id: "aws-question-1504",
+    text: "A company is expecting a short-term spike in internet traffic for its application. During the traffic increase, the application cannot be interrupted. The company also needs to minimize cost and maximize flexibility. Which Amazon EC2 instance type should the company use to meet these requirements?",
+    options: [
+      "On-Demand Instances",
+      "Spot Instances",
+      "Reserved Instances",
+      "Dedicated Hosts",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "On-Demand Instances are best suited for applications with unpredictable workloads that cannot tolerate interruptions. They offer flexibility without long-term commitments. [Reference](https://aws.amazon.com/ec2/faqs/).",
+  },
+  {
+    id: "aws-question-1505",
+    text: "A company wants to track AWS resource configuration changes for compliance reasons. Which AWS feature can be used to meet this requirement?",
+    options: [
+      "AWS Cost and Usage Report",
+      "AWS Organizations service control policies (SCPs)",
+      "AWS Config rules",
+      "VPC Flow Logs",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Config tracks AWS resource configuration changes and compliance status, making it ideal for compliance monitoring. [Reference](https://aws.amazon.com/config/).",
+  },
+  {
+    id: "aws-question-1506",
+    text: "A company is building an application that needs to deliver images and videos globally with minimal latency. Which approach can the company use to accomplish this in a cost-effective manner?",
+    options: [
+      "Deliver the content through Amazon CloudFront.",
+      "Store the content on Amazon S3 and enable S3 cross-region replication.",
+      "Implement a VPN across multiple AWS Regions.",
+      "Deliver the content through AWS PrivateLink.",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon CloudFront is a global content delivery network (CDN) that caches content closer to users to reduce latency and improve speed. [Reference](https://aws.amazon.com/cloudfront/faqs/).",
+  },
+  {
+    id: "aws-question-1507",
+    text: "The AWS IAM best practice for granting least privilege is to:",
+    options: [
+      "Apply an IAM policy to an IAM group and limit the size of the group.",
+      "Require multi-factor authentication (MFA) for all IAM users.",
+      "Require each IAM user who has different permissions to have multiple passwords.",
+      "Apply an IAM policy only to IAM users who require it.",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Following the principle of least privilege, IAM policies should be assigned only to users who require them, minimizing unnecessary permissions. [Reference](https://kirkpatrickprice.com/blog/best-practices-for-privilege-management-in-aws/).",
+  },
+  {
+    id: "aws-question-1508",
+    text: "Which cloud computing benefit does AWS demonstrate with its ability to offer lower variable costs as a result of high purchase volumes?",
+    options: [
+      "Pay-as-you-go pricing",
+      "High availability",
+      "Global reach",
+      "Economies of scale",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS benefits from economies of scale by purchasing infrastructure at large volumes, which allows it to reduce costs for customers. [Reference](https://innovationtactics.com/amazon-business-model-amazon-web-services/).",
+  },
+  {
+    id: "aws-question-1509",
+    text: "A pharmaceutical company operates its infrastructure in a single AWS Region. The company has thousands of VPCs in various AWS accounts that it wants to interconnect. Which AWS service or feature should the company use to help simplify management and reduce operational costs?",
+    options: [
+      "VPC endpoint",
+      "AWS Direct Connect",
+      "AWS Transit Gateway",
+      "VPC peering",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Transit Gateway enables organizations to efficiently connect multiple VPCs and simplify network management. [Reference](https://d1.awsstatic.com/whitepapers/building-a-scalable-and-secure-multi-vpc-aws-network-infrastructure.pdf).",
+  },
+  {
+    id: "aws-question-1510",
+    text: "How can AWS enable a company to control expenses as an application's usage changes unpredictably?",
+    options: [
+      "AWS will refund the cost difference if a customer moves to larger servers.",
+      "The application can be built to scale up or down automatically as resources are needed.",
+      "Spot instances will automatically be used if the price is lower than on-demand instances.",
+      "Amazon CloudWatch will automatically predict what resources are needed.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Auto Scaling allows applications to scale up or down based on demand, optimizing costs and performance. [Reference](https://aws.amazon.com/autoscaling/).",
+  },
+  {
+    id: "aws-question-1511",
+    text: "Which AWS service or feature can be used to prevent SQL injection attacks?",
+    options: ["Security groups", "Network ACLs", "AWS WAF", "IAM policy"],
+    correctAnswers: [2],
+    explanation:
+      "AWS WAF helps protect web applications from SQL injection attacks and other common vulnerabilities. [Reference](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-sql-conditions.html).",
+  },
+];
+
 export const quizzes: Quiz[] = [
   {
     id: 1,
@@ -13563,5 +14214,15 @@ export const quizzes: Quiz[] = [
     categoryId: "aws-management",
     category: "AWS Management",
     exam: exam22,
+  },
+  {
+    id: 23,
+    title: "Practice Exam 23",
+    slug: "aws",
+    subtitle: `${exam23.length} Questions`,
+    description: "Test your knowledge of AWS management services.",
+    categoryId: "aws-management",
+    category: "AWS Management",
+    exam: exam23,
   },
 ];
