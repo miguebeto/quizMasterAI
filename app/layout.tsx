@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="flex justify-start p-4">
+            <ThemeSwitcher />
+          </div>
           {children}
         </ThemeProvider>
       </body>
