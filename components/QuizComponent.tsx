@@ -98,11 +98,11 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
   }
 
   return (
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 dark:bg-gray-800">
+    <div className="border text-card-foreground block p-6 bg-white dark:border-slate-700 dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <h2 className="text-xl font-bold mb-4">
         Question {currentQuestionIndex + 1}/{quiz.exam.length}
       </h2>
-      <span className="absolute right-4 top-4 text-sm text-gray-500 dark:text-gray-400 dark:text-white">
+      <span className="absolute right-4 top-4 text-sm text-gray-500 dark:text-white">
         {calculateScore()}%
       </span>
       <p className="mb-4">{currentQuestion?.text}</p>

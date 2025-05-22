@@ -22,7 +22,7 @@ export default function QuizList({
       {categoryQuizzes.map((quiz) => (
         <Card
           key={quiz.id}
-          className="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          className="block p-6 bg-white dark:border-slate-700 dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <CardHeader>
             <CardTitle>{quiz.title}</CardTitle>
