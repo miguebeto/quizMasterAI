@@ -98,11 +98,11 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
   }
 
   return (
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 dark:bg-gray-800">
       <h2 className="text-xl font-bold mb-4">
         Question {currentQuestionIndex + 1}/{quiz.exam.length}
       </h2>
-      <span className="absolute right-4 top-6 text-sm text-gray-500 dark:text-white">
+      <span className="absolute right-4 top-4 text-sm text-gray-500 dark:text-gray-400 dark:text-white">
         {calculateScore()}%
       </span>
       <p className="mb-4">{currentQuestion?.text}</p>
@@ -117,7 +117,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
                     : selectedAnswers.includes(index)
                     ? "bg-red-100"
                     : ""
-                  : "hover:bg-gray-100"
+                  : "hover:bg-gray-100 dark:hover:bg-gray-700"
               }`}
             >
               <input
@@ -164,7 +164,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
             selectedAnswers.includes(answer)
           ) && (
             <button
-              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-gray-700 dark:hover:bg-gray-600"
               onClick={handleReset}
             >
               Reset
@@ -173,7 +173,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
           <div className="mt-4">
             <button
               onClick={() => setShowExplanation(!showExplanation)}
-              className="flex items-center text-blue-500 hover:text-blue-600"
+              className="flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
             >
               {showExplanation ? (
                 <>
@@ -188,7 +188,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
               )}
             </button>
             {showExplanation && (
-              <p className="mt-2 p-2 bg-gray-100 rounded">
+              <p className="mt-2 p-2 bg-gray-100 rounded dark:bg-gray-700 dark:text-gray-200">
                 {currentQuestion.explanation}
               </p>
             )}
