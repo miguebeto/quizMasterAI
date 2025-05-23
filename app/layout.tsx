@@ -25,7 +25,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex justify-end p-4">
+          <div className="flex justify-start p-4">
             <ThemeSwitcher />
           </div>
           {children}

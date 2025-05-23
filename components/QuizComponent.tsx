@@ -102,7 +102,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
       <h2 className="text-xl font-bold mb-4">
         Question {currentQuestionIndex + 1}/{quiz.exam.length}
       </h2>
-      <span className="absolute right-4 top-4 text-sm text-gray-500">
+      <span className="absolute right-4 top-6 text-sm text-gray-500">
         {calculateScore()}%
       </span>
       <p className="mb-4">{currentQuestion?.text}</p>
