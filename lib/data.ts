@@ -2660,7 +2660,7 @@ const exam5: Question[] = [
       "Multi-threading."
     ],
     correctAnswers: [2],
-    explanation: "Fault tolerance is the design principle that ensures a system continues to operate properly even if some of its components fail. This is critical for high-availability workloads like e-commerce sites. Least Privilege is a security principle. Pilot Light is a disaster recovery strategy. Multi-threading relates to programming, not system design in this context.",
+    explanation: "Fault tolerance is the design principle that ensures a system continues to operate properly even if some of its components fail. This is critical for high-availability workloads like e-commerce sites. Least Privilege is a security principle. Pilot Light is a disaster recovery strategy. Multi-threading relates to programming, not system design in this context.\nMás información: https://docs.aws.amazon.com/wellarchitected/latest/framework/fault-tolerance-principle.html",
   },
   {
     id: uuidv5("aws-question-202", uuidv5.URL),
@@ -2672,7 +2672,7 @@ const exam5: Question[] = [
       "No up-front reservation."
     ],
     correctAnswers: [0],
-    explanation: "All up-front payment for Reserved Instances provides the highest total discount over the term. Partial and no up-front options offer lower savings in exchange for more flexible payment schedules.",
+    explanation: "All up-front payment for Reserved Instances provides the highest total discount over the term. Partial and no up-front options offer lower savings in exchange for more flexible payment schedules.\nMás información: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-payment.html",
   },
   {
     id: uuidv5("aws-question-203", uuidv5.URL),
@@ -2685,7 +2685,7 @@ const exam5: Question[] = [
       "Load balancing."
     ],
     correctAnswers: [0, 2],
-    explanation: "Access control and data encryption are key AWS features that help protect customer data. Physical MFA devices may help secure accounts but aren't an AWS-provided cloud feature. Unlimited storage and load balancing relate to performance and scalability, not directly to data protection.",
+    explanation: "Access control and data encryption are key AWS features that help protect customer data. Physical MFA devices may help secure accounts but aren't an AWS-provided cloud feature. Unlimited storage and load balancing relate to performance and scalability, not directly to data protection.\nMás información: https://aws.amazon.com/compliance/data-protection/",
   },
   {
     id: uuidv5("aws-question-204", uuidv5.URL),
@@ -2697,7 +2697,7 @@ const exam5: Question[] = [
       "3 hours for the Linux instance and 4 hours, 23 minutes and 7 seconds for the CentOS instance."
     ],
     correctAnswers: [2],
-    explanation: "Per-second billing is available for Linux-based instances, so the customer is charged only for the time used. CentOS (a non-Amazon Linux OS) falls under hourly billing, so it will be rounded up to the next hour.",
+    explanation: "Per-second billing is available for Linux-based instances, so the customer is charged only for the time used. CentOS (a non-Amazon Linux OS) falls under hourly billing, so it will be rounded up to the next hour.\nMás información: https://aws.amazon.com/ec2/pricing/on-demand/",
   },
   {
     id: uuidv5("aws-question-205", uuidv5.URL),
@@ -2709,7 +2709,7 @@ const exam5: Question[] = [
       "AWS Personal Health Dashboard."
     ],
     correctAnswers: [2],
-    explanation: "AWS Support API allows customers to interact with AWS Support and manage cases via code. Trusted Advisor provides recommendations, Operations Support isn't a standalone feature, and Personal Health Dashboard provides health notifications—not support case management.",
+    explanation: "AWS Support API allows customers to interact with AWS Support and manage cases via code. Trusted Advisor provides recommendations, Operations Support isn't a standalone feature, and Personal Health Dashboard provides health notifications—not support case management.\nMás información: https://docs.aws.amazon.com/awssupport/latest/user/support-api.html",
   },
   {
     id: uuidv5("aws-question-206", uuidv5.URL),
@@ -2722,7 +2722,7 @@ const exam5: Question[] = [
       "AWS CodeCommit."
     ],
     correctAnswers: [0, 2],
-    explanation: "Customers can use the AWS CLI and SDKs to manage IAM. Security Groups and Network ACLs are used for controlling traffic, and CodeCommit is a source control service unrelated to IAM.",
+    explanation: "Customers can use the AWS CLI and SDKs to manage IAM. Security Groups and Network ACLs are used for controlling traffic, and CodeCommit is a source control service unrelated to IAM.\nMás información: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html",
   },
   {
     id: uuidv5("aws-question-207", uuidv5.URL),
@@ -2735,7 +2735,7 @@ const exam5: Question[] = [
       "AWS Organizations."
     ],
     correctAnswers: [2, 3],
-    explanation: "IAM Roles and IAM Users are IAM identities. IAM Policies are permissions, not identities. AWS Organizations is a service for managing multiple accounts. Resource Groups are for organizing AWS resources, not identities.",
+    explanation: "IAM Roles and IAM Users are IAM identities. IAM Policies are permissions, not identities. AWS Organizations is a service for managing multiple accounts. Resource Groups are for organizing AWS resources, not identities.\nMás información: https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html",
   },
   {
     id: uuidv5("aws-question-208", uuidv5.URL),
@@ -2747,7 +2747,7 @@ const exam5: Question[] = [
       "Read Replicas."
     ],
     correctAnswers: [3],
-    explanation: "Read Replicas allow read traffic to be offloaded from the primary database to improve performance. Snapshots and backups are for recovery, and Multi-AZ is for high availability—not scaling read traffic.",
+    explanation: "Read Replicas allow read traffic to be offloaded from the primary database to improve performance. Snapshots and backups are for recovery, and Multi-AZ is for high availability—not scaling read traffic.\nMás información: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
   },
   {
     id: uuidv5("aws-question-209", uuidv5.URL),
@@ -2759,7 +2759,7 @@ const exam5: Question[] = [
       "Using Compliance Resources."
     ],
     correctAnswers: [1],
-    explanation: "AWS uses Security Bulletins to inform customers about important security and privacy events. ACM handles SSL/TLS certificates, Compliance Resources are documents, and the Management Console may display some notices, but bulletins are the primary channel.",
+    explanation: "AWS uses Security Bulletins to inform customers about important security and privacy events. ACM handles SSL/TLS certificates, Compliance Resources are documents, and the Management Console may display some notices, but bulletins are the primary channel.\nMás información: https://aws.amazon.com/security/security-bulletins/",
   },
   {
     id: uuidv5("aws-question-210", uuidv5.URL),
@@ -2771,7 +2771,7 @@ const exam5: Question[] = [
       "IAM Groups."
     ],
     correctAnswers: [2],
-    explanation: "IAM Roles are designed to grant temporary access to AWS resources. IAM Users are for long-term access. IAM Groups are used to assign permissions to multiple users. Key Pairs are used for EC2 instance login—not access control.",
+    explanation: "IAM Roles are designed to grant temporary access to AWS resources. IAM Users are for long-term access. IAM Groups are used to assign permissions to multiple users. Key Pairs are used for EC2 instance login—not access control.\nMás información: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html",
   },
   {
     id: uuidv5("aws-question-211", uuidv5.URL),
@@ -2783,7 +2783,7 @@ const exam5: Question[] = [
       "Transit VPC."
     ],
     correctAnswers: [1],
-    explanation: "An Application Load Balancer (ALB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, to improve scalability and fault tolerance. AWS Global Accelerator improves global application performance, CloudFront is a content delivery network (CDN), and Transit VPC is used for networking between VPCs.",
+    explanation: "An Application Load Balancer (ALB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, to improve scalability and fault tolerance. AWS Global Accelerator improves global application performance, CloudFront is a content delivery network (CDN), and Transit VPC is used for networking between VPCs.\nMás información: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html",
   },
   {
     id: uuidv5("aws-question-212", uuidv5.URL),
@@ -2795,7 +2795,7 @@ const exam5: Question[] = [
       "Migrate all of your applications to a dedicated host."
     ],
     correctAnswers: [2],
-    explanation: "Using Infrastructure as Code (IaC), such as AWS CloudFormation or Terraform, helps eliminate human error and automates provisioning. CodeDeploy is for application deployment, not infrastructure provisioning. The other options are unrelated or incorrect.",
+    explanation: "Using Infrastructure as Code (IaC), such as AWS CloudFormation or Terraform, helps eliminate human error and automates provisioning. CodeDeploy is for application deployment, not infrastructure provisioning. The other options are unrelated or incorrect.\nMás información: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
   },
   {
     id: uuidv5("aws-question-213", uuidv5.URL),
@@ -2807,7 +2807,7 @@ const exam5: Question[] = [
       "Set up two login passwords."
     ],
     correctAnswers: [2],
-    explanation: "Enabling MFA for IAM users adds a strong layer of security by requiring a second form of verification. Sharing IAM accounts is a security anti-pattern. AWS does not support multiple passwords per user. API call restrictions are better handled via IAM policies.",
+    explanation: "Enabling MFA for IAM users adds a strong layer of security by requiring a second form of verification. Sharing IAM accounts is a security anti-pattern. AWS does not support multiple passwords per user. API call restrictions are better handled via IAM policies.\nMás información: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html",
   },
   {
     id: uuidv5("aws-question-214", uuidv5.URL),
@@ -2819,7 +2819,7 @@ const exam5: Question[] = [
       "AWS Cost Explorer."
     ],
     correctAnswers: [1],
-    explanation: "Amazon S3 offers tiered pricing, where the more storage you use, the less you pay per GB. Amazon VPC and Lightsail do not offer volume-based discounts. AWS Cost Explorer helps analyze costs, but doesn't apply discounts.",
+    explanation: "Amazon S3 offers tiered pricing, where the more storage you use, the less you pay per GB. Amazon VPC and Lightsail do not offer volume-based discounts. AWS Cost Explorer helps analyze costs, but doesn't apply discounts.\nMás información: https://aws.amazon.com/s3/pricing/",
   },
   {
     id: uuidv5("aws-question-215", uuidv5.URL),
@@ -2832,7 +2832,7 @@ const exam5: Question[] = [
       "Geographic proximity to the company's location."
     ],
     correctAnswers: [1, 2],
-    explanation: "Data sovereignty (legal and regulatory requirements) and cost are important factors when choosing an AWS Region. While proximity may affect latency, it is less critical than legal or financial considerations. All AWS Regions have high security levels, and the number of VPCs is not typically a determining factor.",
+    explanation: "Data sovereignty (legal and regulatory requirements) and cost are important factors when choosing an AWS Region. While proximity may affect latency, it is less critical than legal or financial considerations. All AWS Regions have high security levels, and the number of VPCs is not typically a determining factor.\nMás información: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
     id: uuidv5("aws-question-216", uuidv5.URL),
@@ -2844,7 +2844,7 @@ const exam5: Question[] = [
       "DAX."
     ],
     correctAnswers: [2],
-    explanation: "Amazon ElastiCache improves performance by caching frequently accessed data in memory, reducing load on the MySQL database. DAX is a caching solution for DynamoDB, not MySQL. EFS is a file storage service, and Neptune is for graph databases.",
+    explanation: "Amazon ElastiCache improves performance by caching frequently accessed data in memory, reducing load on the MySQL database. DAX is a caching solution for DynamoDB, not MySQL. EFS is a file storage service, and Neptune is for graph databases.\nMás información: https://aws.amazon.com/elasticache/",
   },
   {
     id: uuidv5("aws-question-217", uuidv5.URL),
@@ -2856,7 +2856,7 @@ const exam5: Question[] = [
       "Auto Scaling Groups distributes application traffic across multiple Availability Zones to enhance performance."
     ],
     correctAnswers: [1],
-    explanation: "Auto Scaling Groups provide automatic scaling across multiple AZs to maintain availability and fault tolerance. The first option describes CloudFront. The third option is inaccurate—Auto Scaling Groups operate within a region. The fourth option describes a load balancer.",
+    explanation: "Auto Scaling Groups provide automatic scaling across multiple AZs to maintain availability and fault tolerance. The first option describes CloudFront. The third option is inaccurate—Auto Scaling Groups operate within a region. The fourth option describes a load balancer.\nMás información: https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html",
   },
   {
     id: uuidv5("aws-question-218", uuidv5.URL),
@@ -2868,7 +2868,7 @@ const exam5: Question[] = [
       "AWS secures AWS resources at no additional charge."
     ],
     correctAnswers: [2],
-    explanation: "AWS frequently reduces prices as it achieves economies of scale, lowering the total cost of ownership (TCO) for customers. Capital expenditures are avoided, not increased. Automation helps but isn't the primary driver of the widening TCO gap.",
+    explanation: "AWS frequently reduces prices as it achieves economies of scale, lowering the total cost of ownership (TCO) for customers. Capital expenditures are avoided, not increased. Automation helps but isn't the primary driver of the widening TCO gap.\nMás información: https://aws.amazon.com/executive-insights/cloud-strategy/benefits-of-cloud-computing/",
   },
   {
     id: uuidv5("aws-question-219", uuidv5.URL),
@@ -2881,7 +2881,7 @@ const exam5: Question[] = [
       "File system encryption."
     ],
     correctAnswers: [0, 4],
-    explanation: "Security IN the cloud is the customer's responsibility and includes tasks like application configuration (schemas) and data encryption. AWS manages the infrastructure, including patching and hardware, which are part of “security OF the cloud.”",
+    explanation: "Security IN the cloud is the customer's responsibility and includes tasks like application configuration (schemas) and data encryption. AWS manages the infrastructure, including patching and hardware, which are part of “security OF the cloud.”\nMás información: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
     id: uuidv5("aws-question-220", uuidv5.URL),
@@ -2893,7 +2893,7 @@ const exam5: Question[] = [
       "AWS Key Pair."
     ],
     correctAnswers: [1],
-    explanation: "U2F (Universal 2nd Factor) Security Keys are hardware devices used for MFA. AWS CloudHSM is for key management, AWS Access Keys are credentials—not MFA devices—and Key Pairs are used for SSH access, not MFA.",
+    explanation: "U2F (Universal 2nd Factor) Security Keys are hardware devices used for MFA. AWS CloudHSM is for key management, AWS Access Keys are credentials—not MFA devices—and Key Pairs are used for SSH access, not MFA.\nMás información: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_physical.html",
   },
   {
     id: uuidv5("aws-question-221", uuidv5.URL),
