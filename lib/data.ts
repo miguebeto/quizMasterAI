@@ -4159,7 +4159,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "AWS Key Management Service (KMS) and CloudHSM are both services for managing encryption keys in AWS. KMS is a managed service that makes it easy to create and control encryption keys, while CloudHSM provides hardware security modules (HSMs) for generating and managing cryptographic keys. The other services are not related to encryption key management. [Reference](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)",
+      "AWS Key Management Service (KMS) and CloudHSM are both services for managing encryption keys in AWS. KMS is a managed service that makes it easy to create and control encryption keys, while CloudHSM provides hardware security modules (HSMs) for generating and managing cryptographic keys. The other services are not related to encryption key management: AWS Certificate Manager is for managing SSL/TLS certificates, AWS CodeDeploy is for automating application deployments, and AWS CodeCommit is a source control service. [Reference](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)",
   },
   {
     id: uuidv5("aws-question-322", uuidv5.URL),
@@ -4167,7 +4167,7 @@ const exam7: Question[] = [
     options: ["Amazon EC2", "Amazon Cognito", "Amazon RDS", "Amazon Inspector"],
     correctAnswers: [0],
     explanation:
-      "Amazon EC2 (Elastic Compute Cloud) provides virtual servers where you can install and run any software, including custom relational database software. While RDS is a managed database service, it only supports specific database engines. If you need to run a custom or unsupported database engine, EC2 is the appropriate choice. [Reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)",
+      "Amazon EC2 (Elastic Compute Cloud) provides virtual servers where you can install and run any software, including custom relational database software. While RDS is a managed database service, it only supports specific database engines. Amazon Cognito is for user authentication, and Amazon Inspector is for security assessments, neither of which are related to running custom database software. [Reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)",
   },
   {
     id: uuidv5("aws-question-323", uuidv5.URL),
@@ -4180,7 +4180,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define. It's perfect for applications with varying load patterns as it can automatically adjust your compute capacity to maintain steady, predictable performance at the lowest possible cost. [Reference](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)",
+      "Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define. ELB (Elastic Load Balancer) distributes traffic but does not scale resources. Amazon Route53 is a DNS service, and Amazon Elastic Container Service is for managing containers, not scaling EC2 instances. [Reference](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)",
   },
   {
     id: uuidv5("aws-question-324", uuidv5.URL),
@@ -4188,7 +4188,7 @@ const exam7: Question[] = [
     options: ["AWS IAM", "AWS Outposts", "AWS Federation", "Amazon Redshift"],
     correctAnswers: [0],
     explanation:
-      "AWS Identity and Access Management (IAM) allows users to securely manage access to AWS services and resources by defining permissions for individual users or groups. [Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)",
+      "AWS Identity and Access Management (IAM) allows users to securely manage access to AWS services and resources by defining permissions for individual users or groups. AWS Outposts is for extending AWS infrastructure to on-premises environments, AWS Federation is not a service but a concept for integrating external identity providers, and Amazon Redshift is a data warehouse service. [Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)",
   },
   {
     id: uuidv5("aws-question-325", uuidv5.URL),
@@ -4202,7 +4202,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Two key design principles for cloud systems are loose coupling (which increases flexibility and reduces interdependencies) and treating servers as disposable resources (enabling automation and reducing the impact of failures). These principles align with cloud-native best practices and help create more resilient and scalable systems. [Reference](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence-pillar.html)",
+      "Two key design principles for cloud systems are loose coupling (which increases flexibility and reduces interdependencies) and treating servers as disposable resources (enabling automation and reducing the impact of failures). Reserved capacity is less flexible, servers instead of managed services reduce scalability, and Multi-AZ deployments focus on availability within a region, not global resilience. [Reference](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence-pillar.html)",
   },
   {
     id: uuidv5("aws-question-326", uuidv5.URL),
@@ -4215,7 +4215,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "The IAM Credential Report lists all users in your AWS account and the status of their various credentials, including passwords, access keys, and MFA devices. This report helps you audit and comply with your security requirements by providing information about the state of your users' credentials. [Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)",
+      "The IAM Credential Report lists all users in your AWS account and the status of their various credentials, including passwords, access keys, and MFA devices. AWS CloudTrail records API activity, AWS Artifact provides compliance reports, and AWS Cost and Usage Report tracks billing data, none of which provide user credential details. [Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)",
   },
   {
     id: uuidv5("aws-question-327", uuidv5.URL),
@@ -4228,7 +4228,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS CloudHSM provides hardware security modules (HSMs) in the AWS Cloud. It enables you to easily generate and use your own encryption keys on the AWS Cloud. CloudHSM helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated HSM instances within the AWS cloud. [Reference](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)",
+      "AWS CloudHSM provides hardware security modules (HSMs) in the AWS Cloud. It enables you to easily generate and use your own encryption keys on the AWS Cloud. AWS Shield is for DDoS protection, AWS Certificate Manager manages SSL/TLS certificates, and AWS WAF is a web application firewall, none of which are related to encryption key management. [Reference](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)",
   },
   {
     id: uuidv5("aws-question-328", uuidv5.URL),
@@ -4241,7 +4241,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "The AWS Acceptable Use Policy describes prohibited uses of the web services offered by Amazon Web Services. This policy is part of the AWS Customer Agreement and outlines what customers can and cannot do with AWS services. [Reference](https://aws.amazon.com/aup/)",
+      "The AWS Acceptable Use Policy describes prohibited uses of the web services offered by Amazon Web Services. AWS Service Control Policies (SCPs) manage permissions within AWS Organizations, AWS Artifact provides compliance reports, and AWS Budgets tracks spending, none of which address prohibited uses. [Reference](https://aws.amazon.com/aup/)",
   },
   {
     id: uuidv5("aws-question-329", uuidv5.URL),
@@ -4255,7 +4255,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS Security Bulletins and the AWS Security Blog are free resources available to all AWS users. They provide important security information and best practices. Other options like Technical Account Manager (TAM), Support API access, and classroom training typically require paid subscriptions or additional fees. [Reference](https://aws.amazon.com/security/security-resources/)",
+      "AWS Security Bulletins and the AWS Security Blog are free resources available to all AWS users. AWS TAM (Technical Account Manager) is part of paid support plans, AWS Support API requires a subscription, and AWS Classroom Training is a paid service. [Reference](https://aws.amazon.com/security/security-resources/)",
   },
   {
     id: uuidv5("aws-question-330", uuidv5.URL),
@@ -4268,7 +4268,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "S3 Versioning is the feature that helps protect against accidental deletion of objects in S3 buckets. When versioning is enabled, instead of deleting an object, Amazon S3 inserts a delete marker, which becomes the current version of the object. Previous versions can be restored if needed. [Reference](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)",
+      "S3 Versioning is the feature that helps protect against accidental deletion of objects in S3 buckets. Bucket Policies control access, Lifecycle Policies manage object expiration, and disabling CRR does not prevent accidental deletion. [Reference](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)",
   },
   {
     id: uuidv5("aws-question-331", uuidv5.URL),
@@ -4281,7 +4281,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS maintains many certifications and assurance programs (such as ISO 9001, HIPAA, and others) that help customers achieve their compliance requirements. However, compliance is a shared responsibility, and customers must ensure their specific use of AWS services meets their compliance needs.",
+      "AWS maintains many certifications and assurance programs (such as ISO 9001, HIPAA, and others) that help customers achieve their compliance requirements. However, compliance is a shared responsibility, and customers must ensure their specific use of AWS services meets their compliance needs. The other options are incorrect because: (1) Compliance is possible in the cloud; (2) AWS does not take full responsibility for customer compliance; (4) While AWS services are assessed regularly, certifications are the primary assurance mechanism. [Reference](https://aws.amazon.com/compliance/)",
   },
   {
     id: uuidv5("aws-question-332", uuidv5.URL),
@@ -4294,7 +4294,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Under the AWS Shared Responsibility Model, AWS is responsible for managing and scaling DynamoDB. This is one of the key benefits of using managed services like DynamoDB - AWS handles the underlying infrastructure and scaling operations automatically.",
+      "Under the AWS Shared Responsibility Model, AWS is responsible for managing and scaling DynamoDB. This is one of the key benefits of using managed services like DynamoDB - AWS handles the underlying infrastructure and scaling operations automatically. The other options are incorrect because scaling is not the responsibility of the customer's security, development, or DevOps teams. [Reference](https://docs.aws.amazon.com/dynamodb/latest/developerguide/Introduction.html)",
   },
   {
     id: uuidv5("aws-question-333", uuidv5.URL),
@@ -4307,7 +4307,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon Elastic Transcoder is designed specifically for converting media files from their source format into versions that will play on various devices. It's the ideal service for converting media formats for compatibility with different playback devices.",
+      "Amazon Elastic Transcoder is designed specifically for converting media files from their source format into versions that will play on various devices. The other options are incorrect because: (1) Amazon Pinpoint is for customer engagement and analytics; (2) Amazon S3 is for object storage, not media conversion; (3) Amazon Rekognition is for image and video analysis, not format conversion. [Reference](https://docs.aws.amazon.com/elastictranscoder/latest/developerguide/what-is.html)",
   },
   {
     id: uuidv5("aws-question-334", uuidv5.URL),
@@ -4321,7 +4321,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "AWS Organizations provides two main benefits: centralized management of access to AWS services through Service Control Policies (SCPs) and consolidated billing across multiple AWS accounts, which helps organizations better manage and optimize their AWS costs.",
+      "AWS Organizations provides centralized management of access to AWS services through Service Control Policies (SCPs) and consolidated billing across multiple AWS accounts, which helps organizations better manage and optimize their AWS costs. The other options are incorrect because: (2) Organizations do not directly help with cloud adoption; (3) Payment methods are not managed by Organizations; (4) Business outcomes are not directly influenced by Organizations. [Reference](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)",
   },
   {
     id: uuidv5("aws-question-335", uuidv5.URL),
@@ -4334,7 +4334,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Redshift is AWS's fully managed data warehouse service that allows you to run complex queries on structured and semi-structured data efficiently.",
+      "Amazon Redshift is AWS's fully managed data warehouse service that allows you to run complex queries on structured and semi-structured data efficiently. The other options are incorrect because: (1) AWS Shield is for DDoS protection; (3) Amazon RDS is for relational databases, not data warehousing; (4) Amazon Comprehend is for natural language processing. [Reference](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)",
   },
   {
     id: uuidv5("aws-question-336", uuidv5.URL),
@@ -4347,7 +4347,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Marketplace is a digital catalog with thousands of software listings from independent software vendors that makes it easy to find, test, buy, and deploy software that runs on AWS.",
+      "AWS Marketplace is a digital catalog with thousands of software listings from independent software vendors that makes it easy to find, test, buy, and deploy software that runs on AWS. The other options are incorrect because: (1) Application Discovery Service is for migration planning; (2) Amazon DevPay is for billing; (4) Resource Groups are for organizing AWS resources. [Reference](https://aws.amazon.com/marketplace/)",
   },
   {
     id: uuidv5("aws-question-337", uuidv5.URL),
@@ -4360,7 +4360,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon EC2 is not a serverless service. It requires provisioning of servers, which is contrary to the serverless model.",
+      "Amazon EC2 is not a serverless service. It requires provisioning of servers, which is contrary to the serverless model. The other options are correct characteristics of EC2: (2) EC2 eliminates upfront hardware investment; (3) EC2 allows flexible scaling; (4) EC2 provides scalable computing. [Reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)",
   },
   {
     id: uuidv5("aws-question-338", uuidv5.URL),
@@ -4368,7 +4368,7 @@ const exam7: Question[] = [
     options: ["Amazon Personalize", "Amazon Route 53", "AWS KMS", "AWS Config"],
     correctAnswers: [1],
     explanation:
-      "Amazon Route 53 is AWS’s scalable Domain Name System (DNS) web service that can also be used to register and manage domain names.",
+      "Amazon Route 53 is AWS’s scalable Domain Name System (DNS) web service that can also be used to register and manage domain names. The other options are incorrect because: (1) Amazon Personalize is for machine learning personalization; (3) AWS KMS is for encryption key management; (4) AWS Config is for resource configuration tracking. [Reference](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)",
   },
   {
     id: uuidv5("aws-question-339", uuidv5.URL),
@@ -4382,7 +4382,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "Amazon Inspector and AWS Config help with security analysis and auditing for compliance by analyzing configurations and detecting vulnerabilities.",
+      "Amazon Inspector and AWS Config help with security analysis and auditing for compliance by analyzing configurations and detecting vulnerabilities. The other options are incorrect because: (2) Virtual Private Gateway is for hybrid networking; (3) AWS Batch is for batch processing; (4) Amazon ECS is for container orchestration. [Reference](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html) [Reference](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)",
   },
   {
     id: uuidv5("aws-question-340", uuidv5.URL),
@@ -4390,7 +4390,7 @@ const exam7: Question[] = [
     options: ["PostgreSQL", "Oracle", "Microsoft SQL Server", "Teradata"],
     correctAnswers: [3],
     explanation:
-      "Amazon RDS supports six database engines: MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server, and Amazon Aurora. Teradata is not supported on Amazon RDS. If you need to run a custom or unsupported database engine, EC2 is the appropriate choice.",
+      "Amazon RDS supports six database engines: MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server, and Amazon Aurora. Teradata is not supported on Amazon RDS. If you need to run a custom or unsupported database engine, EC2 is the appropriate choice. The other options are valid database engines supported by RDS. [Reference](https://aws.amazon.com/rds/)",
   },
   {
     id: uuidv5("aws-question-341", uuidv5.URL),
@@ -4403,7 +4403,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Database Migration Service (DMS) helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. It supports homogeneous migrations (same database engine) and heterogeneous migrations (different database engines).",
+      "AWS Database Migration Service (DMS) helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. It supports homogeneous migrations (same database engine) and heterogeneous migrations (different database engines). The other options are incorrect because: (1) Amazon S3 Transfer Acceleration is for speeding up uploads to S3; (2) AWS Directory Service is for managing directories; (3) AWS Transit Gateway is for connecting VPCs and on-premises networks. [Reference](https://aws.amazon.com/dms/)",
   },
   {
     id: uuidv5("aws-question-342", uuidv5.URL),
@@ -4416,7 +4416,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon Lightsail is the easiest way to get started with AWS for developers, small businesses, students, and other users who need a simple virtual private server (VPS) solution. Lightsail provides everything you need to launch a WordPress website, including a virtual machine, SSD-based storage, data transfer, DNS management, and a static IP address.",
+      "Amazon Lightsail is the easiest way to get started with AWS for developers, small businesses, students, and other users who need a simple virtual private server (VPS) solution. Lightsail provides everything you need to launch a WordPress website, including a virtual machine, SSD-based storage, data transfer, DNS management, and a static IP address. The other options are incorrect because: (1) Installing WordPress on EC2 requires more manual setup; (2) S3 is for hosting static websites, not dynamic ones like WordPress; (3) AWS CDK is a development framework, not a hosting solution. [Reference](https://aws.amazon.com/lightsail/)",
   },
   {
     id: uuidv5("aws-question-343", uuidv5.URL),
@@ -4430,7 +4430,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "AWS Key Management Service (KMS) and CloudHSM are both services for managing encryption keys in AWS. KMS is a managed service that makes it easy to create and control encryption keys, while CloudHSM provides hardware security modules (HSMs) for generating and managing cryptographic keys. The other services are not related to encryption key management.",
+      "AWS Key Management Service (KMS) and CloudHSM are both services for managing encryption keys in AWS. KMS is a managed service that makes it easy to create and control encryption keys, while CloudHSM provides hardware security modules (HSMs) for generating and managing cryptographic keys. The other options are incorrect because: (1) AWS Certificate Manager is for managing SSL/TLS certificates; (2) AWS CodeDeploy is for automating application deployments; (3) AWS CodeCommit is a source control service. [Reference](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)",
   },
   {
     id: uuidv5("aws-question-344", uuidv5.URL),
@@ -4443,7 +4443,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.",
+      "Amazon ECS with Fargate is a serverless compute engine for containers that allows you to run containerized applications without managing the underlying infrastructure. The other options are incorrect because: (1) Amazon EC2 requires server management; (2) AWS Lambda is for running code, not containers; (3) AWS Batch is for batch processing, not container orchestration. [Reference](https://aws.amazon.com/fargate/)",
   },
   {
     id: uuidv5("aws-question-345", uuidv5.URL),
@@ -4456,13 +4456,13 @@ const exam7: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.",
+      "AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. The other options are incorrect because: (1) AWS CodeDeploy is for deploying applications; (2) AWS CodeCommit is a source control service; (3) CloudEndure is for disaster recovery and migration. [Reference](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)",
   },
   {
     id: uuidv5("aws-question-346", uuidv5.URL),
     text: "What does the Amazon CloudFront service provide? (Choose TWO)",
     options: [
-      "Tracks user activity and APl usage",
+      "Tracks user activity and API usage",
       "Increases application availability by caching at the edge",
       "Enables faster disaster recovery",
       "Stores archived data at very low costs",
@@ -4470,7 +4470,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "Amazon CloudFront is a content delivery network (CDN) service that increases application availability through edge caching and delivers content to end users with low latency by using a global network of edge locations.",
+      "Amazon CloudFront is a content delivery network (CDN) service that increases application availability through edge caching and delivers content to end users with low latency by using a global network of edge locations. The other options are incorrect because: (1) Tracking user activity is done by services like CloudTrail; (2) Disaster recovery is not a primary feature of CloudFront; (3) Storing archived data is done by services like S3 Glacier. [Reference](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)",
   },
   {
     id: uuidv5("aws-question-347", uuidv5.URL),
@@ -4483,7 +4483,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Connect is a cloud-based contact center service that makes it easy to set up and manage a customer contact center and provide reliable customer engagement at any scale.",
+      "Amazon Connect is a cloud-based contact center service that makes it easy to set up and manage a customer contact center and provide reliable customer engagement at any scale. The other options are incorrect because: (1) Amazon Lightsail is for hosting applications; (2) AWS Direct Connect is for network connectivity; (3) AWS Elastic Beanstalk is for deploying applications, not managing contact centers. [Reference](https://aws.amazon.com/connect/)",
   },
   {
     id: uuidv5("aws-question-348", uuidv5.URL),
@@ -4496,7 +4496,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Resource Groups is a feature that allows you to create groups of AWS resources and manage them together, making it easier to view and manage your resources in the AWS Management Console.",
+      "AWS Resource Groups let you organize AWS resources such as EC2 instances, databases, or S3 buckets into groups using tags. This makes it easier to manage, monitor, and automate tasks on large numbers of resources at once. The other options are incorrect because: (1) AWS Placement Groups are for optimizing EC2 instance placement; (2) AWS Management Console is a general interface, not specific to environments; (3) AWS Tag Editor is for editing tags, not creating custom consoles. [Reference](https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html)",
   },
   {
     id: uuidv5("aws-question-349", uuidv5.URL),
@@ -4509,7 +4509,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon CloudWatch is a monitoring and logging service that provides visibility into your AWS resources and applications. It collects metrics from running EC2 instances, such as CPU usage, network traffic, and disk usage, and provides real-time data to help you troubleshoot and optimize your applications.",
+      "Amazon CloudWatch is a monitoring and observability service that provides data and actionable insights for AWS resources. It collects monitoring and operational data in the form of logs, metrics, and events from EC2 instances and other AWS resources, allowing you to detect anomalous behavior in your environments. The other options are incorrect because: (1) Amazon Inspector is for security assessments; (2) AWS CloudFormation is for infrastructure as code; (3) AWS CloudTrail logs API activity, not metrics. [Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)",
   },
   {
     id: uuidv5("aws-question-350", uuidv5.URL),
@@ -4522,7 +4522,7 @@ const exam7: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon EC2 is a service that provides scalable computing capacity in the cloud. You can install and run custom relational database software on an EC2 instance, giving you full control over your database environment.",
+      "Amazon EC2 is a service that provides scalable computing capacity in the cloud. You can install and run custom relational database software on an EC2 instance, giving you full control over your database environment. The other options are incorrect because: (1) Amazon Cognito is for user authentication; (2) Amazon RDS is a managed database service, not for custom installations; (3) Amazon Inspector is for security assessments. [Reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)",
   },
 ];
 
