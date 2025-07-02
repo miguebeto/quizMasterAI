@@ -4538,7 +4538,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Security Groups act as a virtual firewall for your Amazon RDS instance, allowing you to control inbound and outbound traffic by specifying allowed IP ranges and ports. The other options are incorrect: user access and encryption keys are managed differently (A), SSL/TLS certificates are not deployed by security groups (C), and distributing traffic is related to load balancers, not security groups (D).",
+      "Security Groups act as a virtual firewall for your Amazon RDS instance, allowing you to control inbound and outbound traffic by specifying allowed IP ranges and ports. The other options are incorrect: user access and encryption keys are managed differently (A), SSL/TLS certificates are not deployed by security groups (C), and distributing traffic is related to load balancers, not security groups (D). [Learn more](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html)",
   },
   {
     id: uuidv5("aws-question-352", uuidv5.URL),
@@ -4551,7 +4551,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "The EC2 launch type allows the company to manage the underlying EC2 instances that host the containers, providing full visibility and control over the infrastructure. The Fargate launch type abstracts the underlying servers (B), Lightsail is not used for ECS (C), and Lambda is a serverless compute service, not a container hosting solution (D).",
+      "The EC2 launch type allows the company to manage the underlying EC2 instances that host the containers, providing full visibility and control over the infrastructure. The Fargate launch type abstracts the underlying servers (B), Lightsail is not used for ECS (C), and Lambda is a serverless compute service, not a container hosting solution (D). [Learn more](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html)",
   },
   {
     id: uuidv5("aws-question-353", uuidv5.URL),
@@ -4564,7 +4564,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Using AWS Organizations with Consolidated Billing allows you to combine usage across multiple accounts to benefit from volume pricing discounts and simplify billing. Removing accounts (A) doesn't directly reduce charges, tracking costs (C) doesn't reduce them either, and there is no such feature as enabling 'tiered-pricing' manually (D).",
+      "Using AWS Organizations with Consolidated Billing allows you to combine usage across multiple accounts to benefit from volume pricing discounts and simplify billing. Removing accounts (A) doesn't directly reduce charges, tracking costs (C) doesn't reduce them either, and there is no such feature as enabling 'tiered-pricing' manually (D). [Learn more](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html)",
   },
   {
     id: uuidv5("aws-question-354", uuidv5.URL),
@@ -4577,7 +4577,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "To analyze allowed inbound and outbound traffic, you need to check both Security Groups and Network ACLs. Security Groups operate at the instance level and control traffic specifically for that instance. Network ACLs operate at the subnet level and provide another layer of traffic control. The other options include components not directly related to traffic rules, such as Traffic Manager (A), or incorrectly combine unrelated items (B, C).",
+      "To analyze allowed inbound and outbound traffic, you need to check both Security Groups and Network ACLs. Security Groups operate at the instance level and control traffic specifically for that instance. Network ACLs operate at the subnet level and provide another layer of traffic control. The other options include components not directly related to traffic rules, such as Traffic Manager (A), or incorrectly combine unrelated items (B, C). [Learn more](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html)",
   },
   {
     id: uuidv5("aws-question-355", uuidv5.URL),
@@ -4591,7 +4591,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "The AWS 'Business' support plan provides access to the full set of Trusted Advisor checks and the AWS Support API. The other options, such as Concierge Service (B) and Proactive Technical Account Management (E), are part of the 'Enterprise' support plan. Less than 15-minute response time (C) is also exclusive to the 'Enterprise' support plan.",
+      "The AWS 'Business' support plan provides access to the full set of Trusted Advisor checks and the AWS Support API. The other options, such as Concierge Service (B) and Proactive Technical Account Management (E), are part of the 'Enterprise' support plan. Less than 15-minute response time (C) is also exclusive to the 'Enterprise' support plan. [Learn more](https://aws.amazon.com/premiumsupport/plans/business/)",
   },
   {
     id: uuidv5("aws-question-356", uuidv5.URL),
@@ -4604,7 +4604,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Elastic Beanstalk provides an easy way to deploy and scale web applications and services. It automates the deployment process, including provisioning the necessary resources and scaling. S3 (A) is for storage, CodeCommit (C) is for version control, and EFS (D) is for file storage.",
+      "AWS Elastic Beanstalk provides an easy way to deploy and scale web applications and services. It automates the deployment process, including provisioning the necessary resources and scaling. S3 (A) is for storage, CodeCommit (C) is for version control, and EFS (D) is for file storage. [Learn more](https://aws.amazon.com/elasticbeanstalk/)",
   },
   {
     id: uuidv5("aws-question-357", uuidv5.URL),
@@ -4617,7 +4617,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "According to AWS's Shared Responsibility Model, customers are responsible for managing and patching the database software on their EC2 instances. AWS manages the infrastructure, but the application and its related security are the customer's responsibility. The other options misrepresent the division of responsibilities.",
+      "According to AWS's Shared Responsibility Model, customers are responsible for managing and patching the database software on their EC2 instances. AWS manages the infrastructure, but the application and its related security are the customer's responsibility. The other options misrepresent the division of responsibilities. [Learn more](https://aws.amazon.com/compliance/shared-responsibility-model/)",
   },
   {
     id: uuidv5("aws-question-358", uuidv5.URL),
@@ -4631,7 +4631,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "Amazon EC2 improves fault-tolerance by allowing the use of multiple Availability Zones and can be scaled up or down quickly as needed. While seamless remote accessibility (B) and automatic backups (D) are features of other AWS services, they are not unique to EC2. Network security (C) is managed by Security Groups and not specifically tied to EC2’s benefits.",
+      "Amazon EC2 improves fault-tolerance by allowing the use of multiple Availability Zones and can be scaled up or down quickly as needed. While seamless remote accessibility (B) and automatic backups (D) are features of other AWS services, they are not unique to EC2. Network security (C) is managed by Security Groups and not specifically tied to EC2’s benefits. [Learn more](https://aws.amazon.com/ec2/faqs/)",
   },
   {
     id: uuidv5("aws-question-359", uuidv5.URL),
@@ -4645,7 +4645,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS's pricing model includes pay-as-you-go, meaning no upfront fees, and you only pay for the services you use without long-term contracts. However, some third-party software (B) and reserved instances (E) can involve additional costs or commitments, and there are no 'startup fees' for AWS services (D).",
+      "AWS's pricing model includes pay-as-you-go, meaning no upfront fees, and you only pay for the services you use without long-term contracts. However, some third-party software (B) and reserved instances (E) can involve additional costs or commitments, and there are no 'startup fees' for AWS services (D). [Learn more](https://aws.amazon.com/pricing/)",
   },
   {
     id: uuidv5("aws-question-360", uuidv5.URL),
@@ -4658,7 +4658,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Control Tower simplifies the process of setting up and managing a multi-account AWS environment by providing pre-configured best practices. Macie (B) is for data security and privacy, Patch Manager (C) handles patching, and Security Hub (D) centralizes security alerts but doesn’t directly manage multi-account setups.",
+      "AWS Control Tower simplifies the process of setting up and managing a multi-account AWS environment by providing pre-configured best practices. Macie (B) is for data security and privacy, Patch Manager (C) handles patching, and Security Hub (D) centralizes security alerts but doesn’t directly manage multi-account setups. [Learn more](https://aws.amazon.com/controltower/)",
   },
   {
     id: uuidv5("aws-question-361", uuidv5.URL),
@@ -4671,7 +4671,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon CloudWatch Alarms allow you to monitor specific metrics, such as CPU usage, and set thresholds to trigger notifications or automated actions. CloudFront (A) is for content delivery, AWS Config (B) tracks configuration changes but doesn’t monitor CPU usage, and SNS (D) is a notification service that doesn’t monitor metrics directly.",
+      "La forma correcta de monitorear el uso de CPU en instancias EC2 y recibir alertas cuando supera el 60% es mediante Amazon CloudWatch Alarms, que permite establecer umbrales y notificaciones automáticas. CloudFront (A) es un servicio de entrega de contenido y no monitorea métricas de instancias. AWS Config (B) rastrea cambios de configuración, pero no monitorea métricas de uso de CPU. SNS (D) es un servicio de notificaciones, pero no monitorea métricas directamente, aunque puede ser usado como destino de las alarmas. Más información: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html",
   },
   {
     id: uuidv5("aws-question-362", uuidv5.URL),
@@ -4684,7 +4684,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon EBS (Elastic Block Store) is the recommended storage option for hosting databases on EC2 instances due to its high performance, durability, and ability to handle frequent data changes. RDS (B) and DynamoDB (D) are managed database services, but they are not used directly with EC2-hosted databases. Option C is incorrect because you can run databases inside EC2 instances.",
+      "Amazon EBS (Elastic Block Store) es la opción recomendada para bases de datos en EC2 porque ofrece almacenamiento de alto rendimiento, durabilidad y permite cambios frecuentes en los datos. RDS (B) y DynamoDB (D) son servicios gestionados de base de datos, pero no se usan directamente como almacenamiento para bases de datos instaladas en EC2. La opción C es incorrecta porque sí se pueden ejecutar bases de datos en EC2. Más información: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html",
   },
   {
     id: uuidv5("aws-question-363", uuidv5.URL),
@@ -4697,7 +4697,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon CloudWatch is a monitoring service that provides metrics and logs to track application performance and resource utilization. CloudSearch (B) is for search capabilities, Elastic MapReduce (C) is for big data processing, and CloudHSM (D) is for hardware security modules, not monitoring.",
+      "Amazon CloudWatch es el servicio de AWS para monitorear aplicaciones, recolectando métricas y logs. CloudSearch (B) es para búsquedas, Elastic MapReduce (C) es para procesamiento de big data y CloudHSM (D) es para módulos de seguridad de hardware, ninguno de estos monitorea aplicaciones. Más información: https://docs.aws.amazon.com/cloudwatch/",
   },
   {
     id: uuidv5("aws-question-364", uuidv5.URL),
@@ -4711,7 +4711,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "AWS Lambda charges are based on the number of requests to your functions and the compute time consumed (measured in GB-seconds). Storage (A), number of volumes (C), and placement groups (D) are unrelated to Lambda pricing.",
+      "AWS Lambda cobra según el número de solicitudes a tus funciones y el tiempo de cómputo consumido (GB-segundos). El almacenamiento (A), número de volúmenes (C) y placement groups (D) no afectan el costo de Lambda, ya que no son relevantes para funciones serverless. Más información: https://aws.amazon.com/lambda/pricing/",
   },
   {
     id: uuidv5("aws-question-365", uuidv5.URL),
@@ -4725,7 +4725,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "IAM users are associated with a single person and have permanent credentials. IAM roles, on the other hand, are designed to be assumable by multiple entities and use temporary credentials for enhanced security. Options C, D, and E misrepresent the functionality of IAM users and roles.",
+      "Un usuario IAM está asociado a una sola persona y tiene credenciales permanentes. Un rol IAM puede ser asumido por diferentes entidades y utiliza credenciales temporales. Las opciones C, D y E son incorrectas porque el costo no varía entre usuarios y roles, y la asociación/credenciales están invertidas o mal explicadas. Más información: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_vs_roles.html",
   },
   {
     id: uuidv5("aws-question-366", uuidv5.URL),
@@ -4739,7 +4739,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2, 3],
     explanation:
-      "Deleting unnecessary snapshots reduces costs because EBS snapshots consume storage, and changing the volume type to a cheaper option (e.g., from 'Provisioned IOPS' to 'General Purpose') can also lower expenses. Deleting unused buckets (A) applies to S3, not EBS. Reservations (B) are not applicable to EBS, and distributing requests (E) is irrelevant to cost reduction.",
+      "Eliminar snapshots innecesarios reduce costos porque ocupan almacenamiento, y cambiar el tipo de volumen a uno más económico también puede disminuir gastos. Eliminar buckets (A) aplica a S3, no a EBS. Las reservas (B) no aplican a EBS y distribuir solicitudes (E) no afecta el costo. Más información: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-cost-savings.html",
   },
   {
     id: uuidv5("aws-question-367", uuidv5.URL),
@@ -4752,7 +4752,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon GuardDuty is a threat detection service that continuously monitors AWS accounts and workloads for malicious activity, such as attacker reconnaissance or account compromise. It does not handle abuse notifications (A), root cause analysis (C), or specific security group configurations (D).",
+      "Amazon GuardDuty monitorea continuamente la infraestructura AWS para detectar amenazas como reconocimiento de atacantes o compromiso de cuentas. No notifica sobre abusos reportados (A), no realiza análisis de causa raíz (C) ni revisa reglas de grupos de seguridad específicamente (D). Más información: https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html",
   },
   {
     id: uuidv5("aws-question-368", uuidv5.URL),
@@ -4765,7 +4765,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon RDS is designed for relational databases that support joins and complex transactions, making it suitable for this scenario. AWS Outposts (B) extends AWS infrastructure on-premises but isn't a database service. DocumentDB (C) is a document database, and DynamoDB (D) is a NoSQL service that doesn’t natively support joins or complex transactions.",
+      "Amazon RDS es un servicio de base de datos relacional que soporta joins y transacciones complejas. Outposts (B) es infraestructura híbrida, DocumentDB (C) es para documentos y DynamoDB (D) es NoSQL, ninguno de estos soporta joins o transacciones complejas nativamente. Más información: https://aws.amazon.com/rds/",
   },
   {
     id: uuidv5("aws-question-369", uuidv5.URL),
@@ -4778,7 +4778,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Tagging allows you to categorize resources by assigning metadata (tags) to them, enabling better organization, management, and filtering. CloudWatch (A) is for monitoring, Service Catalog (B) manages IT services, and Directory Service (C) is for managing directories like Microsoft Active Directory.",
+      "AWS Tagging permite categorizar y organizar recursos mediante metadatos (tags). CloudWatch (A) es para monitoreo, Service Catalog (B) para gestión de servicios y Directory Service (C) para directorios, ninguno de estos facilita la categorización y filtrado de recursos como los tags. Más información: https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html",
   },
   {
     id: uuidv5("aws-question-370", uuidv5.URL),
@@ -4791,7 +4791,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon Glacier is designed for long-term data archival with low cost but does not provide immediate data retrieval, as retrieval can take minutes to hours depending on the retrieval type. Option A is false, as Glacier accepts any data format. Option B is incorrect because it’s meant for infrequent access. Option D is irrelevant, as Glacier doesn’t attach directly to EC2.",
+      "Amazon Glacier está diseñado para archivado a largo plazo y bajo costo, pero la recuperación de datos no es inmediata y puede tardar minutos u horas. No requiere datos comprimidos (A), no es para acceso frecuente (B) y no se adjunta a EC2 (D). Más información: https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html",
   },
   {
     id: uuidv5("aws-question-371", uuidv5.URL),
@@ -4799,7 +4799,7 @@ const exam8: Question[] = [
     options: ["Amazon EC2.", "AWS Batch.", "Lambda@Edge.", "AWS Fargate."],
     correctAnswers: [1],
     explanation:
-      "AWS Batch is a managed service that enables efficient running of batch computing jobs, eliminating the need to install and manage batch processing software. Amazon EC2 (A) is a compute service but requires manual management. Lambda@Edge (C) is designed for low-latency serverless computing at edge locations, and AWS Fargate (D) is a serverless compute engine for containers, not for batch jobs.",
+      "AWS Batch is a managed service that enables you to efficiently run hundreds or thousands of batch computing jobs without the need to install or manage batch processing software. Amazon EC2 (A) provides compute resources but requires manual management of batch software. Lambda@Edge (C) is for serverless functions at edge locations, not for batch jobs. AWS Fargate (D) is a serverless compute engine for containers, not specifically for batch processing. More info: https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html",
   },
   {
     id: uuidv5("aws-question-372", uuidv5.URL),
@@ -4812,7 +4812,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Deploying your application across multiple Availability Zones (AZs) ensures that if one AZ fails, the others can continue serving the application. Running multiple EC2 instances (A) improves availability but does not protect against AZ failure. Using a single powerful instance (C) creates a single point of failure, and deploying across subnets (D) does not inherently increase fault-tolerance unless combined with multiple AZs.",
+      "Deploying your application across multiple Availability Zones (AZs) increases fault-tolerance because if one AZ fails, the others can continue to serve the application. Deploying across multiple EC2 instances (A) increases availability but does not protect against AZ failure. Using a single powerful instance (C) creates a single point of failure. Deploying across subnets (D) does not guarantee fault-tolerance unless those subnets are in different AZs. More info: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/reliability.html",
   },
   {
     id: uuidv5("aws-question-373", uuidv5.URL),
@@ -4826,7 +4826,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "The 'Enterprise' and 'Business' support plans offer 24/7 access to AWS Cloud Support Engineers via email and phone. The 'Developer' plan (A) only provides business hours support. 'Premium' (B) is not an AWS Support Plan, and the 'Standard' plan (D) does not exist.",
+      "The 'Enterprise' and 'Business' support plans provide 24/7 access to AWS Cloud Support Engineers via email and phone. The 'Developer' plan (A) only provides business hours support and does not include phone access. 'Premium' (B) is not an actual AWS support plan. 'Standard' (D) is not a support plan but the default level with no support engineer access. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
     id: uuidv5("aws-question-374", uuidv5.URL),
@@ -4840,7 +4840,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "IAM users and AWS account root users both require an access key ID and a secret access key for long-lived programmatic access. IAM groups (A) do not have credentials; they are used to group users. IAM roles (C) use temporary credentials instead. TAM (E) refers to a Technical Account Manager, not an entity that needs programmatic access.",
+      "IAM users and the AWS account root user both require an access key ID and a secret access key for long-lived programmatic access. IAM groups (A) are collections of users and do not have credentials. IAM roles (C) use temporary credentials, not long-lived ones. TAM (E) stands for Technical Account Manager, which is not an AWS identity. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
   },
   {
     id: uuidv5("aws-question-375", uuidv5.URL),
@@ -4853,7 +4853,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Loose Coupling ensures that application components are independent, allowing one component to be modified without affecting others, improving flexibility and scalability. It does not eliminate change management (A), enable Cross-Region Replication (B), or directly reduce privileged access (C).",
+      "Loose Coupling allows individual application components or services to be modified, updated, or replaced without impacting other components, increasing flexibility and scalability. It does not eliminate the need for change management (A), does not directly enable cross-region replication (B), and does not specifically reduce privileged access (C). More info: https://docs.aws.amazon.com/wellarchitected/latest/architecture-development/loose-coupling.html",
   },
   {
     id: uuidv5("aws-question-376", uuidv5.URL),
@@ -4866,7 +4866,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon Elastic File System (EFS) provides scalable, high-throughput storage that can be shared across multiple EC2 instances, making it ideal for big data applications. Amazon Elastic Block Store (A) is attached to individual EC2 instances. AWS Storage Gateway (B) is for hybrid cloud storage, and Amazon S3 (D) is an object storage service, not optimized for compute node access.",
+      "Amazon Elastic File System (EFS) provides scalable, high-throughput storage that can be shared across multiple EC2 instances, making it ideal for big data applications. Amazon Elastic Block Store (A) is attached to individual EC2 instances. AWS Storage Gateway (B) is for hybrid cloud storage integration. Amazon S3 (D) is object storage, not optimized for high-throughput shared access by compute nodes. More info: https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
   },
   {
     id: uuidv5("aws-question-377", uuidv5.URL),
@@ -4874,7 +4874,7 @@ const exam8: Question[] = [
     options: ["On-premises.", "IaaS.", "PaaS.", "Cloud."],
     correctAnswers: [3],
     explanation:
-      "The Cloud deployment model allows customers to host applications and services without the need for physical data centers. On-premises (A) relies on local hardware, IaaS (B) and PaaS (C) are service models within the cloud but not deployment models themselves.",
+      "The Cloud deployment model allows organizations to run applications and services without owning or maintaining physical data centers. On-premises (A) requires physical infrastructure. IaaS (B) and PaaS (C) are service models within the cloud, not deployment models themselves. More info: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/cloud-computing-models.html",
   },
   {
     id: uuidv5("aws-question-378", uuidv5.URL),
@@ -4888,7 +4888,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3, 4],
     explanation:
-      "AWS Marketplace offers flexible pricing options and software solutions that can run on AWS or other cloud vendors. However, it does not provide periodic security checks (A), per-second billing (B), or discounts on EC2 on-demand instances (C).",
+      "AWS Marketplace offers flexible pricing options and provides software solutions that can run on AWS or other cloud vendors. It does not perform periodic security checks on products (A), does not offer per-second billing (B), and does not provide cheaper EC2 on-demand instances (C). More info: https://aws.amazon.com/marketplace/features/",
   },
   {
     id: uuidv5("aws-question-379", uuidv5.URL),
@@ -4896,7 +4896,7 @@ const exam8: Question[] = [
     options: ["Elasticity.", "Durability.", "Traceability.", "Accessibility."],
     correctAnswers: [1],
     explanation:
-      "Amazon EBS volumes are automatically replicated within the same Availability Zone to prevent data loss due to hardware failure, ensuring durability. Elasticity (A) refers to scaling, Traceability (C) relates to monitoring, and Accessibility (D) is about availability, not replication.",
+      "Amazon EBS volumes are automatically replicated within the same Availability Zone to prevent data loss due to hardware failure, ensuring durability. Elasticity (A) refers to scaling resources, Traceability (C) is about monitoring and logging, and Accessibility (D) is about being able to access resources, not about data replication. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html",
   },
   {
     id: uuidv5("aws-question-380", uuidv5.URL),
@@ -4909,7 +4909,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "On-Demand Instances are the most cost-effective and flexible option for handling short-term, unpredictable workloads like traffic spikes during an advertising campaign. Spot Instances (B) are cheaper but may be interrupted, Savings Plans (A) and Reserved Instances (C) require long-term commitments.",
+      "On-Demand Instances are the most cost-effective and flexible option for short-term, unpredictable workloads like traffic spikes during a campaign. Spot Instances (B) are cheaper but can be interrupted at any time. Savings Plans (A) and Reserved Instances (C) require long-term commitments and are not ideal for temporary spikes. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html",
   },
   {
     id: uuidv5("aws-question-381", uuidv5.URL),
@@ -4922,7 +4922,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon CloudFront integrates with AWS Shield and AWS WAF to provide protection against DDoS attacks at the network and application layers. Amazon EFS (A) is a storage service, AWS Secrets Manager (B) handles secrets, and AWS Systems Manager (C) is for operational management.",
+      "Amazon CloudFront integrates with AWS Shield and AWS WAF to provide protection against DDoS attacks at both the network and application layers. Amazon EFS (A) is a file storage service, AWS Secrets Manager (B) is for managing secrets, and AWS Systems Manager (C) is for operational management, none of which provide DDoS protection. More info: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html",
   },
   {
     id: uuidv5("aws-question-382", uuidv5.URL),
@@ -4930,7 +4930,7 @@ const exam8: Question[] = [
     options: ["AWS WAF.", "AWS KMS.", "Amazon Macie.", "Amazon GuardDuty."],
     correctAnswers: [1],
     explanation:
-      "AWS Key Management Service (KMS) is used for managing encryption keys and encrypting EBS volumes. AWS WAF (A) protects web applications, Amazon Macie (C) identifies sensitive data, and Amazon GuardDuty (D) detects threats.",
+      "AWS Key Management Service (KMS) is used to manage encryption keys and is integrated with EBS to encrypt volumes. AWS WAF (A) is for web application firewall, Amazon Macie (C) is for discovering sensitive data, and Amazon GuardDuty (D) is for threat detection, none of which are used for EBS encryption. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html",
   },
   {
     id: uuidv5("aws-question-383", uuidv5.URL),
@@ -4944,7 +4944,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3, 4],
     explanation:
-      "To secure your account, rotate all access keys (D) and change the email address, password, and enable MFA for the root account (E). Deleting all IAM accounts (B) would disrupt operations, and downloading policies (A) is not an immediate security action.",
+      "To immediately secure your AWS account, you should rotate all access keys (D) to prevent unauthorized access and change the root account's email, password, and enable MFA (E) to secure the most privileged account. Downloading policies (A) is not a direct security action, deleting all IAM accounts (B) is disruptive, and checking CloudWatch logs (C) is useful for auditing but not an immediate protective measure. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
   },
   {
     id: uuidv5("aws-question-384", uuidv5.URL),
@@ -4958,7 +4958,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "Amazon ElastiCache provides an in-memory data storage service (A) and improves web application performance (C) by caching frequently accessed data. It does not reduce delivery costs (B), provide a Chef-compatible cache (D), or distribute requests (E).",
+      "Amazon ElastiCache provides an in-memory data storage service (A) and improves web application performance (C) by caching frequently accessed data. It does not reduce delivery costs using Edge Locations (B), is not specifically Chef-compatible (D), and does not distribute requests (E). More info: https://docs.aws.amazon.com/elasticache/latest/mem-ug/WhatIs.html",
   },
   {
     id: uuidv5("aws-question-385", uuidv5.URL),
@@ -4972,7 +4972,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "Using Amazon EC2 Auto Scaling (B) and Serverless Computing (E) allows customers to automatically adjust resources to match demand, reducing costs. Deploying across Availability Zones (A) or regions (C) improves availability but doesn't directly utilize elasticity.",
+      "Using Amazon EC2 Auto Scaling (B) and Serverless Computing (E) allows customers to automatically adjust resources to match demand, reducing costs. Deploying across Availability Zones (A) or regions (C) improves availability but does not directly leverage elasticity. Elastic Load Balancing (D) distributes traffic but does not scale resources automatically. More info: https://aws.amazon.com/autoscaling/ and https://aws.amazon.com/serverless/",
   },
   {
     id: uuidv5("aws-question-386", uuidv5.URL),
@@ -4986,7 +4986,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "On-Demand EC2 instances allow you to scale capacity up or down based on demand (E) and avoid the need to maintain 'safety net' capacity for traffic spikes (C). They are not free (A), cheaper than all other options (B), or limited to specific setup times (D).",
+      "On-Demand EC2 instances allow you to scale capacity up or down based on demand (E) and avoid the need to maintain 'safety net' capacity for traffic spikes (C). They are not free (A), not always cheaper than other options (B), and setup time (D) is not a specific benefit. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html",
   },
   {
     id: uuidv5("aws-question-387", uuidv5.URL),
@@ -4999,7 +4999,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "An Availability Zone is a distinct location within a region designed to be insulated from failures in other zones (D). It is not an individual data center (A), a multi-country collection (B), or a logically isolated network (C).",
+      "An Availability Zone is a distinct location within a region, insulated from failures in other zones. It is not a single data center (A), not a multi-country collection (B), and not just a logically isolated network (C). More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
   },
   {
     id: uuidv5("aws-question-388", uuidv5.URL),
@@ -5012,7 +5012,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Deploying infrastructure across multiple AWS Regions (A) enables disaster recovery by ensuring availability in case of regional failures. Transportation devices (B), support plans (C), and edge locations (D) are unrelated to disaster recovery.",
+      "Deploying infrastructure across multiple AWS Regions enables disaster recovery by ensuring availability in case of regional failures. Transportation devices (B), support plans (C), and edge locations (D) are not related to disaster recovery. More info: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html",
   },
   {
     id: uuidv5("aws-question-389", uuidv5.URL),
@@ -5026,7 +5026,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "The company must configure AWS services to meet PCI DSS standards (B) and restrict access to cardholder data while creating security policies (C). AWS handles physical security (E), and not all services are PCI compliant by default (A). Customers do not configure underlying AWS infrastructure (D).",
+      "The company must ensure AWS services are configured to meet PCI DSS standards (B) and restrict access to cardholder data and create security policies (C). Not all AWS services are PCI compliant by default (A), customers do not configure underlying AWS infrastructure (D), and AWS is responsible for physical security (E). More info: https://aws.amazon.com/compliance/pci-dss-level-1-faqs/",
   },
   {
     id: uuidv5("aws-question-390", uuidv5.URL),
@@ -5039,7 +5039,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon S3 provides virtually unlimited storage for objects. The size limit for a single object is 5 TB (C), but overall storage is not capped (B). Other options like 100 PB (A) or 10 EB (D) are incorrect.",
+      "Amazon S3 provides virtually unlimited storage for objects in a single account. The size limit for a single object is 5 TB (C), but there is no overall storage cap. 100 PB (A) and 10 EB (D) are not actual limits. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   },
   {
     id: uuidv5("aws-question-391", uuidv5.URL),
@@ -5052,7 +5052,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The Performance Efficiency pillar of the AWS Well-Architected Framework focuses on selecting the right compute resources for workloads, optimizing performance and scalability. Operational Excellence (A) addresses operational processes, Security (B) emphasizes data protection, and Reliability (D) focuses on system recovery and resiliency.",
+      "The Performance Efficiency pillar focuses on selecting the right compute resources for workloads, optimizing performance and scalability. Operational Excellence (A) is about operations and monitoring, Security (B) is about protecting data and systems, and Reliability (D) is about system recovery and resiliency. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency-pillar.html",
   },
   {
     id: uuidv5("aws-question-392", uuidv5.URL),
@@ -5065,7 +5065,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon CloudFront is a content delivery network (CDN) service that provides low latency and high transfer speeds for delivering data, videos, and applications globally. Amazon Route 53 (A) is a DNS service, Amazon Connect (B) is a contact center solution, and Amazon EC2 (D) provides virtual servers.",
+      "Amazon CloudFront is a content delivery network (CDN) that delivers data, videos, applications, and APIs globally with low latency and high transfer speeds. Amazon Route 53 (A) is a DNS service, Amazon Connect (B) is a contact center service, and Amazon EC2 (D) provides virtual servers. More info: https://aws.amazon.com/cloudfront/",
   },
   {
     id: uuidv5("aws-question-393", uuidv5.URL),
@@ -5078,7 +5078,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Customers must request and wait for approval from AWS support before conducting penetration testing. AWS has specific guidelines for permitted testing to ensure compliance and avoid service interruptions.",
+      "Customers must request and wait for approval from AWS support before conducting penetration testing. This ensures compliance with AWS policies and avoids service disruptions. The other options either skip AWS approval or incorrectly assume internal approval is sufficient. More info: https://aws.amazon.com/security/penetration-testing/",
   },
   {
     id: uuidv5("aws-question-394", uuidv5.URL),
@@ -5091,7 +5091,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The AWS Cost and Usage Report provides the most granular billing data, including detailed information about usage and costs. AWS Cost Explorer (A) offers visualization tools, AWS Budgets (B) sets cost alerts, and the AWS Billing dashboard (D) provides a summary of billing details.",
+      "The AWS Cost and Usage Report provides the most detailed and granular billing data. AWS Cost Explorer (A) is for visualizing costs, AWS Budgets (B) is for setting cost thresholds, and the Billing dashboard (D) provides summaries. More info: https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html",
   },
   {
     id: uuidv5("aws-question-395", uuidv5.URL),
@@ -5104,7 +5104,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Availability Zones consist of one or more discrete data centers with redundant power, networking, and connectivity, housed in separate facilities. AWS Regions (A) are geographical areas, Edge locations (C) are used for content delivery, and Amazon CloudFront (D) is a CDN service.",
+      "Availability Zones consist of one or more discrete data centers with redundant power, networking, and connectivity, housed in separate facilities. AWS Regions (A) are geographic areas containing multiple AZs, Edge locations (C) are for content delivery, and Amazon CloudFront (D) is a CDN. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
     id: uuidv5("aws-question-396", uuidv5.URL),
@@ -5117,7 +5117,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Provisioning compute resources across a minimum of two Availability Zones ensures high availability. This configuration provides redundancy and fault tolerance in case one AZ fails.",
+      "Provisioning across at least two Availability Zones ensures high availability and fault tolerance. One AZ (A) is a single point of failure, while three or more (C, D) may be over-provisioning for most use cases. More info: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/reliability.html",
   },
   {
     id: uuidv5("aws-question-397", uuidv5.URL),
@@ -5130,7 +5130,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Regions represent the global infrastructure, enabling customers to deploy resources in multiple geographical locations for redundancy, compliance, and performance.",
+      "Multiple AWS Regions are part of AWS's global infrastructure, allowing customers to deploy resources worldwide. Agility (A), elasticity (C), and pay-as-you-go pricing (D) are other AWS characteristics but not related to the physical infrastructure. More info: https://aws.amazon.com/about-aws/global-infrastructure/",
   },
   {
     id: uuidv5("aws-question-398", uuidv5.URL),
@@ -5138,7 +5138,7 @@ const exam8: Question[] = [
     options: ["Amazon EBS.", "Amazon S3.", "Amazon EC2.", "Amazon ECS."],
     correctAnswers: [2],
     explanation:
-      "Amazon EC2 is the service that allows customers to manually launch virtual servers (instances) based on their resource needs. Amazon EBS (A) provides storage, Amazon S3 (B) is for object storage, and Amazon ECS (D) is used for containerized applications.",
+      "Amazon EC2 allows users to manually launch virtual server instances based on their resource needs. Amazon EBS (A) is for storage, Amazon S3 (B) is for object storage, and Amazon ECS (D) is for container orchestration. More info: https://aws.amazon.com/ec2/",
   },
   {
     id: uuidv5("aws-question-399", uuidv5.URL),
@@ -5151,7 +5151,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Designing applications to handle the failure of any single component ensures high availability. This includes redundancy and failover mechanisms, which are crucial in distributed systems.",
+      "Designing for failure of any single component ensures high availability by enabling redundancy and failover. Low-latency connectivity (A) and running at peak load (B) do not guarantee high availability. Monolithic applications (D) are less resilient. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability-pillar.html",
   },
   {
     id: uuidv5("aws-question-400", uuidv5.URL),
@@ -5165,7 +5165,7 @@ const exam8: Question[] = [
     ],
     correctAnswers: [2, 3],
     explanation:
-      "Elasticity allows AWS to scale resources up or down based on demand, while pay-as-you-go pricing ensures customers only pay for the resources they use, making it cost-effective for workloads with dynamic demand.",
+      "Elasticity allows AWS to scale resources up or down based on demand, and pay-as-you-go pricing ensures you only pay for what you use, making AWS cost effective for dynamic workloads. High availability (A), shared security model (B), and reliability (E) are important but not directly related to cost effectiveness. More info: https://aws.amazon.com/pricing/",
   },
 ];
 
