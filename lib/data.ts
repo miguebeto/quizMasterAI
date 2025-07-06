@@ -5171,7 +5171,7 @@ const exam8: Question[] = [
 
 const exam9: Question[] = [
   {
-    id: uuidv5("aws-question-809", uuidv5.URL),
+    id: uuidv5("aws-question-401", uuidv5.URL),
     text: "An administrator needs to rapidly deploy a popular IT solution and start using it immediately. Where can the administrator find assistance?",
     options: [
       "AWS Well-Architected Framework documentation.",
@@ -5181,10 +5181,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Quick Start reference deployments provide pre-configured templates and architectural guidance to help deploy popular IT solutions quickly and easily.",
+      "AWS Quick Start reference deployments provide pre-configured templates and architectural guidance to help deploy popular IT solutions quickly and easily. The Well-Architected Framework (A) is for best practices, CloudFront (B) is a CDN, and CodeCommit (C) is a source control service. More info: https://aws.amazon.com/quickstart/",
   },
   {
-    id: uuidv5("aws-question-810", uuidv5.URL),
+    id: uuidv5("aws-question-402", uuidv5.URL),
     text: "What is one of the advantages of the Amazon Relational Database Service (Amazon RDS)?",
     options: [
       "It simplifies relational database administration tasks.",
@@ -5194,10 +5194,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon RDS simplifies tasks such as backups, patch management, and scaling, enabling users to focus on their applications rather than database management. While it is reliable, durability and automatic scaling are not the primary features of RDS.",
+      "Amazon RDS simplifies database administration tasks such as backups, patching, and scaling. While it is reliable, the other options either exaggerate durability, refer to features not unique to RDS, or are not primary advantages. More info: https://aws.amazon.com/rds/features/",
   },
   {
-    id: uuidv5("aws-question-811", uuidv5.URL),
+    id: uuidv5("aws-question-403", uuidv5.URL),
     text: "Which of the following AWS Cloud services can be used to run a customer-managed relational database?",
     options: [
       "Amazon EC2.",
@@ -5207,10 +5207,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon EC2 allows customers to run relational database software of their choice and manage it entirely. Other services like ElastiCache and DynamoDB are not intended for customer-managed relational databases.",
+      "Amazon EC2 allows customers to install and manage their own relational database software. Route 53 (B) is DNS, ElastiCache (C) is for caching, and DynamoDB (D) is NoSQL, not relational. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-applications.html",
   },
   {
-    id: uuidv5("aws-question-812", uuidv5.URL),
+    id: uuidv5("aws-question-404", uuidv5.URL),
     text: "A user is planning to launch two additional Amazon EC2 instances to increase availability. Which action should the user take?",
     options: [
       "Launch the instances across multiple Availability Zones in a single AWS Region.",
@@ -5220,10 +5220,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Launching EC2 instances across multiple Availability Zones within the same region improves availability and fault tolerance. This ensures redundancy without needing to manage cross-region replication.",
+      "Launching instances across multiple Availability Zones in a single region increases availability and fault tolerance. Reserved Instances (B) and Spot Instances (D) are purchasing options, not deployment strategies, and launching in multiple regions (C) complicates management. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
   },
   {
-    id: uuidv5("aws-question-813", uuidv5.URL),
+    id: uuidv5("aws-question-405", uuidv5.URL),
     text: "Which of the following can limit Amazon Simple Storage Service (Amazon S3) bucket access to specific users?",
     options: [
       "A public and private key-pair.",
@@ -5233,10 +5233,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Identity and Access Management (IAM) policies are used to control access to S3 buckets and objects. Public-private key pairs (A) are used for encryption and authentication, not access control. Security Groups (D) control network-level access, not S3 bucket permissions.",
+      "IAM policies are used to control access to S3 buckets and objects. Key-pairs (A) are for authentication, Inspector (B) is for security assessment, and Security Groups (D) are for network access, not S3 permissions. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html",
   },
   {
-    id: uuidv5("aws-question-814", uuidv5.URL),
+    id: uuidv5("aws-question-406", uuidv5.URL),
     text: "Which AWS service allows companies to connect an Amazon VPC to an on-premises data center? (Select TWO)",
     options: [
       "AWS VPN.",
@@ -5246,10 +5246,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS VPN and Amazon Direct Connect both allow companies to connect an Amazon VPC to their on-premises data centers. AWS VPN establishes secure tunnels, while Direct Connect provides a dedicated network connection.",
+      "AWS VPN and Amazon Direct Connect both allow secure connections between a VPC and on-premises data centers. Redshift (B) is a data warehouse, and API Gateway (C) is for API management. More info: https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html and https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-815", uuidv5.URL),
+    id: uuidv5("aws-question-407", uuidv5.URL),
     text: "Which AWS service or feature can be used to monitor CPU usage?",
     options: [
       "AWS CloudTrail.",
@@ -5259,10 +5259,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon CloudWatch collects and monitors metrics such as CPU usage, memory, and other operational data for AWS resources.",
+      "Amazon CloudWatch collects and monitors metrics such as CPU usage. CloudTrail (A) logs API calls, VPC Flow Logs (B) capture network traffic, and Config (D) tracks resource configurations. More info: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   },
   {
-    id: uuidv5("aws-question-816", uuidv5.URL),
+    id: uuidv5("aws-question-408", uuidv5.URL),
     text: "Which task is AWS responsible for in the shared responsibility model for security and compliance?",
     options: [
       "Granting access to individuals and services.",
@@ -5272,10 +5272,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "In the shared responsibility model, AWS is responsible for maintaining and updating the infrastructure, including host firmware. Customers are responsible for securing their own operating systems and data.",
+      "AWS is responsible for maintaining and updating the infrastructure, including EC2 host firmware. Customers are responsible for access management, data encryption, and OS updates. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-817", uuidv5.URL),
+    id: uuidv5("aws-question-409", uuidv5.URL),
     text: "Which of the following security-related actions are available at no cost?",
     options: [
       "Calling AWS Support.",
@@ -5285,10 +5285,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Access to forums, blogs, and AWS whitepapers is free of charge, offering resources to help users enhance security and best practices.",
+      "Access to AWS forums, blogs, and whitepapers is free. AWS Support (A) and Professional Services (B) may incur costs, and university classes (D) are not provided by AWS for free. More info: https://aws.amazon.com/whitepapers/",
   },
   {
-    id: uuidv5("aws-question-818", uuidv5.URL),
+    id: uuidv5("aws-question-410", uuidv5.URL),
     text: "Which storage service can be used as a low-cost option for hosting static websites?",
     options: [
       "Amazon Glacier.",
@@ -5298,10 +5298,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon S3 is ideal for hosting static websites because it offers low-cost storage, scalability, and the ability to serve content directly via HTTP.",
+      "Amazon S3 is ideal for hosting static websites due to its low cost, scalability, and ability to serve content over HTTP. Glacier (A) is for archival, DynamoDB (B) is NoSQL, and EFS (C) is for file storage, not static websites. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html",
   },
   {
-    id: uuidv5("aws-question-819", uuidv5.URL),
+    id: uuidv5("aws-question-411", uuidv5.URL),
     text: "According to the AWS shared responsibility model what is the sole responsibility of AWS?",
     options: [
       "Application security.",
@@ -5311,10 +5311,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "In the shared responsibility model, AWS is responsible for managing the physical infrastructure, including edge locations, regions, and availability zones. Application security, patch management, and client-side data are the customer's responsibilities.",
+      "In the shared responsibility model, AWS is responsible for managing the physical infrastructure, including edge locations, regions, and availability zones. Application security, patch management, and client-side data are the customer's responsibilities. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-820", uuidv5.URL),
+    id: uuidv5("aws-question-412", uuidv5.URL),
     text: "Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO)",
     options: [
       "Multiple Availability Zones.",
@@ -5325,10 +5325,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "The AWS Well-Architected Framework includes Performance Efficiency and Security as two of its five pillars. The other three are Operational Excellence, Reliability, and Cost Optimization.",
+      "Performance Efficiency and Security are two of the five pillars of the AWS Well-Architected Framework. The other pillars are Operational Excellence, Reliability, and Cost Optimization. The other options are not pillars. More info: https://aws.amazon.com/architecture/well-architected/",
   },
   {
-    id: uuidv5("aws-question-821", uuidv5.URL),
+    id: uuidv5("aws-question-413", uuidv5.URL),
     text: "Which AWS service identifies security groups that allow unrestricted access to a user’s AWS resources?",
     options: [
       "AWS Trusted Advisor.",
@@ -5338,10 +5338,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Trusted Advisor checks for security vulnerabilities, including overly permissive security group rules, and provides recommendations to improve resource configuration.",
+      "AWS Trusted Advisor checks for security vulnerabilities, including overly permissive security group rules, and provides recommendations to improve resource configuration. Inspector (B) is for automated security assessments, CloudWatch (C) is for monitoring, and CloudTrail (D) is for logging API calls. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-822", uuidv5.URL),
+    id: uuidv5("aws-question-414", uuidv5.URL),
     text: "Which design principles for cloud architecture are recommended when re-architecting a large monolithic application? (Select TWO)",
     options: [
       "Use manual monitoring.",
@@ -5352,10 +5352,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "Implementing loose coupling and designing for scalability are key cloud architecture principles, enabling better flexibility, fault tolerance, and performance in distributed applications.",
+      "Implementing loose coupling and designing for scalability are key cloud architecture principles, enabling flexibility, fault tolerance, and performance. Manual monitoring (A), fixed servers (B), and relying on individual components (D) are not recommended. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-823", uuidv5.URL),
+    id: uuidv5("aws-question-415", uuidv5.URL),
     text: "When architecting cloud applications, which of the following are a key design principle?",
     options: [
       "Use the largest instance possible.",
@@ -5365,10 +5365,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Implementing elasticity ensures that resources automatically scale up or down based on demand, optimizing costs and performance, which is a fundamental design principle for cloud-native applications.",
+      "Implementing elasticity is a key design principle for cloud-native applications, allowing resources to scale automatically based on demand. The other options are not cloud design principles. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-824", uuidv5.URL),
+    id: uuidv5("aws-question-416", uuidv5.URL),
     text: "A company has deployed several relational databases on Amazon EC2 instances. Every month the database software vendor releases new security patches that need to be applied to the databases. What is the MOST efficient way to apply the security patches?",
     options: [
       "Connect to each database instance on a monthly basis and download and apply the necessary security patches from the vendor.",
@@ -5378,10 +5378,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Systems Manager allows for automation of repetitive tasks like patch management, enabling administrators to schedule and deploy patches efficiently across multiple EC2 instances.",
+      "AWS Systems Manager allows for automation of repetitive tasks like patch management, enabling administrators to schedule and deploy patches efficiently across multiple EC2 instances. The other options are manual, not applicable, or only for RDS. More info: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html",
   },
   {
-    id: uuidv5("aws-question-825", uuidv5.URL),
+    id: uuidv5("aws-question-417", uuidv5.URL),
     text: "Which mechanism allows developers to access AWS services from application code?",
     options: [
       "AWS Software Development Kit.",
@@ -5391,10 +5391,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "The AWS Software Development Kit (SDK) provides APIs for developers to integrate AWS services into their application code, supporting various programming languages.",
+      "The AWS Software Development Kit (SDK) provides APIs for developers to integrate AWS services into their application code. The Management Console (B) is for manual management, CodePipeline (C) is for CI/CD, and Config (D) is for resource configuration tracking. More info: https://aws.amazon.com/tools/",
   },
   {
-    id: uuidv5("aws-question-826", uuidv5.URL),
+    id: uuidv5("aws-question-418", uuidv5.URL),
     text: "Which AWS feature will reduce the customer’s total cost of ownership (TCO)?",
     options: [
       "Shared responsibility security model.",
@@ -5404,10 +5404,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Elastic computing enables resources to scale up or down based on demand, ensuring that customers only pay for what they use, thus reducing TCO.",
+      "Elastic computing allows resources to scale up or down based on demand, so customers only pay for what they use, reducing TCO. The other options do not directly impact TCO. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-827", uuidv5.URL),
+    id: uuidv5("aws-question-419", uuidv5.URL),
     text: "Which of the following is a benefit of using the AWS Cloud?",
     options: [
       "Permissive security removes the administrative burden.",
@@ -5417,10 +5417,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "By offloading infrastructure management to AWS, businesses can concentrate on activities that directly impact their revenue, such as innovation and product development.",
+      "By offloading infrastructure management to AWS, businesses can focus on innovation and revenue-generating activities. The other options are not benefits of AWS Cloud. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-828", uuidv5.URL),
+    id: uuidv5("aws-question-420", uuidv5.URL),
     text: "Which of the following are categories of AWS Trusted Advisor? (Select TWO)",
     options: [
       "Fault Tolerance.",
@@ -5431,10 +5431,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS Trusted Advisor provides insights into areas like Fault Tolerance and Performance to optimize the usage of AWS resources and improve the application's reliability.",
+      "AWS Trusted Advisor provides insights into areas like Fault Tolerance and Performance. Instance Usage (B), Infrastructure (C), and Storage Capacity (E) are not official categories. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-829", uuidv5.URL),
+    id: uuidv5("aws-question-421", uuidv5.URL),
     text: "What is Amazon CloudWatch?",
     options: [
       "A code repository with customizable build and team commit features.",
@@ -5444,10 +5444,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon CloudWatch is a monitoring service for AWS resources and applications. It allows users to collect and track metrics, set alarms, and automatically react to changes in AWS environments.",
+      "Amazon CloudWatch is a monitoring service for AWS resources and applications. It collects and tracks metrics, sets alarms, and can automatically react to changes in AWS environments. The other options describe unrelated services or features. More info: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   },
   {
-    id: uuidv5("aws-question-830", uuidv5.URL),
+    id: uuidv5("aws-question-422", uuidv5.URL),
     text: "Under the AWS shared responsibility model, which of the following activities are the customer’s responsibility? (Select TWO)",
     options: [
       "Patching operating system components for Amazon Relational Database Server (Amazon RDS).",
@@ -5458,10 +5458,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Under the shared responsibility model, customers are responsible for data encryption and access management (e.g., configuring Network ACLs), while AWS manages the underlying infrastructure.",
+      "Customers are responsible for encrypting data on the client-side and configuring Network ACLs. AWS manages the underlying infrastructure, including patching RDS OS components, training data center staff, and maintaining environmental controls. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-831", uuidv5.URL),
+    id: uuidv5("aws-question-423", uuidv5.URL),
     text: "Under the shared responsibility model, which of the following is a shared control between a customer and AWS?",
     options: [
       "Physical controls.",
@@ -5471,10 +5471,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Patch management is a shared responsibility. AWS manages patches for the infrastructure, while customers handle patches for their operating systems and applications.",
+      "Patch management is a shared responsibility: AWS manages patches for the infrastructure, while customers patch their operating systems and applications. Physical controls, zone security, and data center auditing are AWS responsibilities. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-832", uuidv5.URL),
+    id: uuidv5("aws-question-424", uuidv5.URL),
     text: "Which AWS service is used to pay AWS bills, and monitor usage and budget costs?",
     options: [
       "AWS Billing and Cost Management.",
@@ -5484,10 +5484,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Billing and Cost Management provides tools to view AWS bills, monitor usage, and create budgets to manage costs.",
+      "AWS Billing and Cost Management provides tools to view and pay bills, monitor usage, and create budgets. Consolidated billing (B) is a feature for combining accounts, CloudWatch (C) is for monitoring resources, and QuickSight (D) is for analytics. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html",
   },
   {
-    id: uuidv5("aws-question-833", uuidv5.URL),
+    id: uuidv5("aws-question-425", uuidv5.URL),
     text: "How do customers benefit from Amazon’s massive economies of scale?",
     options: [
       "Periodic price reductions as the result of Amazon’s operational efficiencies.",
@@ -5497,10 +5497,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon passes on savings to customers through periodic price reductions, leveraging its massive economies of scale to operate efficiently.",
+      "Amazon's economies of scale allow it to reduce prices for customers as operational efficiencies increase. The other options are benefits of AWS, but not direct results of economies of scale. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-834", uuidv5.URL),
+    id: uuidv5("aws-question-426", uuidv5.URL),
     text: "Which AWS feature allows a company to take advantage of usage tiers for services across multiple member accounts?",
     options: [
       "Service control policies (SCPs).",
@@ -5510,10 +5510,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Consolidated billing allows companies to combine usage across multiple accounts and take advantage of aggregated usage tiers for services.",
+      "Consolidated billing allows companies to aggregate usage across accounts and benefit from volume discounts. SCPs (A) are for policy management, Reserved Instances (C) are a purchasing option, and Cost Explorer (D) is for cost analysis. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-835", uuidv5.URL),
+    id: uuidv5("aws-question-427", uuidv5.URL),
     text: "Which AWS services provide a way to extend an on-premises architecture to the AWS cloud? (Select TWO)",
     options: [
       "Amazon EBS.",
@@ -5524,10 +5524,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "AWS Storage Gateway and AWS Direct Connect provide ways to extend on-premises infrastructure to the AWS Cloud, with Storage Gateway offering hybrid cloud storage and Direct Connect offering dedicated network connections.",
+      "AWS Storage Gateway and AWS Direct Connect both extend on-premises environments to AWS. EBS (A) is block storage, Connect (B) is a contact center, and CloudFront (D) is a CDN. More info: https://aws.amazon.com/storagegateway/ and https://aws.amazon.com/directconnect/",
   },
   {
-    id: uuidv5("aws-question-836", uuidv5.URL),
+    id: uuidv5("aws-question-428", uuidv5.URL),
     text: "Which of the following services will automatically scale with an expected increase in web traffic?",
     options: [
       "AWS CodePipeline.",
@@ -5537,10 +5537,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Elastic Load Balancing automatically scales to distribute incoming web traffic to multiple instances based on demand, ensuring high availability and fault tolerance.",
+      "Elastic Load Balancing automatically scales to distribute incoming web traffic to multiple targets. CodePipeline (A) is for CI/CD, EBS (C) is storage, and Direct Connect (D) is for network connectivity. More info: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html",
   },
   {
-    id: uuidv5("aws-question-837", uuidv5.URL),
+    id: uuidv5("aws-question-429", uuidv5.URL),
     text: "Which service provides a virtually unlimited amount of online highly durable object storage?",
     options: [
       "Amazon Redshift.",
@@ -5550,10 +5550,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon S3 (Simple Storage Service) offers virtually unlimited storage with high durability, making it suitable for storing large amounts of data in the cloud.",
+      "Amazon S3 provides virtually unlimited, highly durable object storage. Redshift (A) is a data warehouse, EFS (B) is file storage, and ECS (C) is for containers. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-838", uuidv5.URL),
+    id: uuidv5("aws-question-430", uuidv5.URL),
     text: "Which AWS feature should a customer leverage to achieve high availability of an application?",
     options: [
       "AWS Direct Connect.",
@@ -5563,10 +5563,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Availability Zones are designed to provide high availability by isolating applications across different physical locations, ensuring applications remain operational even during failures in one zone.",
+      "Availability Zones provide high availability by isolating applications across physically separate locations. Direct Connect (A) is for network connectivity, data centers (C) are the physical infrastructure, and VPC (D) is for network isolation. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-839", uuidv5.URL),
+    id: uuidv5("aws-question-431", uuidv5.URL),
     text: "Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Select TWO)",
     options: [
       "AWS WAF.",
@@ -5577,10 +5577,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "AWS WAF (Web Application Firewall) can block requests from specific IPs or networks, and Network ACLs (Access Control Lists) can provide a layer of security by controlling inbound and outbound traffic at the subnet level.",
+      "AWS WAF (Web Application Firewall) can block requests from specific IPs or networks at the application layer, and Network ACLs (Access Control Lists) can block or allow traffic at the subnet level. Trusted Advisor (B) provides recommendations, Direct Connect (C) is for network connectivity, and Organizations (D) is for account management. More info: https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html and https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html",
   },
   {
-    id: uuidv5("aws-question-840", uuidv5.URL),
+    id: uuidv5("aws-question-432", uuidv5.URL),
     text: "Which of the following is a cloud architectural design principle?",
     options: [
       "Scale up not out.",
@@ -5590,10 +5590,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Loosely coupling components allows each component to be independent, enhancing flexibility, scalability, and fault tolerance in cloud architectures.",
+      "Loosely coupling components is a key cloud design principle, enabling flexibility, scalability, and fault tolerance. Scaling up (A) and building monolithic systems (C) are not recommended, and using commercial databases (D) is not a design principle. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-841", uuidv5.URL),
+    id: uuidv5("aws-question-433", uuidv5.URL),
     text: "Which service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs?",
     options: [
       "Amazon CloudWatch.",
@@ -5603,10 +5603,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS CloudTrail records user activity and API usage, enabling auditing and tracking of events across AWS services.",
+      "AWS CloudTrail records user activity and API usage for auditing and compliance. CloudWatch (A) is for monitoring metrics, Config (C) tracks resource configurations, and Health (D) provides health information. More info: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
   },
   {
-    id: uuidv5("aws-question-842", uuidv5.URL),
+    id: uuidv5("aws-question-434", uuidv5.URL),
     text: "Where can AWS compliance and certification reports be downloaded?",
     options: [
       "AWS Artifact.",
@@ -5616,10 +5616,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Artifact is the service that provides access to AWS compliance and certification reports, including SOC reports, ISO certifications, and other industry standards.",
+      "AWS Artifact provides access to compliance and certification reports. Concierge (B) is for enterprise support, Certificate Manager (C) manages SSL/TLS certificates, and Trusted Advisor (D) gives best practice recommendations. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-843", uuidv5.URL),
+    id: uuidv5("aws-question-435", uuidv5.URL),
     text: "The financial benefits of using AWS are: (Select TWO)",
     options: [
       "Reduced Total Cost of Ownership (TCO).",
@@ -5630,10 +5630,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS reduces TCO by eliminating the need for on-premises hardware and associated maintenance costs, while reducing opex with pay-as-you-go pricing and elastic scalability.",
+      "AWS reduces TCO by eliminating the need for on-premises hardware and reduces opex with pay-as-you-go pricing. Capex (B) increases with traditional IT, and deferred payment plans (D) and credit lines (E) are not standard AWS benefits. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-844", uuidv5.URL),
+    id: uuidv5("aws-question-436", uuidv5.URL),
     text: "Which AWS service can serve a static website?",
     options: [
       "Amazon S3.",
@@ -5643,10 +5643,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon S3 (Simple Storage Service) can be used to host static websites by enabling static website hosting in the S3 bucket settings.",
+      "Amazon S3 can host static websites by enabling static website hosting on a bucket. Route 53 (B) is DNS, QuickSight (C) is analytics, and X-Ray (D) is for tracing. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html",
   },
   {
-    id: uuidv5("aws-question-845", uuidv5.URL),
+    id: uuidv5("aws-question-437", uuidv5.URL),
     text: "What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Select TWO)",
     options: [
       "Companies can deploy applications in multiple AWS Regions to reduce latency.",
@@ -5657,10 +5657,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "Deploying in multiple AWS Regions and using Amazon CloudFront with its edge locations help reduce latency for users globally by delivering content from locations closer to them.",
+      "Deploying in multiple AWS Regions and using Amazon CloudFront's global edge locations both reduce latency for global customers. Translate (B) and Comprehend (D) are language services, and ELB (E) does not distribute traffic across regions. More info: https://aws.amazon.com/about-aws/global-infrastructure/ and https://aws.amazon.com/cloudfront/features/",
   },
   {
-    id: uuidv5("aws-question-846", uuidv5.URL),
+    id: uuidv5("aws-question-438", uuidv5.URL),
     text: "Which of the following are main components of the AWS global infrastructure? (Select TWO)",
     options: [
       "Resource groups.",
@@ -5671,10 +5671,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "AWS global infrastructure consists of Regions, which are geographical locations, and Availability Zones, which are isolated data centers within those regions.",
+      "Regions and Availability Zones are the main components of AWS global infrastructure. Resource groups (A), security groups (C), and AMIs (E) are not infrastructure components. More info: https://aws.amazon.com/about-aws/global-infrastructure/",
   },
   {
-    id: uuidv5("aws-question-847", uuidv5.URL),
+    id: uuidv5("aws-question-439", uuidv5.URL),
     text: "What is the AWS customer responsible for according to the AWS shared responsibility model?",
     options: [
       "Physical access controls.",
@@ -5684,10 +5684,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "In the shared responsibility model, customers are responsible for data encryption, both at rest and in transit, within their environment.",
+      "Customers are responsible for data encryption in the shared responsibility model. AWS handles physical access, device disposal, and environmental controls. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-848", uuidv5.URL),
+    id: uuidv5("aws-question-440", uuidv5.URL),
     text: "If each department within a company has its own AWS account, what is one way to enable consolidated billing?",
     options: [
       "Use AWS Budgets on each account to pay only to budget.",
@@ -5697,10 +5697,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Organizations allows you to consolidate billing by linking multiple AWS accounts into one master payer account, enabling centralized billing.",
+      "AWS Organizations allows consolidated billing by linking multiple accounts under one payer account. Budgets (A) are for cost control, Support (B) does not consolidate bills, and S3/Redshift (D) is not a billing solution. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-849", uuidv5.URL),
+    id: uuidv5("aws-question-441", uuidv5.URL),
     text: "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?",
     options: [
       "Project management.",
@@ -5710,10 +5710,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "When comparing AWS TCO with on-premises TCO, data center security is included in the cost, as it encompasses the physical security of the infrastructure in a data center.",
+      "Data center security is included in on-premises TCO because it covers the physical security of the infrastructure, which AWS manages in the cloud. Project management (A) and software development (D) are not infrastructure costs, and antivirus licensing (B) is a software cost. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-850", uuidv5.URL),
+    id: uuidv5("aws-question-442", uuidv5.URL),
     text: "What is the benefit of using AWS managed services, such as Amazon ElastiCache and Amazon Relational Database Service (Amazon RDS)?",
     options: [
       "They require the customer to monitor and replace failing instances.",
@@ -5723,10 +5723,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Managed Services simplify patching and updating underlying operating systems, ensuring that critical security patches and updates are applied consistently.",
+      "AWS managed services simplify patching and updating the underlying operating systems, ensuring security and compliance. Customers are still responsible for instance sizing and monitoring. More info: https://aws.amazon.com/managed-services/",
   },
   {
-    id: uuidv5("aws-question-851", uuidv5.URL),
+    id: uuidv5("aws-question-443", uuidv5.URL),
     text: "Which services can be used across hybrid AWS Cloud architectures? (Select TWO)",
     options: [
       "Amazon Route 53.",
@@ -5737,10 +5737,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "Amazon Route 53 can be used for DNS management in hybrid architectures, and Virtual Private Gateway allows secure connectivity between an on-premises network and AWS.",
+      "Amazon Route 53 (DNS) and Virtual Private Gateway (VPN connectivity) are both used in hybrid architectures to connect on-premises and AWS resources. Classic Load Balancer (C), Auto Scaling (D), and CloudWatch metrics (E) are not specifically hybrid features. More info: https://aws.amazon.com/architecture/hybrid/",
   },
   {
-    id: uuidv5("aws-question-852", uuidv5.URL),
+    id: uuidv5("aws-question-444", uuidv5.URL),
     text: "Which statement best describes Elastic Load Balancing?",
     options: [
       "It translates a domain name into an IP address using DNC.",
@@ -5750,10 +5750,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Elastic Load Balancing (ELB) distributes incoming traffic across multiple Amazon EC2 instances to ensure high availability and fault tolerance.",
+      "Elastic Load Balancing distributes incoming traffic across multiple EC2 instances for high availability and fault tolerance. It does not translate domain names (A), collect metrics (C), or scale instances (D). More info: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html",
   },
   {
-    id: uuidv5("aws-question-853", uuidv5.URL),
+    id: uuidv5("aws-question-445", uuidv5.URL),
     text: "Which of the following is a fast and reliable NoSQL database service?",
     options: [
       "Amazon Redshift.",
@@ -5763,10 +5763,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon DynamoDB is a fast, fully managed NoSQL database service designed for applications that require low-latency data access at any scale.",
+      "Amazon DynamoDB is a fully managed, fast, and reliable NoSQL database service. Redshift (A) is a data warehouse, RDS (B) is relational, and S3 (D) is object storage. More info: https://aws.amazon.com/dynamodb/",
   },
   {
-    id: uuidv5("aws-question-854", uuidv5.URL),
+    id: uuidv5("aws-question-446", uuidv5.URL),
     text: "Which AWS service would you use to obtain compliance reports and certificates?",
     options: [
       "AWS Artifact.",
@@ -5776,10 +5776,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Artifact is a service that provides on-demand access to AWS compliance reports and certificates.",
+      "AWS Artifact provides on-demand access to AWS compliance reports and certificates. Lambda (B) is for serverless compute, Inspector (C) is for security assessment, and Certificate Manager (D) manages SSL/TLS certificates. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-855", uuidv5.URL),
+    id: uuidv5("aws-question-447", uuidv5.URL),
     text: "Which AWS services are defined as global instead of regional? (Select TWO)",
     options: [
       "Amazon Route 53.",
@@ -5790,10 +5790,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "Amazon Route 53 and Amazon CloudFront are global services, meaning they are available across all regions for DNS and content delivery, respectively.",
+      "Amazon Route 53 (DNS) and Amazon CloudFront (CDN) are global services, available across all regions. EC2 (B), S3 (C), and DynamoDB (E) are regional services. More info: https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html",
   },
   {
-    id: uuidv5("aws-question-856", uuidv5.URL),
+    id: uuidv5("aws-question-448", uuidv5.URL),
     text: "How would an AWS customer easily apply common access controls to a large set of users?",
     options: [
       "Apply an IAM policy to an IAM group.",
@@ -5803,10 +5803,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "By applying an IAM policy to an IAM group, an AWS customer can efficiently manage access controls for multiple users belonging to the same group.",
+      "Applying an IAM policy to an IAM group allows centralized management of permissions for multiple users. Policies on roles (B) are for assumed identities, and Cognito (D) is for federated identities. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
   },
   {
-    id: uuidv5("aws-question-857", uuidv5.URL),
+    id: uuidv5("aws-question-449", uuidv5.URL),
     text: "Which of the following is an important architectural design principle when designing cloud applications?",
     options: [
       "Use multiple Availability Zones.",
@@ -5816,10 +5816,10 @@ const exam9: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Using multiple Availability Zones is a key design principle to ensure high availability and fault tolerance in cloud applications.",
+      "Using multiple Availability Zones ensures high availability and fault tolerance. Tightly coupled components (B) reduce flexibility, open source (C) is a technology choice, and extra capacity (D) can be wasteful. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability-pillar.html",
   },
   {
-    id: uuidv5("aws-question-858", uuidv5.URL),
+    id: uuidv5("aws-question-450", uuidv5.URL),
     text: "Which service allows a company with multiple AWS accounts to combine its usage to obtain volume discounts?",
     options: [
       "AWS Server Migration Service.",
@@ -5829,7 +5829,7 @@ const exam9: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Organizations enables companies with multiple AWS accounts to combine their usage for volume discounts and centralized billing management.",
+      "AWS Organizations enables consolidated billing and volume discounts for multiple accounts. Server Migration Service (A) is for migrations, Budgets (C) is for cost control, and Trusted Advisor (D) is for best practice checks. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
 ];
 
