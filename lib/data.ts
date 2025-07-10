@@ -6500,7 +6500,7 @@ const exam10: Question[] = [
 
 const exam11: Question[] = [
   {
-    id: uuidv5("aws-question-910", uuidv5.URL),
+    id: uuidv5("aws-question-501", uuidv5.URL),
     text: "Which of the following can an AWS customer use to launch a new Amazon Relational Database Service (Amazon RDS) cluster? (Select TWO)",
     options: [
       "AWS Concierge.",
@@ -6511,10 +6511,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "AWS CloudFormation can automate the provisioning of resources, including RDS clusters, while the AWS Management Console allows users to launch and manage services manually.",
+      "AWS CloudFormation can automate the provisioning of resources, including RDS clusters, while the AWS Management Console allows users to launch and manage services manually. Concierge (A) is for enterprise support, S3 (C) is for storage, and EC2 Auto Scaling (D) is for scaling EC2 instances. More info: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html and https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html",
   },
   {
-    id: uuidv5("aws-question-911", uuidv5.URL),
+    id: uuidv5("aws-question-502", uuidv5.URL),
     text: "Which of the following Reserved Instance (RI) pricing models provides the highest average savings compared to On-Demand pricing?",
     options: [
       "One-year, No Upfront, Standard RI pricing.",
@@ -6524,10 +6524,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The Three-year, All Upfront, Standard RI pricing model offers the highest savings because it combines a long commitment period with full upfront payment.",
+      "The Three-year, All Upfront, Standard RI pricing model offers the highest savings because it combines a long commitment period with full upfront payment. The other options offer less savings due to shorter terms, partial payment, or convertible flexibility. More info: https://aws.amazon.com/ec2/pricing/reserved-instances/",
   },
   {
-    id: uuidv5("aws-question-912", uuidv5.URL),
+    id: uuidv5("aws-question-503", uuidv5.URL),
     text: "Which of the following are features of Amazon CloudWatch Logs? (Select TWO)",
     options: [
       "Summaries by Amazon Simple Notification Service (Amazon SNS).",
@@ -6538,18 +6538,18 @@ const exam11: Question[] = [
     ],
     correctAnswers: [3, 4],
     explanation:
-      "Amazon CloudWatch Logs provides real-time monitoring of log data and allows users to set adjustable retention periods for log data storage.",
+      "Amazon CloudWatch Logs provides real-time monitoring of log data and allows users to set adjustable retention periods for log data storage. SNS (A) is for notifications, Elasticsearch analytics (B) is not free, and CloudWatch Logs is not provided at no charge (C). More info: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html",
   },
   {
-    id: uuidv5("aws-question-913", uuidv5.URL),
+    id: uuidv5("aws-question-504", uuidv5.URL),
     text: "Which of the following is an AWS-managed compute service?",
     options: ["Amazon SWF.", "Amazon EC2.", "AWS Lambda.", "Amazon Aurora."],
     correctAnswers: [2],
     explanation:
-      "AWS Lambda is a managed serverless compute service that allows users to run code without provisioning or managing servers.",
+      "AWS Lambda is a managed serverless compute service that allows users to run code without provisioning or managing servers. SWF (A) is for workflows, EC2 (B) is not fully managed, and Aurora (D) is a managed database. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-914", uuidv5.URL),
+    id: uuidv5("aws-question-505", uuidv5.URL),
     text: "A company wants to reduce the physical compute footprint that developers use to run code. Which service would meet that need by enabling serverless architectures?",
     options: [
       "Amazon Elastic Compute Cloud (Amazon EC2).",
@@ -6559,10 +6559,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Lambda is a serverless compute service that enables developers to run code without provisioning physical or virtual servers, thereby reducing the compute footprint.",
+      "AWS Lambda is a serverless compute service that enables developers to run code without provisioning physical or virtual servers, thereby reducing the compute footprint. EC2 (A) requires server management, DynamoDB (C) is a database, and CodeCommit (D) is for source control. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-915", uuidv5.URL),
+    id: uuidv5("aws-question-506", uuidv5.URL),
     text: "Which of the following is the customer’s responsibility under the AWS shared responsibility model?",
     options: [
       "Patching underlying infrastructure.",
@@ -6572,10 +6572,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Under the AWS shared responsibility model, customers are responsible for managing and patching the operating systems and applications on their Amazon EC2 instances.",
+      "Under the AWS shared responsibility model, customers are responsible for managing and patching the operating systems and applications on their Amazon EC2 instances. AWS handles the underlying infrastructure and physical security. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-916", uuidv5.URL),
+    id: uuidv5("aws-question-507", uuidv5.URL),
     text: "According to the AWS shared responsibility model who is responsible for configuration management?",
     options: [
       "It is solely the responsibility of the customer.",
@@ -6585,10 +6585,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Configuration management is a shared responsibility. AWS manages the infrastructure configuration, while customers are responsible for configuring their applications and systems.",
+      "Configuration management is a shared responsibility. AWS manages the infrastructure configuration, while customers are responsible for configuring their applications and systems. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-917", uuidv5.URL),
+    id: uuidv5("aws-question-508", uuidv5.URL),
     text: "Which security service automatically recognizes and classifies sensitive data or intellectual property on AWS?",
     options: [
       "Amazon GuardDuty.",
@@ -6598,10 +6598,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Macie automatically discovers, classifies, and protects sensitive data using machine learning.",
+      "Amazon Macie automatically discovers, classifies, and protects sensitive data using machine learning. GuardDuty (A) is for threat detection, Inspector (C) is for vulnerability assessment, and Shield (D) is for DDoS protection. More info: https://aws.amazon.com/macie/",
   },
   {
-    id: uuidv5("aws-question-918", uuidv5.URL),
+    id: uuidv5("aws-question-509", uuidv5.URL),
     text: "Which of the following BEST describe the AWS pricing model? (Select TWO)",
     options: [
       "Fixed-term.",
@@ -6612,10 +6612,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "AWS operates on a pay-as-you-go pricing model with variable costs based on actual usage, eliminating upfront commitments.",
+      "AWS operates on a pay-as-you-go pricing model with variable costs based on actual usage, eliminating upfront commitments. Fixed-term (A), colocation (C), and planned (D) are not core AWS pricing models. More info: https://aws.amazon.com/pricing/",
   },
   {
-    id: uuidv5("aws-question-919", uuidv5.URL),
+    id: uuidv5("aws-question-510", uuidv5.URL),
     text: "Under the shared responsibility model, which of the following tasks are the responsibility of the AWS customer? (Select TWO)",
     options: [
       "Ensuring that application data is encrypted at rest.",
@@ -6626,10 +6626,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "Customers are responsible for securing their data, including encryption, and ensuring their teams are trained to use AWS securely. AWS handles physical security and hardware disposal.",
+      "Customers are responsible for securing their data, including encryption, and ensuring their teams are trained to use AWS securely. AWS handles physical security and hardware disposal. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-920", uuidv5.URL),
+    id: uuidv5("aws-question-511", uuidv5.URL),
     text: "A customer is using multiple AWS accounts with separate billing. How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
     options: [
       "Create one global AWS account and move all AWS resources to that account.",
@@ -6639,10 +6639,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Consolidated billing through AWS Organizations allows multiple accounts to combine usage to benefit from volume discounts while maintaining separate resources.",
+      "Consolidated billing through AWS Organizations allows multiple accounts to combine usage to benefit from volume discounts while maintaining separate resources. The other options either require resource migration or do not directly provide volume discounts. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-921", uuidv5.URL),
+    id: uuidv5("aws-question-512", uuidv5.URL),
     text: "Which Amazon EC2 pricing model offers the MOST significant discount when compared to On-Demand Instances?",
     options: [
       "A Partial Upfront Reserved Instances for a 1-year term.",
@@ -6652,10 +6652,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The All Upfront Reserved Instances for a 3-year term provides the highest discount because it combines a long commitment period with full upfront payment.",
+      "The All Upfront Reserved Instances for a 3-year term provides the highest discount because it combines a long commitment period with full upfront payment. Other options offer less savings due to shorter terms or partial payment. More info: https://aws.amazon.com/ec2/pricing/reserved-instances/",
   },
   {
-    id: uuidv5("aws-question-922", uuidv5.URL),
+    id: uuidv5("aws-question-513", uuidv5.URL),
     text: "Which AWS services should be used for read/write of constantly changing data? (Select TWO)",
     options: [
       "Amazon Glacier.",
@@ -6666,10 +6666,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "Amazon RDS provides a managed relational database service for constantly changing transactional data, while Amazon EFS is a scalable file storage service suitable for concurrent access and updates.",
+      "Amazon RDS provides a managed relational database service for constantly changing transactional data, while Amazon EFS is a scalable file storage service suitable for concurrent access and updates. Glacier (A) is for archival, Snowball (C) is for data transfer, and Redshift (D) is for analytics. More info: https://aws.amazon.com/rds/ and https://aws.amazon.com/efs/",
   },
   {
-    id: uuidv5("aws-question-923", uuidv5.URL),
+    id: uuidv5("aws-question-514", uuidv5.URL),
     text: "Which AWS service allows users to identify the changes made to a resource over time?",
     options: [
       "Amazon Inspector.",
@@ -6679,10 +6679,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Config provides a detailed view of the configuration changes and history of AWS resources over time, enabling compliance auditing and change management.",
+      "AWS Config provides a detailed view of the configuration changes and history of AWS resources over time, enabling compliance auditing and change management. Inspector (A) is for security assessment, Service Catalog (C) is for provisioning, and IAM (D) is for access management. More info: https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
   },
   {
-    id: uuidv5("aws-question-924", uuidv5.URL),
+    id: uuidv5("aws-question-515", uuidv5.URL),
     text: "According to best practices, how should an application be designed to run in the AWS Cloud?",
     options: [
       "Use tightly coupled components.",
@@ -6692,10 +6692,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Applications in the AWS Cloud should use loosely coupled components to improve scalability, reliability, and fault tolerance.",
+      "Applications in the AWS Cloud should use loosely coupled components to improve scalability, reliability, and fault tolerance. Tightly coupled or frequently coupled components reduce flexibility and resilience. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-925", uuidv5.URL),
+    id: uuidv5("aws-question-516", uuidv5.URL),
     text: "Which benefits are included with the AWS Business Support plan? (Select TWO)",
     options: [
       "24/7 assistance by way of live chat or a telephone call.",
@@ -6706,10 +6706,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "The AWS Business Support plan offers 24/7 technical assistance and an unlimited number of cases and contacts, providing flexible support options.",
+      "The AWS Business Support plan offers 24/7 technical assistance and an unlimited number of cases and contacts. A Technical Account Manager (B) and annual reviews (E) are part of the Enterprise plan, and 15-minute response time (D) is for Enterprise critical cases. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-926", uuidv5.URL),
+    id: uuidv5("aws-question-517", uuidv5.URL),
     text: "Which of the following is an AWS managed Domain Name System (DNS) web service?",
     options: [
       "Amazon Route 53.",
@@ -6719,10 +6719,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon Route 53 is a managed DNS web service that provides domain registration, traffic routing, and health checks.",
+      "Amazon Route 53 is a managed DNS web service that provides domain registration, traffic routing, and health checks. Neptune (B) is a graph database, SageMaker (C) is for machine learning, and Lightsail (D) is for simple cloud hosting. More info: https://aws.amazon.com/route53/",
   },
   {
-    id: uuidv5("aws-question-927", uuidv5.URL),
+    id: uuidv5("aws-question-518", uuidv5.URL),
     text: "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server. When Amazon EC2 instance pricing option will meet these requirements?",
     options: [
       "Dedicated Hosts.",
@@ -6732,10 +6732,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Dedicated Hosts provide physical servers fully dedicated to the user's use, which is ideal for meeting compliance and software licensing requirements.",
+      "Dedicated Hosts provide physical servers fully dedicated to the user's use, which is ideal for meeting compliance and software licensing requirements. Dedicated Instances (B) share hardware, Spot (C) and Reserved (D) are purchasing options. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html",
   },
   {
-    id: uuidv5("aws-question-928", uuidv5.URL),
+    id: uuidv5("aws-question-519", uuidv5.URL),
     text: "Which of the Reserved Instance (RI) pricing models can change the attributes of the RI as long as the exchange results in the creation of RIs of equal or greater value?",
     options: [
       "Dedicated RIs.",
@@ -6745,10 +6745,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Convertible Reserved Instances allow customers to modify the instance attributes as long as the new RIs are of equal or greater value.",
+      "Convertible Reserved Instances allow customers to modify the instance attributes as long as the new RIs are of equal or greater value. Standard RIs (D) do not allow this flexibility. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html",
   },
   {
-    id: uuidv5("aws-question-929", uuidv5.URL),
+    id: uuidv5("aws-question-520", uuidv5.URL),
     text: "Which service is best for storing common database query results, which helps to alleviate database access load?",
     options: [
       "Amazon Machine Learning.",
@@ -6758,10 +6758,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon ElastiCache is an in-memory data store that can cache frequently accessed data, such as common database query results, to improve application performance and reduce database load.",
+      "Amazon ElastiCache is an in-memory data store that can cache frequently accessed data, such as common database query results, to improve application performance and reduce database load. SQS (B) is for messaging, EC2 Instance Store (D) is ephemeral storage, and Machine Learning (A) is for ML workloads. More info: https://aws.amazon.com/elasticache/",
   },
   {
-    id: uuidv5("aws-question-930", uuidv5.URL),
+    id: uuidv5("aws-question-521", uuidv5.URL),
     text: "When should a company consider using Amazon EC2 Spot Instances? (Select TWO)",
     options: [
       "For non-production applications.",
@@ -6772,10 +6772,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "EC2 Spot Instances are suitable for applications that are flexible and fault-tolerant, such as non-production applications or workloads that can tolerate interruptions.",
+      "EC2 Spot Instances are suitable for applications that are flexible and fault-tolerant, such as non-production applications or workloads that can tolerate interruptions. They are not recommended for stateful, sensitive, or interruption-intolerant workloads. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
   },
   {
-    id: uuidv5("aws-question-931", uuidv5.URL),
+    id: uuidv5("aws-question-522", uuidv5.URL),
     text: "Which AWS tools assist with estimating costs? (Select three)",
     options: [
       "Detailed billing report.",
@@ -6786,10 +6786,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1, 2, 3],
     explanation:
-      "The Cost Allocation tags, AWS Simple Monthly Calculator, and AWS Total Cost of Ownership (TCO) Calculator are helpful tools for estimating and managing AWS costs.",
+      "Cost allocation tags, the AWS Simple Monthly Calculator, and the AWS TCO Calculator are all tools that help estimate and manage AWS costs. Detailed billing reports (A) are for analysis, and Cost Estimator (E) is not an official AWS tool. More info: https://aws.amazon.com/pricing/calculator/ and https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-932", uuidv5.URL),
+    id: uuidv5("aws-question-523", uuidv5.URL),
     text: "A company wants to focus on business activities instead of managing compute and capacity. Which AWS service can be used to automatically add or remove Amazon EC2 instances based on demand?",
     options: [
       "Elastic Load Balancer.",
@@ -6799,18 +6799,18 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon EC2 Auto Scaling allows users to automatically scale EC2 instances up or down based on the demand, minimizing the need for manual capacity management.",
+      "Amazon EC2 Auto Scaling automatically adjusts the number of EC2 instances based on demand, reducing the need for manual capacity management. Elastic Load Balancer (A) distributes traffic, Route 53 (C) is DNS, and CloudFront (D) is a CDN. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   },
   {
-    id: uuidv5("aws-question-933", uuidv5.URL),
+    id: uuidv5("aws-question-524", uuidv5.URL),
     text: "Which is the minimum AWS Support plan that includes Infrastructure Event Management without additional costs?",
     options: ["Enterprise.", "Business.", "Developer.", "Basic."],
     correctAnswers: [0],
     explanation:
-      "The Enterprise Support plan includes Infrastructure Event Management without additional costs, providing customers with proactive support for managing complex infrastructure changes.",
+      "The Enterprise Support plan includes Infrastructure Event Management at no additional cost. Business, Developer, and Basic plans do not include this feature. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-934", uuidv5.URL),
+    id: uuidv5("aws-question-525", uuidv5.URL),
     text: "Access keys in AWS Identity and Access Management (IM1) are used to:",
     options: [
       "Log in to the AWS Management Console.",
@@ -6820,10 +6820,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS access keys are used to make programmatic API calls to AWS services, allowing for automation of tasks such as managing resources and data.",
+      "AWS access keys are used to make programmatic API calls to AWS services. They are not used for console login, EC2 login, or CodeCommit authentication. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
   },
   {
-    id: uuidv5("aws-question-935", uuidv5.URL),
+    id: uuidv5("aws-question-526", uuidv5.URL),
     text: "Which AWS service can be used to query stored datasets directly from Amazon S3 using standard SQL?",
     options: [
       "AWS Glue.",
@@ -6833,10 +6833,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon Athena is a serverless query service that allows users to run SQL queries directly on data stored in Amazon S3, simplifying the process of analyzing large datasets.",
+      "Amazon Athena is a serverless query service that allows users to run SQL queries directly on data stored in Amazon S3. Glue (A) is for ETL, Data Pipeline (B) is for data workflows, and CloudSearch (C) is for search. More info: https://aws.amazon.com/athena/",
   },
   {
-    id: uuidv5("aws-question-936", uuidv5.URL),
+    id: uuidv5("aws-question-527", uuidv5.URL),
     text: "How does AWS shorten the time to provision IT resources?",
     options: [
       "It supplies an online IT ticketing platform for resource requests.",
@@ -6846,10 +6846,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS accelerates the provisioning of IT resources by providing APIs and automation tools to programmatically provision resources, enabling faster deployments.",
+      "AWS shortens provisioning time by allowing resources to be provisioned programmatically via APIs and automation tools. The other options are not core AWS features. More info: https://aws.amazon.com/quickstart/",
   },
   {
-    id: uuidv5("aws-question-937", uuidv5.URL),
+    id: uuidv5("aws-question-528", uuidv5.URL),
     text: "Which AWS services can be used to gather information about AWS account activity? (Select TWO)",
     options: [
       "Amazon CloudFront.",
@@ -6860,10 +6860,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "AWS CloudTrail logs account activity and user actions, while Amazon CloudWatch monitors metrics and logs for various AWS services, providing insights into account activity.",
+      "AWS CloudTrail logs account activity and user actions, while Amazon CloudWatch monitors metrics and logs for various AWS services. CloudFront (A) is a CDN, Cloud9 (B) is an IDE, and CloudHSM (D) is for key management. More info: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html and https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   },
   {
-    id: uuidv5("aws-question-938", uuidv5.URL),
+    id: uuidv5("aws-question-529", uuidv5.URL),
     text: "Which of the following are characteristics of Amazon S3? (Select TWO)",
     options: [
       "A global file system.",
@@ -6874,10 +6874,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "Amazon S3 is an object store that offers highly durable and scalable storage, making it suitable for large-scale data storage and retrieval across AWS regions.",
+      "Amazon S3 is an object store that offers highly durable and scalable storage. It is not a global file system, local file store, or network file system. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-939", uuidv5.URL),
+    id: uuidv5("aws-question-530", uuidv5.URL),
     text: "A user wants guidance on possible savings when migrating from on-premises to AWS. Which tool is suitable for this scenario?",
     options: [
       "AWS Budgets.",
@@ -6887,10 +6887,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The AWS Total Cost of Ownership (TCO) Calculator helps users estimate the cost savings of migrating from on-premises infrastructure to AWS by comparing their existing infrastructure costs with AWS costs.",
+      "The AWS Total Cost of Ownership (TCO) Calculator helps users estimate the cost savings of migrating from on-premises infrastructure to AWS. Budgets (A) and Cost Explorer (B) are for cost management, and Well-Architected Tool (D) is for best practices. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-940", uuidv5.URL),
+    id: uuidv5("aws-question-531", uuidv5.URL),
     text: "Which of the following services is in the category of AWS serverless platform?",
     options: [
       "Amazon EMR.",
@@ -6900,10 +6900,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, automatically scaling to meet demand.",
+      "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, automatically scaling to meet demand. EMR (A) is for big data, ELB (B) is for load balancing, and Mobile Hub (D) is for mobile app development. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-941", uuidv5.URL),
+    id: uuidv5("aws-question-532", uuidv5.URL),
     text: "The use of what AWS feature or service allows companies to track and categorize spending on a detailed level?",
     options: [
       "Cost allocation tags.",
@@ -6913,10 +6913,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Cost allocation tags allow companies to categorize and track their AWS spending at a granular level, helping in cost management and analysis.",
+      "Cost allocation tags allow companies to categorize and track their AWS spending at a granular level, helping in cost management and analysis. Consolidated billing (B) aggregates costs, Budgets (C) sets limits, and Marketplace (D) is for software procurement. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
   },
   {
-    id: uuidv5("aws-question-942", uuidv5.URL),
+    id: uuidv5("aws-question-533", uuidv5.URL),
     text: "Which of the following inspects AWS environments to find opportunities that can save money for users and also improve system performance?",
     options: [
       "AWS Cost Explorer.",
@@ -6926,10 +6926,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Trusted Advisor analyzes AWS environments and provides recommendations on cost savings, security, performance, and fault tolerance.",
+      "AWS Trusted Advisor analyzes AWS environments and provides recommendations on cost savings, security, performance, and fault tolerance. Cost Explorer (A) is for cost analysis, consolidated billing (C) is for billing, and detailed billing (D) is for reporting. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-943", uuidv5.URL),
+    id: uuidv5("aws-question-534", uuidv5.URL),
     text: "Web servers running on Amazon EC2 access a legacy application running in a corporate data center. What term would describe this model?",
     options: [
       "Cloud-native.",
@@ -6939,10 +6939,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "A hybrid architecture integrates cloud-based resources with on-premises or legacy infrastructure, allowing workloads to run across both environments.",
+      "A hybrid architecture integrates cloud-based resources with on-premises or legacy infrastructure, allowing workloads to run across both environments. Cloud-native (A) is fully cloud, partner network (B) is for AWS partners, and IaaS (D) is a service model. More info: https://aws.amazon.com/architecture/hybrid/",
   },
   {
-    id: uuidv5("aws-question-944", uuidv5.URL),
+    id: uuidv5("aws-question-535", uuidv5.URL),
     text: "What technology enables compute capacity to adjust as loads change?",
     options: [
       "Load balancing.",
@@ -6952,10 +6952,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Auto Scaling automatically adjusts the number of Amazon EC2 instances to handle changes in load, ensuring that resources scale efficiently and cost-effectively.",
+      "Auto Scaling automatically adjusts the number of Amazon EC2 instances to handle changes in load, ensuring that resources scale efficiently and cost-effectively. Load balancing (A) distributes traffic, failover (B) is for redundancy, and round robin (C) is a routing method. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   },
   {
-    id: uuidv5("aws-question-945", uuidv5.URL),
+    id: uuidv5("aws-question-536", uuidv5.URL),
     text: "Which AWS service is a managed NoSQL database?",
     options: [
       "Amazon Redshift.",
@@ -6965,10 +6965,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.",
+      "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. Redshift (A) is a data warehouse, Aurora (C) and RDS (D) are relational databases. More info: https://aws.amazon.com/dynamodb/",
   },
   {
-    id: uuidv5("aws-question-946", uuidv5.URL),
+    id: uuidv5("aws-question-537", uuidv5.URL),
     text: "Which of the following is a correct relationship between regions, Availability Zones, and edge locations?",
     options: [
       "Data centers contain regions.",
@@ -6978,10 +6978,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS regions are made up of multiple Availability Zones, which are designed to provide high availability. Edge locations are used for services like CloudFront and Route 53, but they are not directly inside Availability Zones.",
+      "AWS regions are made up of multiple Availability Zones, which are designed to provide high availability. Edge locations are used for services like CloudFront and Route 53, but they are not directly inside Availability Zones. More info: https://aws.amazon.com/about-aws/global-infrastructure/",
   },
   {
-    id: uuidv5("aws-question-947", uuidv5.URL),
+    id: uuidv5("aws-question-538", uuidv5.URL),
     text: "What approach to transcoding a large number of individual video files adheres to AWS architecture principles?",
     options: [
       "Using many instances in parallel.",
@@ -6991,10 +6991,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS recommends using a distributed approach to transcoding, leveraging parallel processing across many instances to meet scalability and performance requirements.",
+      "AWS recommends using a distributed approach to transcoding, leveraging parallel processing across many instances to meet scalability and performance requirements. The other options do not scale as efficiently. More info: https://aws.amazon.com/solutions/case-studies/elemental-media-convert/",
   },
   {
-    id: uuidv5("aws-question-948", uuidv5.URL),
+    id: uuidv5("aws-question-539", uuidv5.URL),
     text: "Which AWS services can host a Microsoft SQL Server database? (Select TWO)",
     options: [
       "Amazon EC2.",
@@ -7005,10 +7005,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "Amazon EC2 and Amazon RDS can both host Microsoft SQL Server databases, with RDS providing managed database capabilities for easier maintenance.",
+      "Amazon EC2 and Amazon RDS can both host Microsoft SQL Server databases, with RDS providing managed database capabilities for easier maintenance. Aurora (C) is MySQL/PostgreSQL compatible, Redshift (D) is for analytics, and S3 (E) is object storage. More info: https://aws.amazon.com/rds/sqlserver/",
   },
   {
-    id: uuidv5("aws-question-949", uuidv5.URL),
+    id: uuidv5("aws-question-540", uuidv5.URL),
     text: "Which AWS IAM feature allows developers to access AWS services through the AWS CLI?",
     options: [
       "API keys.",
@@ -7018,10 +7018,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Access keys are used by developers to authenticate programmatic access to AWS services through the AWS CLI and APIs.",
+      "Access keys are used by developers to authenticate programmatic access to AWS services through the AWS CLI and APIs. API keys (A) are for API Gateway, usernames/passwords (C) are for console login, and SSH keys (D) are for EC2 access. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
   },
   {
-    id: uuidv5("aws-question-950", uuidv5.URL),
+    id: uuidv5("aws-question-541", uuidv5.URL),
     text: "The user is fully responsible for which action when running workloads on AWS?",
     options: [
       "Patching the infrastructure components.",
@@ -7031,18 +7031,18 @@ const exam11: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "In the AWS shared responsibility model, users are responsible for the configuration of application-level traffic routing and other application-level concerns.",
+      "In the AWS shared responsibility model, users are responsible for the configuration of application-level traffic routing and other application-level concerns. AWS manages the underlying infrastructure, patching, and physical controls. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-951", uuidv5.URL),
+    id: uuidv5("aws-question-542", uuidv5.URL),
     text: "Which AWS support plan includes a dedicated Technical Account Manager?",
     options: ["Developer.", "Enterprise.", "Business.", "Basic."],
     correctAnswers: [1],
     explanation:
-      "The AWS Enterprise support plan includes a dedicated Technical Account Manager (TAM) to provide proactive support and guidance for customers.",
+      "The AWS Enterprise support plan includes a dedicated Technical Account Manager (TAM) to provide proactive support and guidance for customers. The other plans do not include a TAM. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-952", uuidv5.URL),
+    id: uuidv5("aws-question-543", uuidv5.URL),
     text: "What time-savings advantage is offered with the use of Amazon Rekognition?",
     options: [
       "Amazon Rekognition provides automatic watermarking of images.",
@@ -7052,10 +7052,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Rekognition automates the detection of objects and scenes in images, which saves time compared to manually tagging or analyzing visual data.",
+      "Amazon Rekognition automates the detection of objects and scenes in images, which saves time compared to manually tagging or analyzing visual data. The other options are not features of Rekognition. More info: https://aws.amazon.com/rekognition/",
   },
   {
-    id: uuidv5("aws-question-953", uuidv5.URL),
+    id: uuidv5("aws-question-544", uuidv5.URL),
     text: "Which AWS service can be used to automatically scale an application up and down without making capacity planning decisions?",
     options: [
       "Amazon AutoScaling.",
@@ -7065,10 +7065,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon AutoScaling automatically adjusts the number of instances running based on demand, eliminating the need for manual capacity planning decisions.",
+      "Amazon AutoScaling automatically adjusts the number of instances running based on demand, eliminating the need for manual capacity planning decisions. Redshift (B) is a data warehouse, CloudTrail (C) is for logging, and Lambda (D) is serverless compute. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   },
   {
-    id: uuidv5("aws-question-954", uuidv5.URL),
+    id: uuidv5("aws-question-545", uuidv5.URL),
     text: "Amazon Relational Database Service (Amazon RDS) offers which of the following benefits over traditional database management?",
     options: [
       "AWS manages the data stored in Amazon RDS tables.",
@@ -7078,10 +7078,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "With Amazon RDS, AWS manages tasks such as patching, backups, and maintenance of the underlying operating system, reducing the operational overhead for users.",
+      "With Amazon RDS, AWS manages tasks such as patching, backups, and maintenance of the underlying operating system, reducing the operational overhead for users. Data management (A) and database type (D) are user responsibilities, and auto-scaling (C) is not automatic for instance types. More info: https://aws.amazon.com/rds/features/",
   },
   {
-    id: uuidv5("aws-question-955", uuidv5.URL),
+    id: uuidv5("aws-question-546", uuidv5.URL),
     text: "A company’s web application currently has light dependencies on underlying components so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
     options: [
       "Implementing elasticity enabling the application to scale up or scale down as demand changes.",
@@ -7091,10 +7091,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Decoupling components and isolating failures helps ensure that when one component fails, it does not impact the entire application, improving system reliability.",
+      "Decoupling components and isolating failures helps ensure that when one component fails, it does not impact the entire application, improving system reliability. The other options do not address the root cause. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-956", uuidv5.URL),
+    id: uuidv5("aws-question-547", uuidv5.URL),
     text: "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
     options: [
       "AWS Partner Network Technology Partners.",
@@ -7104,10 +7104,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Partner Network (APN) Consulting Partners provide professional services, including design, implementation, and ongoing management of AWS workloads for customers.",
+      "AWS Partner Network (APN) Consulting Partners provide professional services, including design, implementation, and ongoing management of AWS workloads for customers. Technology Partners (A) provide software, Marketplace (B) is for software procurement, and Service Catalog (D) is for managing approved products. More info: https://aws.amazon.com/partners/",
   },
   {
-    id: uuidv5("aws-question-957", uuidv5.URL),
+    id: uuidv5("aws-question-548", uuidv5.URL),
     text: "Which service stores objects, provides real-time access to those objects, and offers versioning and lifecycle capabilities?",
     options: [
       "Amazon Glacier.",
@@ -7117,10 +7117,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon S3 is a scalable object storage service that provides features such as versioning, lifecycle policies, and real-time access to stored data.",
+      "Amazon S3 is a scalable object storage service that provides features such as versioning, lifecycle policies, and real-time access to stored data. Glacier (A) is for archival, Storage Gateway (B) is for hybrid storage, and EBS (D) is block storage. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-958", uuidv5.URL),
+    id: uuidv5("aws-question-549", uuidv5.URL),
     text: "Distributing workloads across multiple Availability Zones supports which cloud architecture design principle?",
     options: [
       "Implement automation.",
@@ -7130,10 +7130,10 @@ const exam11: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Distributing workloads across multiple Availability Zones ensures fault tolerance and resilience, a key aspect of designing for failure in the cloud.",
+      "Distributing workloads across multiple Availability Zones ensures fault tolerance and resilience, a key aspect of designing for failure in the cloud. The other options are important but not directly related to this principle. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability-pillar.html",
   },
   {
-    id: uuidv5("aws-question-959", uuidv5.URL),
+    id: uuidv5("aws-question-550", uuidv5.URL),
     text: "Which service should a customer use to consolidate and centrally manage multiple AWS accounts?",
     options: [
       "AWS IAM.",
@@ -7143,7 +7143,7 @@ const exam11: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Organizations allows customers to consolidate billing, manage accounts, and implement policies for multiple AWS accounts in a single organization.",
+      "AWS Organizations allows customers to consolidate billing, manage accounts, and implement policies for multiple AWS accounts in a single organization. IAM (A) is for identity management, Schema Conversion Tool (C) is for database migration, and Config (D) is for resource configuration. More info: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   },
 ];
 
