@@ -7149,7 +7149,7 @@ const exam11: Question[] = [
 
 const exam12: Question[] = [
   {
-    id: uuidv5("aws-question-960", uuidv5.URL),
+    id: uuidv5("aws-question-551", uuidv5.URL),
     text: "Which of the following components of the AWS Global Infrastructure consists of one or more discrete data centers interconnected through low latency links?",
     options: [
       "Availability Zone",
@@ -7159,10 +7159,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "An Availability Zone consists of one or more discrete data centers interconnected through low-latency links, providing high availability and fault tolerance.",
+      "An Availability Zone consists of one or more discrete data centers interconnected through low-latency links, providing high availability and fault tolerance. Edge locations (B) are for content delivery, regions (C) are collections of AZs, and private networking (D) is not an infrastructure component. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-961", uuidv5.URL),
+    id: uuidv5("aws-question-552", uuidv5.URL),
     text: "One benefit of On-Demand Amazon Elastic Compute Cloud (Amazon EC2) pricing is:",
     options: [
       "The ability to bid for a lower hourly cost.",
@@ -7172,10 +7172,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "With On-Demand EC2 instances, you pay only for the compute time you use without any long-term commitments, making it flexible and cost-effective for unpredictable workloads.",
+      "With On-Demand EC2 instances, you pay only for the compute time you use without any long-term commitments, making it flexible and cost-effective for unpredictable workloads. The other options describe Spot, Reserved, or incorrect models. More info: https://aws.amazon.com/ec2/pricing/on-demand/",
   },
   {
-    id: uuidv5("aws-question-962", uuidv5.URL),
+    id: uuidv5("aws-question-553", uuidv5.URL),
     text: "What can assist in evaluating an application for migration to the cloud? (Select TWO)",
     options: [
       "AWS Trusted Advisor.",
@@ -7186,10 +7186,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "AWS Professional Services provides expert guidance for cloud migration, while the AWS Partner Network (APN) includes consulting partners who assist in migrating applications to AWS.",
+      "AWS Professional Services provides expert guidance for cloud migration, while the AWS Partner Network (APN) includes consulting partners who assist in migrating applications to AWS. Trusted Advisor (A) is for best practices, Systems Manager (C) is for management, and Secrets Manager (E) is for secrets. More info: https://aws.amazon.com/professional-services/ and https://aws.amazon.com/partners/",
   },
   {
-    id: uuidv5("aws-question-963", uuidv5.URL),
+    id: uuidv5("aws-question-554", uuidv5.URL),
     text: "A characteristic of edge locations is that they:",
     options: [
       "Host Amazon EC2 instances closer to users.",
@@ -7199,10 +7199,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Edge locations are part of Amazon CloudFront’s content delivery network (CDN), which helps lower latency and improve performance for end users by caching content closer to them.",
+      "Edge locations are part of Amazon CloudFront’s content delivery network (CDN), which helps lower latency and improve performance for end users by caching content closer to them. They do not host EC2 (A), cache frequently changing data (C), or refresh daily (D). More info: https://aws.amazon.com/cloudfront/features/",
   },
   {
-    id: uuidv5("aws-question-964", uuidv5.URL),
+    id: uuidv5("aws-question-555", uuidv5.URL),
     text: "Which of the following are valid ways for a customer to interact with AWS services? (Select TWO)",
     options: [
       "Command line interface.",
@@ -7213,10 +7213,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS services can be accessed using the AWS Command Line Interface (CLI) and Software Development Kits (SDKs), allowing users to interact programmatically and via command-line commands.",
+      "AWS services can be accessed using the AWS Command Line Interface (CLI) and Software Development Kits (SDKs), allowing users to interact programmatically and via command-line commands. On-premises (B), SaaS (D), and hybrid (E) are not direct interfaces. More info: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html and https://aws.amazon.com/tools/",
   },
   {
-    id: uuidv5("aws-question-965", uuidv5.URL),
+    id: uuidv5("aws-question-556", uuidv5.URL),
     text: "What is a value proposition of the AWS Cloud?",
     options: [
       "AWS is responsible for security in the AWS Cloud.",
@@ -7226,10 +7226,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "One of the key benefits of AWS is its pay-as-you-go model, which eliminates the need for long-term contracts and upfront commitments.",
+      "One of the key benefits of AWS is its pay-as-you-go model, which eliminates the need for long-term contracts and upfront commitments. AWS is not responsible for all security (A), provisioning is in minutes (C), and users manage their own applications (D). More info: https://aws.amazon.com/pricing/",
   },
   {
-    id: uuidv5("aws-question-966", uuidv5.URL),
+    id: uuidv5("aws-question-557", uuidv5.URL),
     text: "A company is migrating an application that is running non-interruptible workloads for a three-year time frame. Which pricing construct would provide the MOST cost-effective solution?",
     options: [
       "Amazon EC2 Spot Instances.",
@@ -7239,18 +7239,18 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon EC2 Reserved Instances provide significant cost savings for workloads with predictable usage patterns over a long-term period, such as three years.",
+      "Amazon EC2 Reserved Instances provide significant cost savings for workloads with predictable usage patterns over a long-term period, such as three years. Spot (A) is for interruptible, Dedicated (B) is for compliance, and On-Demand (C) is for short-term. More info: https://aws.amazon.com/ec2/pricing/reserved-instances/",
   },
   {
-    id: uuidv5("aws-question-967", uuidv5.URL),
+    id: uuidv5("aws-question-558", uuidv5.URL),
     text: "Which AWS service is used to track, record, and audit configuration changes made to AWS resources?",
     options: ["AWS Shield.", "AWS Config.", "AWS IAM.", "Amazon Inspector."],
     correctAnswers: [1],
     explanation:
-      "AWS Config continuously monitors and records AWS resource configurations and changes, allowing for auditing and compliance tracking.",
+      "AWS Config continuously monitors and records AWS resource configurations and changes, allowing for auditing and compliance tracking. Shield (A) is for DDoS, IAM (C) is for identity, and Inspector (D) is for security assessment. More info: https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
   },
   {
-    id: uuidv5("aws-question-968", uuidv5.URL),
+    id: uuidv5("aws-question-559", uuidv5.URL),
     text: "Which feature of the AWS Cloud will support an international company’s requirement for low latency to all of its customers?",
     options: [
       "Fault tolerance.",
@@ -7260,10 +7260,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Global Infrastructure, including multiple regions and edge locations, provides global reach, ensuring low latency access for customers worldwide.",
+      "AWS Global Infrastructure, including multiple regions and edge locations, provides global reach, ensuring low latency access for customers worldwide. Fault tolerance (A) and high availability (D) are important but not specific to global latency. More info: https://aws.amazon.com/about-aws/global-infrastructure/",
   },
   {
-    id: uuidv5("aws-question-969", uuidv5.URL),
+    id: uuidv5("aws-question-560", uuidv5.URL),
     text: "How can one AWS account use Reserved Instances from another AWS account?",
     options: [
       "By using Amazon EC2 Dedicated Instances.",
@@ -7273,10 +7273,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Organizations consolidated billing allows multiple AWS accounts within an organization to share Reserved Instances for cost efficiency.",
+      "AWS Organizations consolidated billing allows multiple AWS accounts within an organization to share Reserved Instances for cost efficiency. Dedicated Instances (A) are for compliance, Cost Explorer (C) and Budgets (D) are for cost management. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-970", uuidv5.URL),
+    id: uuidv5("aws-question-561", uuidv5.URL),
     text: "Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Select TWO)",
     options: [
       "AWS WAF",
@@ -7287,10 +7287,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS WAF (Web Application Firewall) and Amazon CloudFront help mitigate DDoS attacks by filtering and distributing traffic efficiently. AWS WAF provides rule-based filtering for web traffic, while CloudFront acts as a content delivery network (CDN) that helps absorb and distribute large-scale traffic spikes. The other options do not have built-in DDoS protection.",
+      "AWS WAF (Web Application Firewall) and Amazon CloudFront help mitigate DDoS attacks by filtering and distributing traffic efficiently. AWS WAF provides rule-based filtering for web traffic, while CloudFront acts as a content delivery network (CDN) that helps absorb and distribute large-scale traffic spikes. The other options do not have built-in DDoS protection. More info: https://aws.amazon.com/shield/ddos-protection/",
   },
   {
-    id: uuidv5("aws-question-971", uuidv5.URL),
+    id: uuidv5("aws-question-562", uuidv5.URL),
     text: "Which of the following AWS features enables a user to launch a pre-configured Amazon Elastic Compute Cloud (Amazon EC2) instance?",
     options: [
       "Amazon Elastic Block Store (Amazon EBS)",
@@ -7300,10 +7300,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "An Amazon Machine Image (AMI) allows users to launch pre-configured EC2 instances with an operating system, application code, and software settings. Amazon EBS is a storage service, EC2 Systems Manager provides management tools, and AppStream 2.0 is a fully managed application streaming service, none of which directly launch pre-configured EC2 instances.",
+      "An Amazon Machine Image (AMI) allows users to launch pre-configured EC2 instances with an operating system, application code, and software settings. EBS (A) is storage, EC2 Systems Manager (C) is for management, and AppStream 2.0 (D) is for application streaming. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
   },
   {
-    id: uuidv5("aws-question-972", uuidv5.URL),
+    id: uuidv5("aws-question-563", uuidv5.URL),
     text: "A solution that is able to support growth in users, traffic, or data size with no drop in performance aligns with which cloud architecture principle?",
     options: [
       "Think parallel",
@@ -7313,10 +7313,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Implementing elasticity allows AWS resources to scale up or down dynamically based on demand, ensuring that performance remains consistent as traffic or data volume grows. The other principles focus on different architectural best practices, such as fault tolerance and modular design.",
+      "Implementing elasticity allows AWS resources to scale up or down dynamically based on demand, ensuring that performance remains consistent as traffic or data volume grows. The other principles focus on different architectural best practices. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency-pillar.html",
   },
   {
-    id: uuidv5("aws-question-973", uuidv5.URL),
+    id: uuidv5("aws-question-564", uuidv5.URL),
     text: "Which AWS Cloud benefit eliminates the need for users to try estimating future infrastructure usage?",
     options: [
       "Easy and fast deployment of applications in multiple Regions around the world",
@@ -7326,10 +7326,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Elasticity in AWS allows businesses to automatically scale resources based on real-time demand, removing the need for precise forecasting of infrastructure needs. The other options relate to security, cost efficiency, and global availability but do not specifically address infrastructure estimation.",
+      "Elasticity in AWS allows businesses to automatically scale resources based on real-time demand, removing the need for precise forecasting of infrastructure needs. The other options relate to security, cost efficiency, and global availability but do not specifically address infrastructure estimation. More info: https://aws.amazon.com/what-is-cloud-computing/",
   },
   {
-    id: uuidv5("aws-question-974", uuidv5.URL),
+    id: uuidv5("aws-question-565", uuidv5.URL),
     text: "What can users access from AWS Artifact?",
     options: [
       "AWS security and compliance documents",
@@ -7339,10 +7339,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Artifact provides security and compliance documents, such as audit reports and compliance certifications. It does not provide configuration management data, training materials, or specific application security assessments.",
+      "AWS Artifact provides security and compliance documents, such as audit reports and compliance certifications. It does not provide configuration management data, training materials, or specific application security assessments. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-975", uuidv5.URL),
+    id: uuidv5("aws-question-566", uuidv5.URL),
     text: "Compared with costs in traditional and virtualized data centers, AWS has:",
     options: [
       "Greater variable costs and greater upfront costs",
@@ -7352,10 +7352,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS operates on a pay-as-you-go model, reducing upfront costs and offering lower variable costs due to economies of scale. Traditional data centers require large initial investments, while AWS allows businesses to scale resources dynamically, leading to cost efficiency.",
+      "AWS operates on a pay-as-you-go model, reducing upfront costs and offering lower variable costs due to economies of scale. Traditional data centers require large initial investments, while AWS allows businesses to scale resources dynamically, leading to cost efficiency. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-976", uuidv5.URL),
+    id: uuidv5("aws-question-567", uuidv5.URL),
     text: "Which AWS service would a customer use with a static website to achieve lower latency and high transfer speeds?",
     options: [
       "AWS Lambda",
@@ -7365,10 +7365,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon CloudFront is a content delivery network (CDN) that caches and serves static website content closer to users, reducing latency and improving performance. The other options either focus on different AWS services, such as compute (Lambda), database acceleration (DynamoDB Accelerator), or DNS routing (Route 53).",
+      "Amazon CloudFront is a content delivery network (CDN) that caches and serves static website content closer to users, reducing latency and improving performance. Lambda (A) is compute, DynamoDB Accelerator (B) is for databases, and Route 53 (C) is DNS. More info: https://aws.amazon.com/cloudfront/",
   },
   {
-    id: uuidv5("aws-question-977", uuidv5.URL),
+    id: uuidv5("aws-question-568", uuidv5.URL),
     text: "How do Amazon EC2 Auto Scaling groups help achieve high availability for a web application?",
     options: [
       "They automatically add more instances across multiple AWS Regions based on global demand of the application",
@@ -7378,10 +7378,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon EC2 Auto Scaling ensures high availability by adding or replacing instances in different Availability Zones to maintain application performance. The other options either focus on global scaling, content delivery, or load balancing, which are not the primary function of Auto Scaling.",
+      "Amazon EC2 Auto Scaling ensures high availability by adding or replacing instances in different Availability Zones to maintain application performance. The other options either focus on global scaling, content delivery, or load balancing. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html",
   },
   {
-    id: uuidv5("aws-question-978", uuidv5.URL),
+    id: uuidv5("aws-question-569", uuidv5.URL),
     text: "Which of the following can limit Amazon Simple Storage Service (Amazon S3) bucket access to specific users?",
     options: [
       "A public and private key-pair",
@@ -7391,10 +7391,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Identity and Access Management (IAM) policies allow fine-grained access control to Amazon S3 buckets, ensuring only authorized users can access data. Security groups control access at the network level, and public/private key pairs are used for encryption, not access control.",
+      "AWS Identity and Access Management (IAM) policies allow fine-grained access control to Amazon S3 buckets, ensuring only authorized users can access data. Security groups control access at the network level, and public/private key pairs are used for encryption, not access control. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html",
   },
   {
-    id: uuidv5("aws-question-979", uuidv5.URL),
+    id: uuidv5("aws-question-570", uuidv5.URL),
     text: "How should a customer forecast the future costs for running a new web application?",
     options: [
       "Amazon Aurora Backtrack",
@@ -7404,10 +7404,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The AWS Simple Monthly Calculator allows customers to estimate costs for running their applications based on selected services and usage patterns. CloudWatch Billing Alarms monitor spending, and the AWS Cost and Usage Report provides historical data rather than forecasts.",
+      "The AWS Simple Monthly Calculator allows customers to estimate costs for running their applications based on selected services and usage patterns. CloudWatch Billing Alarms monitor spending, and the AWS Cost and Usage Report provides historical data rather than forecasts. More info: https://aws.amazon.com/calculator/",
   },
   {
-    id: uuidv5("aws-question-980", uuidv5.URL),
+    id: uuidv5("aws-question-571", uuidv5.URL),
     text: "Where are AWS compliance documents, such as an SOC 1 report, located?",
     options: [
       "Amazon Inspector",
@@ -7417,10 +7417,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Artifact provides access to compliance reports such as SOC 1, SOC 2, ISO certifications, and more. AWS CloudTrail logs API activity, Amazon Inspector scans workloads for security vulnerabilities, and AWS Certificate Manager manages SSL/TLS certificates but does not store compliance documents.",
+      "AWS Artifact provides access to compliance reports such as SOC 1, SOC 2, ISO certifications, and more. CloudTrail (B) logs API activity, Inspector (A) scans workloads for security vulnerabilities, and Certificate Manager (D) manages SSL/TLS certificates but does not store compliance documents. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-981", uuidv5.URL),
+    id: uuidv5("aws-question-572", uuidv5.URL),
     text: "Which of the following tasks is the responsibility of AWS?",
     options: [
       "Encrypting client-side data",
@@ -7430,10 +7430,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS is responsible for securing the EC2 hypervisor as part of its shared responsibility model. Encrypting client-side data, IAM role configuration, and setting user password policies are responsibilities of the customer.",
+      "AWS is responsible for securing the EC2 hypervisor as part of its shared responsibility model. Encrypting client-side data, IAM role configuration, and setting user password policies are responsibilities of the customer. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-982", uuidv5.URL),
+    id: uuidv5("aws-question-573", uuidv5.URL),
     text: "Under the shared responsibility model which of the following areas are the customer’s responsibility? (Select TWO)",
     options: [
       "Firmware upgrades of network infrastructure",
@@ -7444,10 +7444,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "Customers are responsible for patching operating systems and configuring security groups. AWS is responsible for hypervisor patching, network infrastructure, and physical security of data centers.",
+      "Customers are responsible for patching operating systems and configuring security groups. AWS is responsible for hypervisor patching, network infrastructure, and physical security of data centers. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-983", uuidv5.URL),
+    id: uuidv5("aws-question-574", uuidv5.URL),
     text: "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the company’s needs?",
     options: [
       "Amazon Simple Storage Service (Amazon S3)",
@@ -7457,10 +7457,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon Redshift is AWS's fully managed, scalable data warehouse solution. S3 is object storage, DynamoDB is a NoSQL database, and Kinesis is for real-time data streaming.",
+      "Amazon Redshift is AWS's fully managed, scalable data warehouse solution. S3 is object storage, DynamoDB is a NoSQL database, and Kinesis is for real-time data streaming. More info: https://aws.amazon.com/redshift/",
   },
   {
-    id: uuidv5("aws-question-984", uuidv5.URL),
+    id: uuidv5("aws-question-575", uuidv5.URL),
     text: "Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Select TWO)",
     options: [
       "Amazon EBS",
@@ -7471,10 +7471,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "AWS Direct Connect provides a dedicated network connection from on-premises to AWS, while AWS Storage Gateway enables seamless integration between on-premises storage and AWS Cloud storage. Amazon EBS is a block storage service, CloudFront is a CDN, and Amazon Connect is a cloud-based contact center.",
+      "AWS Direct Connect provides a dedicated network connection from on-premises to AWS, while AWS Storage Gateway enables seamless integration between on-premises storage and AWS Cloud storage. EBS (A) is a block storage service, CloudFront (C) is a CDN, and Amazon Connect (E) is a cloud-based contact center. More info: https://aws.amazon.com/directconnect/ and https://aws.amazon.com/storagegateway/",
   },
   {
-    id: uuidv5("aws-question-985", uuidv5.URL),
+    id: uuidv5("aws-question-576", uuidv5.URL),
     text: "What are the advantages of the AWS Cloud? (Select TWO)",
     options: [
       "Fixed rate monthly cost",
@@ -7485,10 +7485,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "AWS allows businesses to scale resources as needed, removing the need to estimate capacity. It also speeds up time to market by providing on-demand infrastructure. AWS does not have fixed monthly costs, increased capital expenditure, or provide physical data center access to customers.",
+      "AWS allows businesses to scale resources as needed, removing the need to estimate capacity. It also speeds up time to market by providing on-demand infrastructure. AWS does not have fixed monthly costs, increased capital expenditure, or provide physical data center access to customers. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-986", uuidv5.URL),
+    id: uuidv5("aws-question-577", uuidv5.URL),
     text: "How can the AWS Cloud increase user workforce productivity after migration from an on-premises data center?",
     options: [
       "Users do not have to wait for infrastructure provisioning",
@@ -7498,10 +7498,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS provides on-demand provisioning of infrastructure, reducing wait times for resources. However, AWS does not guarantee a faster infrastructure than all on-premises setups, does not configure applications for customers, and customers still need to manage security and compliance within their environment.",
+      "AWS provides on-demand provisioning of infrastructure, reducing wait times for resources. However, AWS does not guarantee a faster infrastructure than all on-premises setups, does not configure applications for customers, and customers still need to manage security and compliance within their environment. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-987", uuidv5.URL),
+    id: uuidv5("aws-question-578", uuidv5.URL),
     text: "Which of the following services could be used to deploy an application to servers running on-premises? (Select TWO)",
     options: [
       "AWS Elastic Beanstalk",
@@ -7512,10 +7512,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "AWS OpsWorks and AWS CodeDeploy both support on-premises deployments. Elastic Beanstalk is for cloud-based applications, AWS Batch is for batch computing, and AWS X-Ray is a tracing tool.",
+      "AWS OpsWorks and AWS CodeDeploy both support on-premises deployments. Elastic Beanstalk is for cloud-based applications, AWS Batch is for batch computing, and AWS X-Ray is a tracing tool. More info: https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html and https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html",
   },
   {
-    id: uuidv5("aws-question-988", uuidv5.URL),
+    id: uuidv5("aws-question-579", uuidv5.URL),
     text: "What is an example of agility in the AWS Cloud?",
     options: [
       "Access to multiple instance types",
@@ -7525,10 +7525,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Agility in AWS means being able to provision new compute resources quickly. While access to instance types and managed services are AWS benefits, they do not directly represent agility. Consolidated Billing relates to cost management rather than agility.",
+      "Agility in AWS means being able to provision new compute resources quickly. While access to instance types and managed services are AWS benefits, they do not directly represent agility. Consolidated Billing relates to cost management rather than agility. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-989", uuidv5.URL),
+    id: uuidv5("aws-question-580", uuidv5.URL),
     text: "Which AWS security service protects applications from distributed denial of service attacks with always-on detection and automatic inline mitigations?",
     options: [
       "Amazon Inspector",
@@ -7538,10 +7538,10 @@ const exam12: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Shield provides DDoS protection with automatic detection and mitigation. AWS WAF helps filter web traffic but does not provide full DDoS protection. Amazon Inspector is for vulnerability assessments, and ELB helps distribute traffic but does not specifically mitigate DDoS attacks.",
+      "AWS Shield provides DDoS protection with automatic detection and mitigation. AWS WAF helps filter web traffic but does not provide full DDoS protection. Amazon Inspector is for vulnerability assessments, and ELB helps distribute traffic but does not specifically mitigate DDoS attacks. More info: https://aws.amazon.com/shield/",
   },
   {
-    id: uuidv5("aws-question-990", uuidv5.URL),
+    id: uuidv5("aws-question-581", uuidv5.URL),
     text: "Which of the following are advantages of AWS consolidated billing? (Choose two)",
     options: [
       "The ability to receive one bill for multiple accounts.",
@@ -7555,7 +7555,7 @@ const exam12: Question[] = [
       "AWS Consolidated Billing allows organizations to receive a single bill for multiple linked accounts, simplifying cost management. Additionally, combining usage across accounts can lead to volume discounts. However, service limits do not automatically increase, there are no fixed discounts, and AWS Support plans are not shared automatically.",
   },
   {
-    id: uuidv5("aws-question-991", uuidv5.URL),
+    id: uuidv5("aws-question-582", uuidv5.URL),
     text: "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. Which service should the company use?",
     options: [
       "Amazon Redshift",
