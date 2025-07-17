@@ -7571,7 +7571,7 @@ const exam12: Question[] = [
 
 const exam13: Question[] = [
   {
-    id: uuidv5("aws-question-992", uuidv5.URL),
+    id: uuidv5("aws-question-601", uuidv5.URL),
     text: "The use of what AWS feature or service allows companies to track and categorize spending on a detailed level?",
     options: [
       "Cost allocation tags",
@@ -7584,7 +7584,7 @@ const exam13: Question[] = [
       "Cost allocation tags allow users to categorize and track AWS costs by applying metadata to resources. This helps in detailed cost tracking and reporting. Consolidated billing groups accounts but does not categorize spending, AWS Budgets sets spending limits, and AWS Marketplace is for purchasing software.",
   },
   {
-    id: uuidv5("aws-question-993", uuidv5.URL),
+    id: uuidv5("aws-question-602", uuidv5.URL),
     text: "Which service stores objects, provides real-time access to those objects, and offers versioning and lifecycle capabilities?",
     options: [
       "Amazon Glacier",
@@ -7597,7 +7597,7 @@ const exam13: Question[] = [
       "Amazon S3 is an object storage service that supports real-time access, versioning, and lifecycle management. Amazon Glacier is for archival storage with delayed retrieval, AWS Storage Gateway enables hybrid cloud storage, and Amazon EBS is block storage for EC2 instances.",
   },
   {
-    id: uuidv5("aws-question-994", uuidv5.URL),
+    id: uuidv5("aws-question-603", uuidv5.URL),
     text: "What AWS team assists customers with accelerating cloud adoption through paid engagements in any of several specialty practice areas?",
     options: [
       "AWS Enterprise Support",
@@ -7610,7 +7610,7 @@ const exam13: Question[] = [
       "AWS Professional Services provides specialized guidance and consulting to help customers accelerate cloud adoption through paid engagements. AWS Enterprise Support offers technical assistance, Solutions Architects provide architecture guidance, and Account Managers focus on customer relationships.",
   },
   {
-    id: uuidv5("aws-question-995", uuidv5.URL),
+    id: uuidv5("aws-question-604", uuidv5.URL),
     text: "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
     options: [
       "AWS Partner Network Technology Partners",
@@ -7623,7 +7623,7 @@ const exam13: Question[] = [
       "AWS Partner Network (APN) Consulting Partners provide expertise and services to help customers design and build workloads on AWS. APN Technology Partners offer software solutions, AWS Marketplace sells third-party software, and AWS Service Catalog helps manage approved cloud products.",
   },
   {
-    id: uuidv5("aws-question-996", uuidv5.URL),
+    id: uuidv5("aws-question-605", uuidv5.URL),
     text: "Distributing workloads across multiple Availability Zones supports which cloud architecture design principle?",
     options: [
       "Implement automation",
@@ -7636,7 +7636,7 @@ const exam13: Question[] = [
       "Designing for failure ensures resilience by distributing workloads across multiple Availability Zones. This minimizes downtime in case of failures. Implementing automation, agility, and elasticity contribute to performance and efficiency but do not directly address failure tolerance.",
   },
   {
-    id: uuidv5("aws-question-997", uuidv5.URL),
+    id: uuidv5("aws-question-606", uuidv5.URL),
     text: "Which AWS services can host a Microsoft SQL Server database? (Select TWO)",
     options: [
       "Amazon EC2",
@@ -7650,7 +7650,7 @@ const exam13: Question[] = [
       "Amazon EC2 allows self-managed SQL Server installations, while Amazon RDS provides a managed SQL Server database service. Amazon Aurora is a different relational database engine, Redshift is for data warehousing, and S3 is object storage.",
   },
   {
-    id: uuidv5("aws-question-998", uuidv5.URL),
+    id: uuidv5("aws-question-607", uuidv5.URL),
     text: "Which of the following inspects AWS environments to find opportunities that can save money for users and also improve system performance?",
     options: [
       "AWS Cost Explorer",
@@ -7663,7 +7663,7 @@ const exam13: Question[] = [
       "AWS Trusted Advisor analyzes AWS environments for cost savings, security, and performance improvements. Cost Explorer helps visualize costs, Consolidated Billing manages multiple accounts, and Detailed Billing provides raw billing data.",
   },
   {
-    id: uuidv5("aws-question-999", uuidv5.URL),
+    id: uuidv5("aws-question-608", uuidv5.URL),
     text: "Which of the following Amazon EC2 pricing models allow customers to use existing server-bound software licenses?",
     options: [
       "Spot Instances",
@@ -7676,7 +7676,7 @@ const exam13: Question[] = [
       "Dedicated Hosts allow customers to bring their own software licenses by providing a dedicated physical server. Spot and On-Demand Instances do not guarantee dedicated hardware, and Reserved Instances are pricing commitments without license-specific accommodations.",
   },
   {
-    id: uuidv5("aws-question-1000", uuidv5.URL),
+    id: uuidv5("aws-question-609", uuidv5.URL),
     text: "Which AWS characteristics make AWS cost effective for a workload with dynamic user demand? (Select TWO)",
     options: [
       "High availability",
@@ -7690,7 +7690,7 @@ const exam13: Question[] = [
       "Elasticity allows AWS to scale resources up or down as needed, optimizing costs, while pay-as-you-go pricing ensures customers pay only for what they use. High availability and reliability improve service uptime but do not directly impact cost efficiency.",
   },
   {
-    id: uuidv5("aws-question-1001", uuidv5.URL),
+    id: uuidv5("aws-question-610", uuidv5.URL),
     text: "Which service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs?",
     options: [
       "Amazon CloudWatch",
@@ -7701,6 +7701,525 @@ const exam13: Question[] = [
     correctAnswers: [1],
     explanation:
       "AWS CloudTrail provides a detailed record of AWS account activity, allowing security auditing and compliance monitoring. CloudWatch monitors performance metrics, AWS Config tracks configuration changes, and AWS Health provides service status updates.",
+  },
+  {
+    id: uuidv5("aws-question-611", uuidv5.URL),
+    text: "Which of the following are characteristics of Amazon S3? (Select TWO.)",
+    options: [
+      "A global file system",
+      "An object store",
+      "A local file store",
+      "A network file system",
+      "A durable storage system",
+    ],
+    correctAnswers: [1, 4],
+    explanation:
+      "Amazon S3 is an object storage service designed for durability (99.999999999%) and scalability, which makes 'An object store' and 'A durable storage system' correct. A (A global file system) is incorrect because S3 is regionally scoped and does not act as a global file system. C (A local file store) and D (A network file system) are incorrect because S3 is object storage, not a traditional file system or block storage.\nReference: https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html",
+  },
+  {
+    id: uuidv5("aws-question-612", uuidv5.URL),
+    text: "Which services can be used across hybrid AWS Cloud architectures? (Select TWO.)",
+    options: [
+      "Amazon Route 53",
+      "Virtual Private Gateway",
+      "Classic Load Balancer",
+      "Auto Scaling",
+      "Amazon CloudWatch default metrics",
+    ],
+    correctAnswers: [0, 1],
+    explanation:
+      "Amazon Route 53 (DNS service) and Virtual Private Gateway enable connectivity and management for hybrid architectures, making them correct. Classic Load Balancer (C) and Auto Scaling (D) operate only within AWS and do not extend to hybrid setups. Amazon CloudWatch default metrics (E) primarily monitor AWS resources; hybrid monitoring requires custom metrics or agents.\nReference: https://aws.amazon.com/cloudwatch/",
+  },
+  {
+    id: uuidv5("aws-question-613", uuidv5.URL),
+    text: "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?",
+    options: [
+      "Project management",
+      "Antivirus software licensing",
+      "Data center security",
+      "Software development",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Data center security (C) is a significant cost in on-premises environments and is considered in TCO comparisons. Project management (A) and Software development (D) costs exist in both models and are not unique to infrastructure. Antivirus licensing (B) is a minor software cost and not the primary focus of TCO calculations.\nReference: https://media.amazonwebservices.com/AWS_TCO_Web_Applications.pdf",
+  },
+  {
+    id: uuidv5("aws-question-614", uuidv5.URL),
+    text: "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. Which service should the company use?",
+    options: [
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Elastic Compute Cloud (Amazon EC2) with Amazon EC2 instance store",
+      "Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Amazon EC2 with EBS allows persistent storage even when the instance is stopped, making it ideal for workloads that require nightly shutdowns. EC2 instance store (C) loses data when stopped, so it is not suitable. Redshift (A) is a managed data warehouse, and DynamoDB (B) is a NoSQL service, both of which do not fit the requirement for a self-hosted database.\nReference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html",
+  },
+  {
+    id: uuidv5("aws-question-615", uuidv5.URL),
+    text: "Which of the following is a correct relationship between regions, Availability Zones, and edge locations?",
+    options: [
+      "Data centers contain regions.",
+      "Regions contain Availability Zones.",
+      "Availability Zones contain edge locations.",
+      "Edge locations contain regions.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Regions contain multiple Availability Zones, which are distinct physical locations within a region. A (Data centers contain regions) is incorrect because data centers are the smallest unit. C and D are incorrect because edge locations are separate from AZs and regions; they are used for content delivery.\nReference: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+  },
+  {
+    id: uuidv5("aws-question-616", uuidv5.URL),
+    text: "Which AWS tools assist with estimating costs? (Select three.)",
+    options: [
+      "Detailed billing report",
+      "Cost allocation tags",
+      "AWS Simple Monthly Calculator",
+      "AWS Total Cost of Ownership (TCO) Calculator",
+      "Cost Eliminator",
+    ],
+    correctAnswers: [1, 2, 3],
+    explanation:
+      "Cost allocation tags (B), AWS Simple Monthly Calculator (C), and AWS TCO Calculator (D) help estimate and allocate costs. A (Detailed billing report) provides historical usage, not estimation. E (Cost Eliminator) is a fictitious service.\nReference: https://aws.amazon.com/premiumsupport/knowledge-center/estimating-aws-resource-costs/",
+  },
+  {
+    id: uuidv5("aws-question-617", uuidv5.URL),
+    text: "Which of the following are advantages of AWS consolidated billing? (Select TWO.)",
+    options: [
+      "The ability to receive one bill for multiple accounts",
+      "Service limits increasing by default in all accounts",
+      "A fixed discount on the monthly bill",
+      "Potential volume discounts, as usage in all accounts is combined",
+      "The automatic extension of the master account's AWS support plan to all accounts",
+    ],
+    correctAnswers: [0, 3],
+    explanation:
+      "Consolidated billing provides a single bill (A) and potential volume discounts (D) across accounts. B (automatic service limit increase) is false; limits are still per account. C (fixed discount) is incorrect because discounts are based on usage, not fixed. E (support plan extension) does not happen automatically.\nReference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
+  },
+  {
+    id: uuidv5("aws-question-618", uuidv5.URL),
+    text: "Which of the following Reserved Instance (RI) pricing models provides the highest average savings compared to On-Demand pricing?",
+    options: [
+      "One-year, No Upfront, Standard RI pricing",
+      "One-year, All Upfront, Convertible RI pricing",
+      "Three-year, All Upfront, Standard RI pricing",
+      "Three-year, No Upfront, Convertible RI pricing",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Three-year, All Upfront, Standard RI pricing offers the deepest discounts. Convertible RIs provide flexibility but less discount. One-year terms offer lower savings than three-year options.\nReference: https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/",
+  },
+  {
+    id: uuidv5("aws-question-619", uuidv5.URL),
+    text: "Compared with costs in traditional and virtualized data centers, AWS has:",
+    options: [
+      "greater variable costs and greater upfront costs.",
+      "fixed usage costs and lower upfront costs.",
+      "lower variable costs and greater upfront costs.",
+      "lower variable costs and lower upfront costs.",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "AWS reduces upfront capital expenses and allows pay-as-you-go pricing, resulting in lower variable and lower upfront costs. A, B, and C do not correctly represent AWS's pricing benefits.\nReference: https://d1.awsstatic.com/whitepapers/introduction-to-aws-cloud-economics-final.pdf",
+  },
+  {
+    id: uuidv5("aws-question-620", uuidv5.URL),
+    text: "A characteristic of edge locations is that they:",
+    options: [
+      "host Amazon EC2 instances closer to users.",
+      "help lower latency and improve performance for users.",
+      "cache frequently changing data without reaching the origin server.",
+      "refresh data changes daily.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Edge locations in Amazon CloudFront are used to deliver content closer to users, reducing latency and improving performance. A is incorrect because edge locations do not host EC2 instances. C is wrong because cached data can be updated based on TTL, not restricted to frequently changing content. D is false because updates are not daily by default.\nReference: https://aws.amazon.com/cloudfront/features/",
+  },
+  {
+    id: uuidv5("aws-question-621", uuidv5.URL),
+    text: "Which of the following can limit Amazon Storage Service (Amazon S3) bucket access to specific users?",
+    options: [
+      "A public and private key-pair",
+      "Amazon Inspector",
+      "AWS Identity and Access Management (IAM) policies",
+      "Security Groups",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "IAM policies (identity- or resource-based) let you explicitly allow or deny actions on specific S3 buckets to designated IAM principals (users, roles, accounts). This is the supported way to scope S3 access granularly. A public/private key-pair (A) only provides credentials; by itself it does not restrict which S3 resources can be accessed. Amazon Inspector (B) is a vulnerability assessment service, not an access-control mechanism for S3. Security Groups (D) act at the network level for resources like EC2 instances—not for S3 API access control. \nReference: https://aws.amazon.com/blogs/security/how-to-restrict-amazon-s3-bucket-access-to-a-specific-iam-role/",
+  },
+  {
+    id: uuidv5("aws-question-622", uuidv5.URL),
+    text: "Which of the following security-related actions are available at no cost?",
+    options: [
+      "Calling AWS Support",
+      "Contacting AWS Professional Services to request a workshop",
+      "Accessing forums, blogs, and whitepapers",
+      "Attending AWS classes at a local university",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS provides a wide range of free security guidance resources—documentation, whitepapers, forums, and blog posts—that you can access at no charge. Calling AWS Support (A) may incur costs depending on your support plan level. AWS Professional Services workshops (B) are paid engagements. Local university AWS classes (D) are typically tuition-based or fee-based. \nReference: https://aws.amazon.com/whitepapers/",
+  },
+  {
+    id: uuidv5("aws-question-623", uuidv5.URL),
+    text: "Which of the Reserved Instance (RI) pricing models can change the attributes of the RI as long as the exchange results in the creation of RIs of equal or greater value?",
+    options: [
+      "Dedicated RIs",
+      "Scheduled RIs",
+      "Convertible RIs",
+      "Standard RIs",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Convertible RIs let you exchange existing reservations for new ones with different instance families, operating systems, or tenancies, provided the exchange results in RIs of equal or greater total value. Dedicated RIs (A) and Scheduled RIs (B) do not offer this broad exchange flexibility. Standard RIs (D) provide larger discounts but are largely fixed in attributes. \nReference: https://aws.amazon.com/ec2/pricing/reserved-instances/",
+  },
+  {
+    id: uuidv5("aws-question-624", uuidv5.URL),
+    text: "Which AWS feature will reduce the customer's total cost of ownership (TCO)?",
+    options: [
+      "Shared responsibility security model",
+      "Single tenancy",
+      "Elastic computing",
+      "Encryption",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Elastic computing lets you scale resources up or down based on demand, so you pay only for what you use—directly reducing overprovisioning and lowering TCO. The shared responsibility model (A) defines security scope but does not inherently lower infrastructure spend. Single tenancy (B) often costs more than shared tenancy. Encryption (D) is a security control and does not by itself reduce cost. \nReference: https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/",
+  },
+  {
+    id: uuidv5("aws-question-625", uuidv5.URL),
+    text: "Which of the following services will automatically scale with an expected increase in web traffic?",
+    options: [
+      "AWS CodePipeline",
+      "Elastic Load Balancing",
+      "Amazon EBS",
+      "AWS Direct Connect",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Elastic Load Balancing automatically scales its load balancer capacity in response to changes in incoming traffic, distributing requests across healthy targets in one or more Availability Zones. CodePipeline (A) is a CI/CD orchestration service and not a traffic-scaling component. Amazon EBS (C) provides block storage volumes and does not auto-scale to handle web request load. AWS Direct Connect (D) is a dedicated network link and does not scale elastically with traffic surges. \nReference: https://aws.amazon.com/elasticloadbalancing/",
+  },
+  {
+    id: uuidv5("aws-question-626", uuidv5.URL),
+    text: "Where are AWS compliance documents, such as an SOC 1 report, located?",
+    options: [
+      "Amazon Inspector",
+      "AWS CloudTrail",
+      "AWS Artifact",
+      "AWS Certificate Manager",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "AWS Artifact is the self-service portal where customers can access AWS compliance reports (including SOC 1, SOC 2, and others) on demand. Amazon Inspector (A) scans for security issues; it does not host compliance reports. AWS CloudTrail (B) records API activity. AWS Certificate Manager (D) manages SSL/TLS certificates. \nReference: https://aws.amazon.com/compliance/soc-faqs/",
+  },
+  {
+    id: uuidv5("aws-question-627", uuidv5.URL),
+    text: "Under the AWS shared responsibility model, which of the following activities are the customer's responsibility? (Select TWO.)",
+    options: [
+      "Patching operating system components for Amazon Relational Database Server (Amazon RDS)",
+      "Encrypting data on the client-side",
+      "Training the data center staff",
+      "Configuring Network Access Control Lists (ACL)",
+      "Maintaining environmental controls within a data center",
+    ],
+    correctAnswers: [1, 3],
+    explanation:
+      "Customers are responsible for security *in* the cloud, which includes data protection choices like client-side encryption (B) and configuration of network-layer controls such as VPC Network ACLs (D). AWS manages the infrastructure layer for managed services like Amazon RDS, including underlying OS patching (A). AWS handles physical security and staffing of data centers (C, E), not the customer. \nReference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-628", uuidv5.URL),
+    text: "Which is a recommended pattern for designing a highly available architecture on AWS?",
+    options: [
+      "Ensure that components have low-latency network connectivity.",
+      "Run enough Amazon EC2 instances to operate at peak load.",
+      "Ensure that the application is designed to accommodate failure of any single component.",
+      "Use a monolithic application that handles all operations.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Designing for resiliency means building so that no single component failure takes down the workload—use redundancy, fault isolation, and automated recovery. Low latency (A) is desirable but not the defining HA pattern. Simply running peak-load capacity (B) without fault tolerance does not ensure availability. A monolithic design (D) often concentrates failure risk. \nReference: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-to-withstand-component-failures.html",
+  },
+  {
+    id: uuidv5("aws-question-629", uuidv5.URL),
+    text: "According to best practices, how should an application be designed to run in the AWS Cloud?",
+    options: [
+      "Use tightly coupled components.",
+      "Use loosely coupled components.",
+      "Use infrequently coupled components.",
+      "Use frequently coupled components.",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Loosely coupled components communicate through well-defined, versioned interfaces (often asynchronous), improving resiliency, scalability, and agility—core AWS architectural best practices. Tightly coupled (A), infrequently coupled (C), and frequently coupled (D) are not standard best-practice terms; tight coupling increases blast radius and reduces independent scaling. \nReference: https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf",
+  },
+  {
+    id: uuidv5("aws-question-630", uuidv5.URL),
+    text: "AWS supports which of the following methods to add security to Identity and Access Management (IAM) users? (Select TWO.)",
+    options: [
+      "Implementing Amazon Rekognition",
+      "Using AWS Shield-protected resources",
+      "Blocking access with Security Groups",
+      "Using Multi-Factor Authentication (MFA)",
+      "Enforcing password strength and expiration",
+    ],
+    correctAnswers: [3, 4],
+    explanation:
+      "You can increase IAM user security by requiring Multi-Factor Authentication (MFA) (D) and by enforcing strong account password policies with rotation/expiration (E). Amazon Rekognition (A) is an image/video analysis service unrelated to IAM user auth. AWS Shield (B) protects against DDoS attacks on networked resources, not IAM credentials. Security Groups (C) control network traffic to resources, not IAM sign-in. \nReference: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html",
+  },
+  {
+    id: uuidv5("aws-question-631", uuidv5.URL),
+    text: "Which AWS services should be used for read/write of constantly changing data? (Select TWO.)",
+    options: [
+      "Amazon Glacier",
+      "Amazon RDS",
+      "AWS Snowball",
+      "Amazon Redshift",
+      "Amazon EFS",
+    ],
+    correctAnswers: [1, 4],
+    explanation:
+      "Amazon RDS (B) is a managed relational database service built for frequent transactional reads/writes. Amazon EFS (E) is an elastic, managed, shared file system that automatically scales and supports read/write access from multiple clients—well suited for changing file data. Amazon Glacier / S3 Glacier (A) is for long-term archival, not frequent updates. AWS Snowball (C) is a data transfer appliance for bulk migration, not continuous read/write. Amazon Redshift (D) is a data warehouse optimized for analytic (read-heavy, batch) workloads, not constant transactional change.\nReference: https://aws.amazon.com/rds/ ; https://aws.amazon.com/efs/",
+  },
+  {
+    id: uuidv5("aws-question-632", uuidv5.URL),
+    text: "What is one of the advantages of the Amazon Relational Database Service (Amazon RDS)?",
+    options: [
+      "It simplifies relational database administration tasks.",
+      "It provides 99.99999999999% reliability and durability.",
+      "It automatically scales databases for loads.",
+      "It enabled users to dynamically adjust CPU and RAM resources.",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "A key RDS benefit is reduced administrative burden: AWS automates many undifferentiated tasks such as provisioning, backups, patching, and minor version upgrades—simplifying database administration. The extreme durability figure in option B reflects object storage claims (like S3), not RDS. Automatic scaling of database compute for load (C) is not universal across all RDS engines; scaling typically requires instance class changes or read replicas (except specific modes like Aurora Serverless). Users cannot arbitrarily adjust raw host CPU/RAM on demand within a running instance as in D—you choose instance classes.\nReference: https://aws.amazon.com/rds/",
+  },
+  {
+    id: uuidv5("aws-question-633", uuidv5.URL),
+    text: "A customer needs to run a MySQL database that easily scales. Which AWS service should they use?",
+    options: [
+      "Amazon Aurora",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon Aurora (compatible with MySQL) is designed for high performance and scalability, offering up to several times the throughput of standard MySQL plus options like Aurora Serverless and read replicas that make scaling easier. Amazon Redshift (B) is a columnar data warehouse for analytics, not a transactional MySQL replacement. DynamoDB (C) is NoSQL, not a relational MySQL engine. ElastiCache (D) is an in-memory cache (Redis/Memcached), not a relational database.\nReference: https://aws.amazon.com/rds/aurora/ ; https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Performance.html",
+  },
+  {
+    id: uuidv5("aws-question-634", uuidv5.URL),
+    text: "Which of the following components of the AWS Global Infrastructure consists of one or more discrete data centers interconnected through low latency links?",
+    options: [
+      "Availability Zone",
+      "Edge location",
+      "Region",
+      "Private networking",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity, linked with low-latency, high-throughput networking within an AWS Region. Edge locations (B) support content delivery (CloudFront) and are separate from AZ constructs. A Region (C) is a geographic area that contains multiple AZs—not the other way around. Private networking (D) is a generic term, not an infrastructure building block in the AWS global model.\nReference: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html",
+  },
+  {
+    id: uuidv5("aws-question-635", uuidv5.URL),
+    text: "Which of the following is a shared control between the customer and AWS?",
+    options: [
+      "Providing a key for Amazon S3 client-side encryption",
+      "Configuration of an Amazon EC2 instance",
+      "Environmental controls of physical AWS data centers",
+      "Awareness and training",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "In the AWS Shared Responsibility Model, awareness & training is considered a shared control area: AWS trains its staff for secure operations, while customers must train their own personnel in proper cloud usage and security practices. Providing client-side encryption keys (A) is a customer responsibility. Configuring an EC2 instance (B)—OS, applications, security settings—is customer responsibility. Physical environmental controls (C) are AWS responsibility. \nReference: https://aws.amazon.com/compliance/shared-responsibility-model/ ; https://digitalcloud.training/aws-shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-636", uuidv5.URL),
+    text: "How many Availability Zones should compute resources be provisioned across to achieve high availability?",
+    options: [
+      "A minimum of one",
+      "A minimum of two",
+      "A minimum of three",
+      "A minimum of four or more",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "High availability in AWS typically starts by distributing workloads across at least two Availability Zones within a Region so that the failure of one AZ does not take down the entire application. One AZ (A) creates a single point of failure. More than two AZs (C, D) can further improve resilience but are not the minimum HA recommendation for most workloads. \nReference: https://aws.amazon.com/blogs/publicsector/best-practices-creating-highly-available-workloads/ ; https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/use-multiple-availability-zones.html",
+  },
+  {
+    id: uuidv5("aws-question-637", uuidv5.URL),
+    text: "One of the advantages to moving infrastructure from an on-premises data center to the AWS Cloud is:",
+    options: [
+      "it allows the business to eliminate IT bills.",
+      "it allows the business to put a server in each customer's data center.",
+      "it allows the business to focus on business activities.",
+      "it allows the business to leave servers unpatched.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "By removing the heavy lifting of owning and operating data center hardware, AWS lets organizations shift resources toward activities that differentiate the business (innovation, customer features) rather than infrastructure maintenance. Eliminating IT bills entirely (A) is unrealistic—you still pay for AWS usage. Deploying servers in each customer data center (B) is not an AWS cloud benefit. Leaving servers unpatched (D) is never a best practice and increases risk. \nReference: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html ; https://aws.amazon.com/executive-insights/content/business-value-on-aws/",
+  },
+  {
+    id: uuidv5("aws-question-638", uuidv5.URL),
+    text: "What is the lowest-cost, durable storage option for retaining database backups for immediate retrieval?",
+    options: [
+      "Amazon S3",
+      "Amazon Glacier",
+      "Amazon EBS",
+      "Amazon EC2 Instance Store",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon S3 provides highly durable, cost-effective object storage with immediate (millisecond) retrieval—well suited for retaining database backup files that need to be restored quickly. Amazon Glacier (B) is even lower cost but designed for archival with retrieval delays. Amazon EBS (C) block storage is more expensive per GB and typically tied to EC2 instances. Instance Store (D) is ephemeral and not durable for retained backups. \nReference: https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/backup-recovery-amazon-s3.html",
+  },
+  {
+    id: uuidv5("aws-question-639", uuidv5.URL),
+    text: "Which AWS IAM feature allows developers to access AWS services through the AWS CLI?",
+    options: ["API keys", "Access keys", "User names/Passwords", "SSH keys"],
+    correctAnswers: [1],
+    explanation:
+      "Programmatic access to AWS via the CLI uses IAM access keys—an access key ID and secret access key pair that signs API requests. “API keys” (A) is a generic term and not the AWS IAM credential type. Console username/password (C) is for web console sign-in, not CLI calls (unless paired with temporary credentials via SSO/federation). SSH keys (D) are used to connect to EC2 instances at the OS level, not to authenticate AWS API calls. \nReference: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html ; https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-user.html",
+  },
+  {
+    id: uuidv5("aws-question-640", uuidv5.URL),
+    text: "Which of the following is a fast and reliable NoSQL database service?",
+    options: ["Amazon Redshift", "Amazon RDS", "Amazon DynamoDB", "Amazon S3"],
+    correctAnswers: [2],
+    explanation:
+      "Amazon DynamoDB is a fully managed, serverless NoSQL database that delivers single-digit millisecond performance at virtually any scale, making it both fast and highly reliable. Amazon Redshift (A) is a managed data warehouse (SQL, analytic). Amazon RDS (B) is for managed relational databases. Amazon S3 (D) is object storage, not a database. \nReference: https://aws.amazon.com/dynamodb/ ; https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+  },
+  {
+    id: uuidv5("aws-question-641", uuidv5.URL),
+    text: "What is an example of agility in the AWS Cloud?",
+    options: [
+      "Access to multiple instance types",
+      "Access to managed services",
+      "Using Consolidated Billing to produce one bill",
+      "Decreased acquisition time for new compute resources",
+    ],
+    correctAnswers: [3],
+    explanation:
+      "Agility in the cloud context refers to the ability to quickly provision and deploy resources as business needs change. Decreasing the acquisition time for compute resources (D) illustrates this because you can spin up instances in minutes instead of weeks. Access to multiple instance types (A) and managed services (B) are cloud features, but they do not directly capture agility. Consolidated Billing (C) is a financial management feature, unrelated to deployment agility.\nReference: https://aws.amazon.com/blogs/enterprise-strategy/risk-is-lack-of-agility/",
+  },
+  {
+    id: uuidv5("aws-question-642", uuidv5.URL),
+    text: "Which service should a customer use to consolidate and centrally manage multiple AWS accounts?",
+    options: [
+      "AWS IAM",
+      "AWS Organizations",
+      "AWS Schema Conversion Tool",
+      "AWS Config",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS Organizations (B) enables central management of multiple accounts, consolidated billing, and application of policies across accounts. IAM (A) manages permissions within a single account. The Schema Conversion Tool (C) is for migrating databases. AWS Config (D) monitors configurations but does not consolidate accounts.\nReference: https://aws.amazon.com/organizations/",
+  },
+  {
+    id: uuidv5("aws-question-643", uuidv5.URL),
+    text: "What approach to transcoding a large number of individual video files adheres to AWS architecture principles?",
+    options: [
+      "Using many instances in parallel",
+      "Using a single large instance during off-peak hours",
+      "Using dedicated hardware",
+      "Using a large GPU instance type",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "AWS architecture emphasizes scalability and parallel processing. Using many instances in parallel (A) distributes workload, speeds processing, and reduces bottlenecks. Using a single large instance (B) is less efficient and creates a single point of failure. Dedicated hardware (C) is not elastic and does not align with cloud principles. Large GPU instances (D) may help specific workloads but do not scale horizontally as needed for large-scale transcoding.\nReference: https://aws.amazon.com/solutions/case-studies/encoding/",
+  },
+  {
+    id: uuidv5("aws-question-644", uuidv5.URL),
+    text: "For which auditing process does AWS have sole responsibility?",
+    options: [
+      "AWS IAM policies",
+      "Physical security",
+      "Amazon S3 bucket policies",
+      "AWS CloudTrail Logs",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "AWS is responsible for the physical security of its data centers under the Shared Responsibility Model. Customers manage IAM policies (A), S3 bucket policies (C), and CloudTrail logs (D). These are in the customer's domain.\nReference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-645", uuidv5.URL),
+    text: "Which feature of the AWS Cloud will support an international company's requirement for low latency to all of its customers?",
+    options: [
+      "Fault tolerance",
+      "Global reach",
+      "Pay-as-you-go pricing",
+      "High availability",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "Global reach (B) refers to AWS's worldwide infrastructure of Regions and edge locations that provide low latency access to users globally. Fault tolerance (A) and high availability (D) relate to reliability within a region but not global latency. Pay-as-you-go pricing (C) addresses cost, not performance.\nReference: https://aws.amazon.com/cloudfront/",
+  },
+  {
+    id: uuidv5("aws-question-646", uuidv5.URL),
+    text: "Which of the following is the customer's responsibility under the AWS shared responsibility model?",
+    options: [
+      "Patching underlying infrastructure",
+      "Physical security",
+      "Patching Amazon EC2 instances",
+      "Patching network infrastructure",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Customers are responsible for patching the guest OS and applications on EC2 instances (C). AWS handles physical security (B) and infrastructure patching (A and D). This distinction is key in the shared responsibility model.\nReference: https://aws.amazon.com/compliance/shared-responsibility-model/",
+  },
+  {
+    id: uuidv5("aws-question-647", uuidv5.URL),
+    text: "A customer is using multiple AWS accounts with separate billing. How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
+    options: [
+      "Create one global AWS account and move all AWS resources to that account.",
+      "Sign up for three years of Reserved Instance pricing up front.",
+      "Use the consolidated billing feature from AWS Organizations.",
+      "Sign up for the AWS Enterprise support plan to get volume discounts.",
+    ],
+    correctAnswers: [2],
+    explanation:
+      "Using consolidated billing (C) in AWS Organizations allows combined usage for volume discounts without migrating resources. Moving all resources to a single account (A) is complex and risky. Reserved Instances (B) only reduce compute cost, not overall. Enterprise Support (D) provides support benefits, not usage-based discounts.\nReference: https://aws.amazon.com/answers/account-management/aws-multi-account-billing-strategy/",
+  },
+  {
+    id: uuidv5("aws-question-648", uuidv5.URL),
+    text: "Which of the following are features of Amazon CloudWatch Logs? (Select TWO.)",
+    options: [
+      "Summaries by Amazon Simple Notification Service (Amazon SNS)",
+      "Free Amazon Elasticsearch Service analytics",
+      "Provided at no charge",
+      "Real-time monitoring",
+      "Adjustable retention",
+    ],
+    correctAnswers: [3, 4],
+    explanation:
+      "Amazon CloudWatch Logs supports real-time monitoring (D) and adjustable retention (E). SNS notifications (A) can be configured for alarms but are not a native feature of CloudWatch Logs. Elasticsearch (B) integration is optional and incurs charges. CloudWatch Logs itself is not free (C); charges apply per ingested GB and retention.\nReference: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html",
+  },
+  {
+    id: uuidv5("aws-question-649", uuidv5.URL),
+    text: "Which of the following is an AWS managed Domain Name System (DNS) web service?",
+    options: [
+      "Amazon Route 53",
+      "Amazon Neptune",
+      "Amazon SageMaker",
+      "Amazon Lightsail",
+    ],
+    correctAnswers: [0],
+    explanation:
+      "Amazon Route 53 (A) is AWS's managed DNS service. Neptune (B) is a graph database, SageMaker (C) is for machine learning, and Lightsail (D) is a simplified hosting environment.\nReference: https://aws.amazon.com/route53/",
+  },
+  {
+    id: uuidv5("aws-question-650", uuidv5.URL),
+    text: "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Select TWO.)",
+    options: [
+      "Reduced latency to users",
+      "The application's presentation in the local language",
+      "Data sovereignty compliance",
+      "Cooling costs in hotter climates",
+      "Proximity to the customer's office for on-site visits",
+    ],
+    correctAnswers: [0, 2],
+    explanation:
+      "Choosing an AWS Region depends on latency to end-users (A) and regulatory/data sovereignty requirements (C). Local language (B) and climate-based cooling costs (D) are irrelevant to customers. On-site visits (E) are rare since AWS is managed infrastructure and does not allow physical access.\nReference: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
 ];
 
