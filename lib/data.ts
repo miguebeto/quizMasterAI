@@ -8986,7 +8986,7 @@ export const exam14: Question[] = [
 
 const exam15: Question[] = [
   {
-    id: uuidv5("aws-question-1052", uuidv5.URL),
+    id: uuidv5("aws-question-701", uuidv5.URL),
     text: "How do customers benefit from Amazon's massive economies of scale?",
     options: [
       "Periodic price reductions as the result of Amazon's operational efficiencies",
@@ -8996,10 +8996,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon's massive economies of scale enable it to reduce operational costs and pass those savings on to customers in the form of periodic price reductions. The other options refer to other benefits of AWS but do not directly relate to economies of scale.",
+      "Amazon's massive economies of scale enable it to reduce operational costs and pass those savings on to customers in the form of periodic price reductions. The other options refer to other benefits of AWS but do not directly relate to economies of scale. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-1053", uuidv5.URL),
+    id: uuidv5("aws-question-702", uuidv5.URL),
     text: "Which AWS services can be used to gather information about AWS account activity? (Choose TWO)",
     options: [
       "Amazon CloudFront",
@@ -9010,10 +9010,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "AWS CloudTrail logs account activity, helping track API calls and actions taken. Amazon CloudWatch provides monitoring and operational insights by collecting and analyzing logs and metrics. The other options do not directly provide account activity tracking.",
+      "AWS CloudTrail logs account activity, helping track API calls and actions taken. Amazon CloudWatch provides monitoring and operational insights by collecting and analyzing logs and metrics. The other options do not directly provide account activity tracking. More info: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html and https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
   },
   {
-    id: uuidv5("aws-question-1054", uuidv5.URL),
+    id: uuidv5("aws-question-703", uuidv5.URL),
     text: "Which of the following common IT tasks can AWS cover to free up company IT resources? (Choose TWO)",
     options: [
       "Patching database software",
@@ -9024,10 +9024,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS services like RDS automate database patching and backups, freeing up IT resources. Creating a database schema and testing applications remain developer responsibilities, and penetration testing requires additional approval from AWS.",
+      "AWS services like RDS automate database patching and backups, freeing up IT resources. Creating a database schema and testing applications remain developer responsibilities, and penetration testing requires additional approval from AWS. More info: https://aws.amazon.com/rds/features/",
   },
   {
-    id: uuidv5("aws-question-1055", uuidv5.URL),
+    id: uuidv5("aws-question-704", uuidv5.URL),
     text: "In which scenario should Amazon EC2 Spot Instances be used?",
     options: [
       "A company wants to move its main website to AWS from an on-premises web server.",
@@ -9037,10 +9037,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "EC2 Spot Instances are ideal for interruptible workloads that can tolerate occasional disruptions, offering cost savings. The other scenarios require stable, high-availability infrastructure that Spot Instances cannot guarantee.",
+      "EC2 Spot Instances are ideal for interruptible workloads that can tolerate occasional disruptions, offering cost savings. The other scenarios require stable, high-availability infrastructure that Spot Instances cannot guarantee. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
   },
   {
-    id: uuidv5("aws-question-1056", uuidv5.URL),
+    id: uuidv5("aws-question-705", uuidv5.URL),
     text: "Which AWS feature should a customer leverage to achieve high availability of an application?",
     options: [
       "AWS Direct Connect",
@@ -9050,26 +9050,26 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Availability Zones (AZs) provide redundancy and fault tolerance for applications, ensuring high availability. Direct Connect provides private network connections, VPCs offer isolated networking, and data centers are part of AWS infrastructure but do not ensure high availability on their own.",
+      "Availability Zones (AZs) provide redundancy and fault tolerance for applications, ensuring high availability. Direct Connect provides private network connections, VPCs offer isolated networking, and data centers are part of AWS infrastructure but do not ensure high availability on their own. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-1057", uuidv5.URL),
+    id: uuidv5("aws-question-706", uuidv5.URL),
     text: "Which is the minimum AWS Support plan that includes Infrastructure Event Management without additional costs?",
     options: ["Enterprise", "Business", "Developer", "Basic"],
     correctAnswers: [1],
     explanation:
-      "The Business Support plan includes Infrastructure Event Management at no additional cost, while Developer and Basic plans do not offer this feature. Enterprise Support also includes it but is a higher-tier plan.",
+      "The Business Support plan includes Infrastructure Event Management at no additional cost, while Developer and Basic plans do not offer this feature. Enterprise Support also includes it but is a higher-tier plan. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-1058", uuidv5.URL),
+    id: uuidv5("aws-question-707", uuidv5.URL),
     text: "Which AWS service can serve a static website?",
     options: ["Amazon S3", "Amazon Route 53", "Amazon QuickSight", "AWS X-Ray"],
     correctAnswers: [0],
     explanation:
-      "Amazon S3 can host static websites, delivering static content directly to users. Route 53 provides DNS services, QuickSight is a business intelligence tool, and X-Ray is used for application tracing.",
+      "Amazon S3 can host static websites, delivering static content directly to users. Route 53 provides DNS services, QuickSight is a business intelligence tool, and X-Ray is used for application tracing. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html",
   },
   {
-    id: uuidv5("aws-question-1059", uuidv5.URL),
+    id: uuidv5("aws-question-708", uuidv5.URL),
     text: "How does AWS shorten the time to provision IT resources?",
     options: [
       "It supplies an online IT ticketing platform for resource requests.",
@@ -9079,10 +9079,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS allows programmatic provisioning of resources using tools like AWS CloudFormation and APIs, reducing manual intervention. The other options do not describe AWS’s primary approach to rapid resource provisioning.",
+      "AWS allows programmatic provisioning of resources using tools like AWS CloudFormation and APIs, reducing manual intervention. The other options do not describe AWS’s primary approach to rapid resource provisioning. More info: https://aws.amazon.com/cloudformation/",
   },
   {
-    id: uuidv5("aws-question-1060", uuidv5.URL),
+    id: uuidv5("aws-question-709", uuidv5.URL),
     text: "What can AWS edge locations be used for? (Choose TWO)",
     options: [
       "Hosting applications",
@@ -9093,10 +9093,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "AWS edge locations, used by CloudFront, reduce latency by caching content closer to users and help reduce server traffic by serving cached responses. They do not host applications, run NoSQL databases, or send notifications.",
+      "AWS edge locations, used by CloudFront, reduce latency by caching content closer to users and help reduce server traffic by serving cached responses. They do not host applications, run NoSQL databases, or send notifications. More info: https://aws.amazon.com/cloudfront/features/",
   },
   {
-    id: uuidv5("aws-question-1061", uuidv5.URL),
+    id: uuidv5("aws-question-710", uuidv5.URL),
     text: "Which of the following can limit Amazon Simple Storage Service (Amazon S3) bucket access to specific users?",
     options: [
       "A public and private key-pair",
@@ -9106,10 +9106,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "IAM policies control access to S3 buckets by defining user permissions. Public-private key pairs are used for encryption, Amazon Inspector is a security assessment tool, and Security Groups control network access but not bucket access.",
+      "IAM policies control access to S3 buckets by defining user permissions. Public-private key pairs are used for encryption, Amazon Inspector is a security assessment tool, and Security Groups control network access but not bucket access. More info: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html",
   },
   {
-    id: uuidv5("aws-question-1062", uuidv5.URL),
+    id: uuidv5("aws-question-711", uuidv5.URL),
     text: "A solution that is able to support growth in users, traffic, or data size with no drop in performance aligns with which cloud architecture principle?",
     options: [
       "Think parallel",
@@ -9119,10 +9119,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Implementing elasticity allows a system to scale with increasing demand while maintaining performance. The other options focus on other architectural best practices but do not specifically address scalability.",
+      "Implementing elasticity allows a system to scale with increasing demand while maintaining performance. The other options focus on other architectural best practices but do not specifically address scalability. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency-pillar.html",
   },
   {
-    id: uuidv5("aws-question-1063", uuidv5.URL),
+    id: uuidv5("aws-question-712", uuidv5.URL),
     text: "Which of the following tasks is the responsibility of AWS?",
     options: [
       "Encrypting client-side data",
@@ -9132,10 +9132,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS is responsible for securing the underlying infrastructure, including the EC2 hypervisor. Customers are responsible for configuring IAM, encrypting data, and setting password policies.",
+      "AWS is responsible for securing the underlying infrastructure, including the EC2 hypervisor. Customers are responsible for configuring IAM, encrypting data, and setting password policies. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1064", uuidv5.URL),
+    id: uuidv5("aws-question-713", uuidv5.URL),
     text: "One benefit of On-Demand Amazon Elastic Compute Cloud (Amazon EC2) pricing is:",
     options: [
       "The ability to bid for a lower hourly cost.",
@@ -9145,10 +9145,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "On-Demand instances allow users to pay only for the time they use, without long-term commitments or upfront costs, making them flexible for varying workloads.",
+      "On-Demand instances allow users to pay only for the time they use, without long-term commitments or upfront costs, making them flexible for varying workloads. More info: https://aws.amazon.com/ec2/pricing/on-demand/",
   },
   {
-    id: uuidv5("aws-question-1065", uuidv5.URL),
+    id: uuidv5("aws-question-714", uuidv5.URL),
     text: "An administrator needs to rapidly deploy a popular IT solution and start using it immediately. Where can the administrator find assistance?",
     options: [
       "AWS Well-Architected Framework documentation",
@@ -9158,10 +9158,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Quick Starts provide pre-configured, automated deployments for popular IT solutions, reducing setup time and complexity.",
+      "AWS Quick Starts provide pre-configured, automated deployments for popular IT solutions, reducing setup time and complexity. The other options do not provide automated deployment templates. More info: https://aws.amazon.com/quickstart/",
   },
   {
-    id: uuidv5("aws-question-1066", uuidv5.URL),
+    id: uuidv5("aws-question-715", uuidv5.URL),
     text: "Which of the following services is in the category of AWS serverless platform?",
     options: [
       "Amazon EMR",
@@ -9171,10 +9171,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Lambda is a core service in AWS's serverless platform, allowing users to run code without provisioning or managing servers.",
+      "AWS Lambda is a core service in AWS's serverless platform, allowing users to run code without provisioning or managing servers. EMR (A) is for big data, ELB (B) is for load balancing, and Mobile Hub (D) is for mobile app development. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-1067", uuidv5.URL),
+    id: uuidv5("aws-question-716", uuidv5.URL),
     text: "Which services are parts of the AWS serverless platform?",
     options: [
       "Amazon EC2, Amazon S3, Amazon Athena",
@@ -9184,10 +9184,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Step Functions, Amazon DynamoDB, and Amazon SNS are serverless services that provide workflow orchestration, database, and messaging capabilities without requiring server management.",
+      "AWS Step Functions, Amazon DynamoDB, and Amazon SNS are serverless services that provide workflow orchestration, database, and messaging capabilities without requiring server management. The other options include non-serverless services. More info: https://aws.amazon.com/serverless/",
   },
   {
-    id: uuidv5("aws-question-1068", uuidv5.URL),
+    id: uuidv5("aws-question-717", uuidv5.URL),
     text: "Under the shared responsibility model, which of the following is a shared control between a customer and AWS?",
     options: [
       "Physical controls",
@@ -9197,10 +9197,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Patch management is a shared control: AWS patches its infrastructure, while customers are responsible for patching their own OS and applications.",
+      "Patch management is a shared control: AWS patches its infrastructure, while customers are responsible for patching their own OS and applications. Physical controls and data center auditing are AWS's responsibility, and zone security is not a defined shared control. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1069", uuidv5.URL),
+    id: uuidv5("aws-question-718", uuidv5.URL),
     text: "What technology enables compute capacity to adjust as loads change?",
     options: [
       "Load balancing",
@@ -9210,10 +9210,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Auto Scaling automatically adjusts compute resources based on demand, ensuring optimal performance and cost efficiency.",
+      "Auto Scaling automatically adjusts compute resources based on demand, ensuring optimal performance and cost efficiency. Load balancing distributes traffic, failover is for redundancy, and round robin is a routing method. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   },
   {
-    id: uuidv5("aws-question-1070", uuidv5.URL),
+    id: uuidv5("aws-question-719", uuidv5.URL),
     text: "Which AWS services are defined as global instead of regional? (Choose TWO)",
     options: [
       "Amazon Route 53",
@@ -9224,10 +9224,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "Amazon Route 53 and Amazon CloudFront are global services, meaning they are not restricted to specific AWS regions.",
+      "Amazon Route 53 and Amazon CloudFront are global services, meaning they are not restricted to specific AWS regions. EC2, S3, and DynamoDB are regional services. More info: https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html",
   },
   {
-    id: uuidv5("aws-question-1071", uuidv5.URL),
+    id: uuidv5("aws-question-720", uuidv5.URL),
     text: "What can AWS edge locations be used for? (Choose TWO)",
     options: [
       "Hosting applications",
@@ -9238,10 +9238,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Edge locations, used by CloudFront, cache content closer to users and reduce the load on origin servers by serving cached responses.",
+      "Edge locations, used by CloudFront, cache content closer to users and reduce the load on origin servers by serving cached responses. They do not host applications, run NoSQL databases, or send notifications. More info: https://aws.amazon.com/cloudfront/features/",
   },
   {
-    id: uuidv5("aws-question-1072", uuidv5.URL),
+    id: uuidv5("aws-question-721", uuidv5.URL),
     text: "Which AWS service would you use to obtain compliance reports and certificates?",
     options: [
       "AWS Artifact",
@@ -9251,10 +9251,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Artifact is the central resource for compliance-related information, providing access to AWS' security and compliance reports and agreements. Other options do not offer compliance reports or certifications.",
+      "AWS Artifact is the central resource for compliance-related information, providing access to AWS' security and compliance reports and agreements. Lambda (B) is for serverless compute, Inspector (C) is for security assessments, and Certificate Manager (D) manages SSL/TLS certificates. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1073", uuidv5.URL),
+    id: uuidv5("aws-question-722", uuidv5.URL),
     text: "Under the shared responsibility model, which of the following tasks are the responsibility of the AWS customer? (Select TWO.)",
     options: [
       "Ensuring that application data is encrypted at rest",
@@ -9265,18 +9265,18 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "Customers are responsible for securing their data and training their users on security best practices. AWS manages the infrastructure, including hardware disposal and physical security of data centers.",
+      "Customers are responsible for securing their data and training their users on security best practices. AWS manages the infrastructure, including hardware disposal and physical security of data centers. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1074", uuidv5.URL),
+    id: uuidv5("aws-question-723", uuidv5.URL),
     text: "Which AWS service can be used to manually launch instances based on resource requirements?",
     options: ["Amazon EBS", "Amazon S3", "Amazon EC2", "Amazon ECS"],
     correctAnswers: [2],
     explanation:
-      "Amazon EC2 allows users to manually launch instances with customizable compute, storage, and networking options. Other services do not provide direct instance launching capabilities.",
+      "Amazon EC2 allows users to manually launch instances with customizable compute, storage, and networking options. EBS (A) is block storage, S3 (B) is object storage, and ECS (D) is for container orchestration. More info: https://aws.amazon.com/ec2/",
   },
   {
-    id: uuidv5("aws-question-1075", uuidv5.URL),
+    id: uuidv5("aws-question-724", uuidv5.URL),
     text: "A company is migrating an application that is running non-interruptible workloads for a three-year time frame. Which pricing construct would provide the MOST cost-effective solution?",
     options: [
       "Amazon EC2 Spot Instances",
@@ -9286,10 +9286,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Reserved Instances offer significant cost savings for long-term, predictable workloads compared to On-Demand and Dedicated Instances. Spot Instances are not suitable for non-interruptible workloads.",
+      "Reserved Instances offer significant cost savings for long-term, predictable workloads compared to On-Demand and Dedicated Instances. Spot Instances are not suitable for non-interruptible workloads. More info: https://aws.amazon.com/ec2/pricing/reserved-instances/",
   },
   {
-    id: uuidv5("aws-question-1076", uuidv5.URL),
+    id: uuidv5("aws-question-725", uuidv5.URL),
     text: "The financial benefits of using AWS are: (Select TWO.)",
     options: [
       "Reduced Total Cost of Ownership (TCO)",
@@ -9300,10 +9300,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS helps reduce both TCO and opex by eliminating upfront infrastructure investments and providing a pay-as-you-go model. Capex is reduced rather than increased, and AWS does not directly offer financial credit lines.",
+      "AWS helps reduce both TCO and opex by eliminating upfront infrastructure investments and providing a pay-as-you-go model. Capex is reduced rather than increased, and AWS does not directly offer financial credit lines. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-1077", uuidv5.URL),
+    id: uuidv5("aws-question-726", uuidv5.URL),
     text: "Which of the following is entirely the responsibility of AWS, according to the AWS shared responsibility model?",
     options: [
       "Patching of the guest operating system",
@@ -9313,10 +9313,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS is responsible for securing its infrastructure, including physical and environmental security. Customers are responsible for OS patching, security training, and IAM policies.",
+      "AWS is responsible for securing its infrastructure, including physical and environmental security. Customers are responsible for OS patching, security training, and IAM policies. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1078", uuidv5.URL),
+    id: uuidv5("aws-question-727", uuidv5.URL),
     text: "Which AWS service allows companies to connect an Amazon VPC to an on-premises data center? (Select TWO)",
     options: [
       "AWS VPN",
@@ -9326,10 +9326,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS VPN and Direct Connect enable secure connectivity between on-premises data centers and AWS. Other services like Redshift and API Gateway do not provide network connectivity solutions.",
+      "AWS VPN and Direct Connect enable secure connectivity between on-premises data centers and AWS. Redshift (B) is a data warehouse, and API Gateway (C) is for API management. More info: https://docs.aws.amazon.com/vpc/latest/userguide/vpn-connections.html and https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-1079", uuidv5.URL),
+    id: uuidv5("aws-question-728", uuidv5.URL),
     text: "A company wants to reduce the physical compute footprint that developers use to run code. Which service would meet that need by enabling serverless architectures?",
     options: [
       "Amazon Elastic Compute Cloud (Amazon EC2)",
@@ -9339,10 +9339,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Lambda allows developers to run code without provisioning or managing servers, reducing physical compute requirements. Other services do not provide serverless computing.",
+      "AWS Lambda allows developers to run code without provisioning or managing servers, reducing physical compute requirements. EC2 (A) requires server management, DynamoDB (C) is a database, and CodeCommit (D) is for source control. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-1080", uuidv5.URL),
+    id: uuidv5("aws-question-729", uuidv5.URL),
     text: "Which AWS service provides alerts when an AWS event may impact a company's AWS resources?",
     options: [
       "AWS Personal Health Dashboard",
@@ -9352,10 +9352,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Personal Health Dashboard provides personalized alerts about events that might impact a company's AWS resources. Other services provide broader or advisory information.",
+      "AWS Personal Health Dashboard provides personalized alerts about events that might impact a company's AWS resources. Service Health Dashboard (B) is general, Trusted Advisor (C) is for best practices, and Infrastructure Event Management (D) is for planned events. More info: https://aws.amazon.com/premiumsupport/phd/",
   },
   {
-    id: uuidv5("aws-question-1081", uuidv5.URL),
+    id: uuidv5("aws-question-730", uuidv5.URL),
     text: "Which of the following are categories of AWS Trusted Advisor? (Select TWO.)",
     options: [
       "Fault Tolerance",
@@ -9366,18 +9366,18 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS Trusted Advisor provides recommendations in five categories, including Performance and Fault Tolerance. Instance Usage and Storage Capacity are not explicit categories.",
+      "AWS Trusted Advisor provides recommendations in five categories, including Performance and Fault Tolerance. Instance Usage and Storage Capacity are not explicit categories. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-1082", uuidv5.URL),
+    id: uuidv5("aws-question-731", uuidv5.URL),
     text: "Which of the following services falls under the responsibility of the customer to maintain operating system configuration, security patching, and networking?",
     options: ["Amazon RDS", "Amazon EC2", "Amazon ElastiCache", "AWS Fargate"],
     correctAnswers: [1],
     explanation:
-      "The customer is responsible for managing, support, patching and control of the guest operating system and AWS services provided like EC2.",
+      "The customer is responsible for managing, supporting, patching, and controlling the guest operating system and networking for Amazon EC2. RDS, ElastiCache, and Fargate are managed services where AWS handles these tasks. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1083", uuidv5.URL),
+    id: uuidv5("aws-question-732", uuidv5.URL),
     text: "A company will be moving from an on-premises data center to the AWS Cloud. What would be one financial difference after the move?",
     options: [
       "Moving from variable operational expense (opex) to upfront capital expense (capex).",
@@ -9387,10 +9387,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS follows a pay-as-you-go model, which moves businesses from a capital expense (CapEx) model to an operational expense (OpEx) model, allowing for variable costs instead of large upfront investments.",
+      "AWS follows a pay-as-you-go model, which moves businesses from a capital expense (CapEx) model to an operational expense (OpEx) model, allowing for variable costs instead of large upfront investments. More info: https://aws.amazon.com/economics/",
   },
   {
-    id: uuidv5("aws-question-1084", uuidv5.URL),
+    id: uuidv5("aws-question-733", uuidv5.URL),
     text: "How should a customer forecast the future costs for running a new web application?",
     options: [
       "Amazon Aurora Backtrack",
@@ -9400,18 +9400,18 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The AWS Simple Monthly Calculator helps customers estimate their future costs by allowing them to model different configurations and usage scenarios.",
+      "The AWS Simple Monthly Calculator helps customers estimate their future costs by allowing them to model different configurations and usage scenarios. Aurora Backtrack (A) is for database recovery, Billing Alarms (B) monitor spending, and Cost and Usage report (D) provides historical data. More info: https://aws.amazon.com/calculator/",
   },
   {
-    id: uuidv5("aws-question-1085", uuidv5.URL),
+    id: uuidv5("aws-question-734", uuidv5.URL),
     text: "Which is the MINIMUM AWS Support plan that provides technical support through phone calls?",
     options: ["Enterprise", "Business", "Developer", "Basic"],
     correctAnswers: [1],
     explanation:
-      "The Business support plan is the minimum AWS Support plan that provides technical support via phone calls.",
+      "The Business support plan is the minimum AWS Support plan that provides technical support via phone calls. Developer and Basic plans do not offer phone support. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-1086", uuidv5.URL),
+    id: uuidv5("aws-question-735", uuidv5.URL),
     text: "According to the AWS shared responsibility model, what is the sole responsibility of AWS?",
     options: [
       "Application security",
@@ -9421,10 +9421,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Client-side data and application security are the customer's responsibility. Patch management is a shared responsibility. AWS is solely responsible for managing edge locations.",
+      "Client-side data and application security are the customer's responsibility. Patch management is a shared responsibility. AWS is solely responsible for managing edge locations. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1087", uuidv5.URL),
+    id: uuidv5("aws-question-736", uuidv5.URL),
     text: "Which AWS IAM feature is used to associate a set of permissions with multiple users?",
     options: [
       "Multi-factor authentication",
@@ -9434,10 +9434,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "IAM Groups allow you to assign permissions to multiple users at once, making permission management more efficient.",
+      "IAM Groups allow you to assign permissions to multiple users at once, making permission management more efficient. MFA (A) is for authentication, password policies (C) set password rules, and access keys (D) are for programmatic access. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html",
   },
   {
-    id: uuidv5("aws-question-1088", uuidv5.URL),
+    id: uuidv5("aws-question-737", uuidv5.URL),
     text: "Which of the following are benefits of the AWS Cloud? (Choose two.)",
     options: [
       "Unlimited uptime",
@@ -9448,10 +9448,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "Elasticity allows AWS resources to scale up or down as needed, and agility enables businesses to innovate faster and adapt quickly to market demands.",
+      "Elasticity allows AWS resources to scale up or down as needed, and agility enables businesses to innovate faster and adapt quickly to market demands. Unlimited uptime (A) is not guaranteed, colocation (D) is not a cloud benefit, and capital expenses (E) are reduced, not a benefit. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-1089", uuidv5.URL),
+    id: uuidv5("aws-question-738", uuidv5.URL),
     text: "Which of the following can a customer use to enable single sign-on (SSO) to the AWS Console?",
     options: [
       "Amazon Connect",
@@ -9461,10 +9461,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Directory Service provides integration with existing directories, enabling single sign-on (SSO) to the AWS Console.",
+      "AWS Directory Service provides integration with existing directories, enabling single sign-on (SSO) to the AWS Console. The other services do not provide SSO capabilities. More info: https://aws.amazon.com/directoryservice/",
   },
   {
-    id: uuidv5("aws-question-1090", uuidv5.URL),
+    id: uuidv5("aws-question-739", uuidv5.URL),
     text: "What are the multiple, isolated locations within an AWS Region that are connected by low-latency networks called?",
     options: [
       "AWS Direct Connects",
@@ -9474,10 +9474,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Availability Zones are the isolated locations within an AWS Region, connected by low-latency links to ensure high availability and fault tolerance.",
+      "Availability Zones are the isolated locations within an AWS Region, connected by low-latency links to ensure high availability and fault tolerance. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-1091", uuidv5.URL),
+    id: uuidv5("aws-question-740", uuidv5.URL),
     text: "Which of the following benefits does the AWS Compliance program provide to AWS customers? (Choose two.)",
     options: [
       "It verifies that hosted workloads are automatically compliant with the controls of supported compliance frameworks.",
@@ -9488,18 +9488,18 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "AWS Compliance program helps customers by ensuring workloads comply with compliance frameworks and maintaining compliance documentation.",
+      "AWS Compliance program helps customers by ensuring workloads comply with compliance frameworks and maintaining compliance documentation. The other options are not direct benefits of the AWS Compliance program. More info: https://aws.amazon.com/compliance/programs/",
   },
   {
-    id: uuidv5("aws-question-1092", uuidv5.URL),
+    id: uuidv5("aws-question-741", uuidv5.URL),
     text: "Which of the following services provides on-demand access to AWS compliance reports?",
     options: ["AWS IAM", "AWS Artifact", "Amazon GuardDuty", "AWS KMS"],
     correctAnswers: [1],
     explanation:
-      "AWS Artifact is a central resource for compliance-related information. It provides on-demand access to AWS' security and compliance reports, including SOC reports, PCI reports, and various certifications. The other options do not provide compliance reports.",
+      "AWS Artifact is a central resource for compliance-related information. It provides on-demand access to AWS' security and compliance reports, including SOC reports, PCI reports, and various certifications. The other options do not provide compliance reports. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1093", uuidv5.URL),
+    id: uuidv5("aws-question-742", uuidv5.URL),
     text: "As part of the AWS shared responsibility model, which of the following operational controls do users fully inherit from AWS?",
     options: [
       "Security management of data center",
@@ -9509,10 +9509,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS is responsible for the security of the cloud, including data center security. Customers are responsible for security in the cloud, which includes user and access management, configuration management, and patching within their environment.",
+      "AWS is responsible for the security of the cloud, including data center security. Customers are responsible for security in the cloud, which includes user and access management, configuration management, and patching within their environment. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1094", uuidv5.URL),
+    id: uuidv5("aws-question-743", uuidv5.URL),
     text: "When comparing AWS Cloud with on-premises Total Cost of Ownership, which expenses must be considered? (Choose two.)",
     options: [
       "Software development",
@@ -9523,10 +9523,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [2, 3],
     explanation:
-      "When moving from on-premises to AWS, costs such as physical servers and storage hardware are eliminated, as AWS provides these resources. Software development and project management remain separate costs.",
+      "When moving from on-premises to AWS, costs such as physical servers and storage hardware are eliminated, as AWS provides these resources. Software development and project management remain separate costs. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-1095", uuidv5.URL),
+    id: uuidv5("aws-question-744", uuidv5.URL),
     text: "Under the shared responsibility model, which of the following tasks are the responsibility of the customer? (Choose two.)",
     options: [
       "Maintaining the underlying Amazon EC2 hardware",
@@ -9537,10 +9537,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "Customers are responsible for securing their applications, which includes managing VPC network ACLs and encrypting data. AWS is responsible for maintaining hardware and infrastructure.",
+      "Customers are responsible for securing their applications, which includes managing VPC network ACLs and encrypting data. AWS is responsible for maintaining hardware and infrastructure. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1096", uuidv5.URL),
+    id: uuidv5("aws-question-745", uuidv5.URL),
     text: "Which scenarios represent the concept of elasticity on AWS? (Choose two.)",
     options: [
       "Scaling the number of Amazon EC2 instances based on traffic.",
@@ -9551,10 +9551,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "Elasticity refers to the ability to scale resources up or down based on demand. Scaling EC2 instances and resizing RDS instances fit this concept, whereas compliance and governance do not.",
+      "Elasticity refers to the ability to scale resources up or down based on demand. Scaling EC2 instances and resizing RDS instances fit this concept, whereas compliance and governance do not. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/performance-efficiency-pillar.html",
   },
   {
-    id: uuidv5("aws-question-1097", uuidv5.URL),
+    id: uuidv5("aws-question-746", uuidv5.URL),
     text: "When is it beneficial for a company to use a Spot Instance?",
     options: [
       "When there is flexibility in when an application needs to run.",
@@ -9564,10 +9564,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Spot Instances are ideal for workloads with flexible start and stop times since they can be interrupted when AWS needs capacity. They are not suitable for mission-critical workloads.",
+      "Spot Instances are ideal for workloads with flexible start and stop times since they can be interrupted when AWS needs capacity. They are not suitable for mission-critical workloads. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html",
   },
   {
-    id: uuidv5("aws-question-1098", uuidv5.URL),
+    id: uuidv5("aws-question-747", uuidv5.URL),
     text: "A company is considering moving its on-premises data center to AWS. What factors should be included in doing a Total Cost of Ownership (TCO) analysis? (Choose two.)",
     options: [
       "Amazon EC2 instance availability",
@@ -9578,10 +9578,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [1, 2],
     explanation:
-      "TCO analysis includes costs such as power consumption and labor for hardware replacement, which are eliminated when moving to AWS. Other factors are either unrelated or dependent on application choices.",
+      "TCO analysis includes costs such as power consumption and labor for hardware replacement, which are eliminated when moving to AWS. Other factors are either unrelated or dependent on application choices. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-1099", uuidv5.URL),
+    id: uuidv5("aws-question-748", uuidv5.URL),
     text: "How does AWS charge for AWS Lambda?",
     options: [
       "Users bid on the maximum price they are willing to pay per hour.",
@@ -9591,10 +9591,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Lambda pricing is based on the number of requests and the compute time used. There are no upfront commitments or bidding involved.",
+      "AWS Lambda pricing is based on the number of requests and the compute time used. There are no upfront commitments or bidding involved. More info: https://aws.amazon.com/lambda/pricing/",
   },
   {
-    id: uuidv5("aws-question-1100", uuidv5.URL),
+    id: uuidv5("aws-question-749", uuidv5.URL),
     text: "What function do security groups serve related to Amazon EC2 instance security?",
     options: [
       "Act as a virtual firewall for the Amazon EC2 instance.",
@@ -9604,10 +9604,10 @@ const exam15: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Security groups act as a virtual firewall, controlling inbound and outbound traffic for EC2 instances. Other services like IAM, AWS Shield, and CloudFront serve different security purposes.",
+      "Security groups act as a virtual firewall, controlling inbound and outbound traffic for EC2 instances. Other services like IAM, AWS Shield, and CloudFront serve different security purposes. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html",
   },
   {
-    id: uuidv5("aws-question-1101", uuidv5.URL),
+    id: uuidv5("aws-question-750", uuidv5.URL),
     text: "Which disaster recovery scenario offers the lowest probability of downtime?",
     options: [
       "Backup and restore",
@@ -9617,7 +9617,7 @@ const exam15: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "A multi-site active-active setup ensures redundancy and minimizes downtime by running workloads across multiple locations. Other methods have varying degrees of recovery time.",
+      "A multi-site active-active setup ensures redundancy and minimizes downtime by running workloads across multiple locations. Other methods have varying degrees of recovery time. More info: https://aws.amazon.com/architecture/disaster-recovery/",
   },
 ];
 
