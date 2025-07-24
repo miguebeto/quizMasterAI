@@ -9623,7 +9623,7 @@ const exam15: Question[] = [
 
 export const exam16: Question[] = [
   {
-    id: uuidv5("aws-question-1102", uuidv5.URL),
+    id: uuidv5("aws-question-751", uuidv5.URL),
     text: "What will help a company perform a cost benefit analysis of migrating to the AWS Cloud?",
     options: [
       "Cost Explorer",
@@ -9633,10 +9633,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS TCO calculators allow you to estimate the cost savings when using AWS and provide a detailed set of reports for executive presentations. The calculators also allow you to modify assumptions to best meet your business needs.",
+      "AWS TCO calculators allow you to estimate the cost savings when using AWS and provide a detailed set of reports for executive presentations. The calculators also allow you to modify assumptions to best meet your business needs. Cost Explorer (A) is for cost analysis, Simple Monthly Calculator (C) is for monthly estimates, and Trusted Advisor (D) is for best practices. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-1103", uuidv5.URL),
+    id: uuidv5("aws-question-752", uuidv5.URL),
     text: "Which of the following provides the ability to share the cost benefits of Reserved Instances across AWS accounts?",
     options: [
       "AWS Cost Explorer between AWS accounts",
@@ -9646,10 +9646,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Reserved Instance discounts apply to accounts in an organization's consolidated billing family if Reserved Instance sharing is enabled. By default, Reserved Instance sharing is on.",
+      "Reserved Instance discounts apply to accounts in an organization's consolidated billing family if Reserved Instance sharing is enabled. By default, Reserved Instance sharing is on. The other options do not provide this feature. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-1104", uuidv5.URL),
+    id: uuidv5("aws-question-753", uuidv5.URL),
     text: "A company has multiple AWS accounts and wants to simplify and consolidate its billing process. Which AWS service will achieve this?",
     options: [
       "AWS Cost and Usage Reports",
@@ -9659,10 +9659,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Organizations provides consolidated billing, allowing companies to manage multiple AWS accounts under a single payment method.",
+      "AWS Organizations provides consolidated billing, allowing companies to manage multiple AWS accounts under a single payment method. The other services do not consolidate billing. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-1105", uuidv5.URL),
+    id: uuidv5("aws-question-754", uuidv5.URL),
     text: "A company is designing an application hosted in a single AWS Region serving end-users spread across the world. The company wants to provide the end-users low latency access to the application data. Which of the following services will help fulfill this requirement?",
     options: [
       "Amazon CloudFront",
@@ -9672,18 +9672,18 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Amazon CloudFront is a content delivery network (CDN) that distributes data globally, providing low-latency access to users.",
+      "Amazon CloudFront is a content delivery network (CDN) that distributes data globally, providing low-latency access to users. Direct Connect (B) is for private networking, Route 53 (C) is DNS, and S3 transfer acceleration (D) is for faster uploads to S3. More info: https://aws.amazon.com/cloudfront/",
   },
   {
-    id: uuidv5("aws-question-1106", uuidv5.URL),
+    id: uuidv5("aws-question-755", uuidv5.URL),
     text: "Which of the following deployment models enables customers to fully trade their capital IT expenses for operational expenses?",
     options: ["On-premises", "Hybrid", "Cloud", "Platform as a service"],
     correctAnswers: [2],
     explanation:
-      "The cloud model allows businesses to eliminate upfront capital expenses and switch to a pay-as-you-go model.",
+      "The cloud model allows businesses to eliminate upfront capital expenses and switch to a pay-as-you-go model. On-premises and hybrid models still require capital investment, and PaaS is a service model, not a deployment model. More info: https://aws.amazon.com/what-is-cloud-computing/",
   },
   {
-    id: uuidv5("aws-question-1107", uuidv5.URL),
+    id: uuidv5("aws-question-756", uuidv5.URL),
     text: "How is asset management on AWS easier than asset management in a physical data center?",
     options: [
       "AWS provides a Configuration Management Database that users can maintain.",
@@ -9693,10 +9693,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS centrally manages assets through an inventory system that tracks ownership, status, and maintenance.",
+      "AWS centrally manages assets through an inventory system that tracks ownership, status, and maintenance. The other options do not reflect AWS's approach to asset management. More info: https://docs.aws.amazon.com/config/latest/developerguide/resource-inventory.html",
   },
   {
-    id: uuidv5("aws-question-1108", uuidv5.URL),
+    id: uuidv5("aws-question-757", uuidv5.URL),
     text: "What feature of Amazon RDS helps to create globally redundant databases?",
     options: [
       "Snapshots",
@@ -9706,10 +9706,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Cross-Region read replicas allow RDS databases to be replicated across different AWS regions for redundancy and availability.",
+      "Cross-Region read replicas allow RDS databases to be replicated across different AWS regions for redundancy and availability. Snapshots (A) are for backups, patching (B) is for maintenance, and Provisioned IOPS (D) is for performance. More info: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
   },
   {
-    id: uuidv5("aws-question-1109", uuidv5.URL),
+    id: uuidv5("aws-question-758", uuidv5.URL),
     text: "Using AWS Identity and Access Management (IAM) to grant access only to the resources needed to perform a task is a concept known as:",
     options: [
       "Restricted access",
@@ -9719,10 +9719,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The principle of least privilege ensures that users and roles are granted only the minimum permissions necessary to perform their tasks.",
+      "The principle of least privilege ensures that users and roles are granted only the minimum permissions necessary to perform their tasks. The other options are not standard IAM concepts. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
   },
   {
-    id: uuidv5("aws-question-1110", uuidv5.URL),
+    id: uuidv5("aws-question-759", uuidv5.URL),
     text: "Which methods can be used to identify AWS costs by departments? (Choose two.)",
     options: [
       "Enable multi-factor authentication for the AWS account root user.",
@@ -9733,10 +9733,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Creating separate AWS accounts for each department and tagging resources appropriately allows businesses to track costs effectively.",
+      "Creating separate AWS accounts for each department and tagging resources appropriately allows businesses to track costs effectively. MFA (A) and purchase orders (E) do not help with cost allocation, and Reserved Instances (C) are for cost savings, not tracking. More info: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
   },
   {
-    id: uuidv5("aws-question-1111", uuidv5.URL),
+    id: uuidv5("aws-question-760", uuidv5.URL),
     text: "Under the AWS shared responsibility model, customer responsibilities include which one of the following?",
     options: [
       "Securing the hardware, software, facilities, and networks that run all products and services.",
@@ -9746,10 +9746,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Customers are responsible for configuring their operating systems, networks, and firewalls in accordance with AWS security best practices.",
+      "Customers are responsible for configuring their operating systems, networks, and firewalls in accordance with AWS security best practices. AWS is responsible for the underlying infrastructure and certifications. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1112", uuidv5.URL),
+    id: uuidv5("aws-question-761", uuidv5.URL),
     text: "Which managed AWS service provides real-time guidance on AWS security best practices?",
     options: [
       "AWS X-Ray",
@@ -9759,10 +9759,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Trusted Advisor provides real-time guidance to help optimize resources, improve security, and reduce costs. The other options do not provide security best practice recommendations in real time.",
+      "AWS Trusted Advisor provides real-time guidance to help optimize resources, improve security, and reduce costs. The other options do not provide security best practice recommendations in real time. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-1113", uuidv5.URL),
+    id: uuidv5("aws-question-762", uuidv5.URL),
     text: "Which feature adds elasticity to Amazon EC2 instances to handle the changing demand for workloads?",
     options: [
       "Resource groups",
@@ -9772,10 +9772,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon EC2 Auto Scaling dynamically adjusts the number of EC2 instances based on demand, ensuring optimal performance and cost-efficiency. The other options do not directly manage elasticity.",
+      "Amazon EC2 Auto Scaling dynamically adjusts the number of EC2 instances based on demand, ensuring optimal performance and cost-efficiency. The other options do not directly manage elasticity. More info: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
   },
   {
-    id: uuidv5("aws-question-1114", uuidv5.URL),
+    id: uuidv5("aws-question-763", uuidv5.URL),
     text: "Under the AWS shared responsibility model, customers are responsible for which aspects of security in the cloud? (Choose two.)",
     options: [
       "Visualization management",
@@ -9786,10 +9786,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "Customers are responsible for securing their data (encryption management) and configuring firewalls (firewall management). AWS manages the underlying hardware and facilities, while visualization management is not a relevant security responsibility.",
+      "Customers are responsible for securing their data (encryption management) and configuring firewalls (firewall management). AWS manages the underlying hardware and facilities, while visualization management is not a relevant security responsibility. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1115", uuidv5.URL),
+    id: uuidv5("aws-question-764", uuidv5.URL),
     text: "Which AWS hybrid storage service enables on-premises applications to seamlessly use AWS Cloud storage through standard file-storage protocols?",
     options: [
       "AWS Direct Connect",
@@ -9799,10 +9799,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Storage Gateway integrates on-premises environments with AWS Cloud storage using standard file-storage protocols. Other options focus on network connectivity (Direct Connect) or physical data transfer (Snowball, Snowball Edge).",
+      "AWS Storage Gateway integrates on-premises environments with AWS Cloud storage using standard file-storage protocols. Other options focus on network connectivity (Direct Connect) or physical data transfer (Snowball, Snowball Edge). More info: https://aws.amazon.com/storagegateway/",
   },
   {
-    id: uuidv5("aws-question-1116", uuidv5.URL),
+    id: uuidv5("aws-question-765", uuidv5.URL),
     text: "What is a responsibility of AWS in the shared responsibility model?",
     options: [
       "Updating the network ACLs to block traffic to vulnerable ports.",
@@ -9812,10 +9812,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS is responsible for maintaining the underlying infrastructure, including updating firmware on EC2 hosts. Customers are responsible for managing security groups, network ACLs, and OS patching.",
+      "AWS is responsible for maintaining the underlying infrastructure, including updating firmware on EC2 hosts. Customers are responsible for managing security groups, network ACLs, and OS patching. More info: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1117", uuidv5.URL),
+    id: uuidv5("aws-question-766", uuidv5.URL),
     text: "Which architectural principle is used when deploying an Amazon Relational Database Service (Amazon RDS) instance in Multiple Availability Zone mode?",
     options: [
       "Implement loose coupling.",
@@ -9825,10 +9825,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Multi-AZ deployments ensure high availability by automatically failing over to a standby instance, embodying the 'Design for failure' principle.",
+      "Multi-AZ deployments ensure high availability by automatically failing over to a standby instance, embodying the 'Design for failure' principle. More info: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html",
   },
   {
-    id: uuidv5("aws-question-1118", uuidv5.URL),
+    id: uuidv5("aws-question-767", uuidv5.URL),
     text: "What does it mean to grant least privilege to AWS IAM users?",
     options: [
       "It is granting permissions to a single user only.",
@@ -9838,10 +9838,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "The principle of least privilege ensures users receive only the permissions necessary for their tasks, minimizing security risks.",
+      "The principle of least privilege ensures users receive only the permissions necessary for their tasks, minimizing security risks. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
   },
   {
-    id: uuidv5("aws-question-1119", uuidv5.URL),
+    id: uuidv5("aws-question-768", uuidv5.URL),
     text: "What is a benefit of loose coupling as a principle of cloud architecture design?",
     options: [
       "It facilitates low-latency request handling.",
@@ -9851,10 +9851,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Loose coupling ensures components are independent, preventing failures in one from affecting others, improving system resilience.",
+      "Loose coupling ensures components are independent, preventing failures in one from affecting others, improving system resilience. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-1120", uuidv5.URL),
+    id: uuidv5("aws-question-769", uuidv5.URL),
     text: "Which service will facilitate private hybrid connectivity?",
     options: [
       "Amazon VPC NAT Gateway",
@@ -9864,10 +9864,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Direct Connect provides private, low-latency connections between on-premises environments and AWS, ensuring secure hybrid connectivity.",
+      "AWS Direct Connect provides private, low-latency connections between on-premises environments and AWS, ensuring secure hybrid connectivity. The other options do not provide private hybrid connectivity. More info: https://aws.amazon.com/directconnect/",
   },
   {
-    id: uuidv5("aws-question-1121", uuidv5.URL),
+    id: uuidv5("aws-question-770", uuidv5.URL),
     text: "A company's web application currently has tight dependencies on underlying components, so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
     options: [
       "Implementing elasticity, enabling the application to scale up or scale down as demand changes.",
@@ -9877,10 +9877,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Decoupling components ensures that failures in one part of the system do not cascade to others, improving system reliability and availability.",
+      "Decoupling components ensures that failures in one part of the system do not cascade to others, improving system reliability and availability. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/general-design-principles.html",
   },
   {
-    id: uuidv5("aws-question-1123", uuidv5.URL),
+    id: uuidv5("aws-question-771", uuidv5.URL),
     text: "How can a customer increase security to AWS account logons? (Choose two.)",
     options: [
       "Configure AWS Certificate Manager",
@@ -9891,10 +9891,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Enabling Multi-Factor Authentication (MFA) adds an extra layer of security by requiring a second factor (such as a hardware device or an app-generated code) in addition to a password. Configuring a strong password policy ensures users create complex and secure passwords, reducing the risk of account compromise. AWS Certificate Manager is used for managing SSL/TLS certificates, Amazon Cognito is an identity provider for applications, and AWS Organizations is for managing multiple accounts, none of which directly enhance AWS account logon security.",
+      "Enabling Multi-Factor Authentication (MFA) adds an extra layer of security by requiring a second factor (such as a hardware device or an app-generated code) in addition to a password. Configuring a strong password policy ensures users create complex and secure passwords, reducing the risk of account compromise. AWS Certificate Manager is for SSL/TLS certificates, Cognito is for app identity, and Organizations is for account management. More info: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html and https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html",
   },
   {
-    id: uuidv5("aws-question-1124", uuidv5.URL),
+    id: uuidv5("aws-question-772", uuidv5.URL),
     text: "What AWS service would be used to centrally manage AWS access across multiple accounts?",
     options: [
       "AWS Service Catalog",
@@ -9904,10 +9904,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Organizations allows users to centrally manage multiple AWS accounts, apply policies, and enable consolidated billing. AWS Service Catalog manages approved AWS services, AWS Config tracks configuration changes, and AWS Trusted Advisor provides recommendations but does not manage access across accounts.",
+      "AWS Organizations allows users to centrally manage multiple AWS accounts, apply policies, and enable consolidated billing. The other services do not provide centralized access management. More info: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   },
   {
-    id: uuidv5("aws-question-1125", uuidv5.URL),
+    id: uuidv5("aws-question-773", uuidv5.URL),
     text: "Which AWS service can a customer use to set up an alert notification when the account is approaching a particular dollar amount?",
     options: [
       "AWS Cost and Usage reports",
@@ -9917,10 +9917,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Budgets allows users to set custom cost and usage budgets, sending alerts when thresholds are exceeded. AWS Cost and Usage Reports provide detailed billing data, AWS Cost Explorer helps analyze cost trends, and AWS Trusted Advisor offers best practice recommendations but does not trigger budget alerts.",
+      "AWS Budgets allows users to set custom cost and usage budgets, sending alerts when thresholds are exceeded. Cost and Usage Reports (A) provide detailed billing data, Cost Explorer (C) is for cost analysis, and Trusted Advisor (D) is for best practices. More info: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
   },
   {
-    id: uuidv5("aws-question-1126", uuidv5.URL),
+    id: uuidv5("aws-question-774", uuidv5.URL),
     text: "What can users access from AWS Artifact?",
     options: [
       "AWS security and compliance documents",
@@ -9930,18 +9930,18 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Artifact provides security and compliance documents such as ISO certifications and SOC reports. It does not provide configuration details, training materials, or security assessments for deployed applications.",
+      "AWS Artifact provides security and compliance documents such as ISO certifications and SOC reports. It does not provide configuration details, training materials, or security assessments for deployed applications. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1127", uuidv5.URL),
+    id: uuidv5("aws-question-775", uuidv5.URL),
     text: "Which is the MINIMUM AWS Support plan that provides designated Technical Account Managers?",
     options: ["Enterprise", "Business", "Developer", "Basic"],
     correctAnswers: [0],
     explanation:
-      "The Enterprise Support plan is the only plan that includes a designated Technical Account Manager (TAM). Business, Developer, and Basic plans do not provide this level of support.",
+      "The Enterprise Support plan is the only plan that includes a designated Technical Account Manager (TAM). Business, Developer, and Basic plans do not provide this level of support. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-1128", uuidv5.URL),
+    id: uuidv5("aws-question-776", uuidv5.URL),
     text: "Which of the following is an AWS Well-Architected Framework design principle related to reliability?",
     options: [
       "Deployment to a single Availability Zone",
@@ -9951,10 +9951,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Reliability in AWS architecture includes the ability to recover from failure. Using multiple Availability Zones, backups, and automated failover mechanisms contribute to this principle. The other options either do not relate directly to reliability or are counterproductive (such as deploying to a single Availability Zone).",
+      "Reliability in AWS architecture includes the ability to recover from failure. Using multiple Availability Zones, backups, and automated failover mechanisms contribute to this principle. The other options either do not relate directly to reliability or are counterproductive (such as deploying to a single Availability Zone). More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability-pillar.html",
   },
   {
-    id: uuidv5("aws-question-1129", uuidv5.URL),
+    id: uuidv5("aws-question-777", uuidv5.URL),
     text: "Which type of AWS storage is ephemeral and is deleted when an instance is stopped or terminated?",
     options: [
       "Amazon EBS",
@@ -9964,10 +9964,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon EC2 instance store is temporary storage that is lost when an instance is stopped or terminated. Amazon EBS persists across stops, Amazon EFS is a managed file system, and Amazon S3 is for object storage with durability across multiple locations.",
+      "Amazon EC2 instance store is temporary storage that is lost when an instance is stopped or terminated. Amazon EBS persists across stops, Amazon EFS is a managed file system, and Amazon S3 is for object storage with durability across multiple locations. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html",
   },
   {
-    id: uuidv5("aws-question-1130", uuidv5.URL),
+    id: uuidv5("aws-question-778", uuidv5.URL),
     text: "What is an advantage of using the AWS Cloud over a traditional on-premises solution?",
     options: [
       "Users do not have to guess about future capacity needs.",
@@ -9977,18 +9977,18 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS offers scalability, allowing users to provision resources on demand rather than estimating future capacity. The other options are incorrect because AWS does not require existing hardware, costs can fluctuate, and audits are still necessary.",
+      "AWS offers scalability, allowing users to provision resources on demand rather than estimating future capacity. The other options are incorrect because AWS does not require existing hardware, costs can fluctuate, and audits are still necessary. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-1131", uuidv5.URL),
+    id: uuidv5("aws-question-779", uuidv5.URL),
     text: "Which of the following is an AWS-managed compute service?",
     options: ["Amazon SWF", "Amazon EC2", "AWS Lambda", "Amazon Aurora"],
     correctAnswers: [2],
     explanation:
-      "AWS Lambda is a fully managed compute service that runs code in response to events without provisioning or managing servers. EC2 requires user management, Amazon SWF is for workflow automation, and Amazon Aurora is a managed database service.",
+      "AWS Lambda is a fully managed compute service that runs code in response to events without provisioning or managing servers. EC2 requires user management, Amazon SWF is for workflow automation, and Amazon Aurora is a managed database service. More info: https://aws.amazon.com/lambda/",
   },
   {
-    id: uuidv5("aws-question-1132", uuidv5.URL),
+    id: uuidv5("aws-question-780", uuidv5.URL),
     text: "Which of the following is an important architectural principle when designing cloud applications?",
     options: [
       "Store data and backups in the same region.",
@@ -9998,10 +9998,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Cloud applications should be designed for failure by implementing redundancy, failover mechanisms, and distributed architectures. Storing backups in the same region increases risk, tightly coupled components reduce flexibility, and avoiding multi-threading limits scalability.",
+      "Cloud applications should be designed for failure by implementing redundancy, failover mechanisms, and distributed architectures. Storing backups in the same region increases risk, tightly coupled components reduce flexibility, and avoiding multi-threading limits scalability. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability-pillar.html",
   },
   {
-    id: uuidv5("aws-question-1133", uuidv5.URL),
+    id: uuidv5("aws-question-781", uuidv5.URL),
     text: "Which mechanism allows developers to access AWS services from application code?",
     options: [
       "AWS Software Development Kit",
@@ -10011,10 +10011,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "The AWS Software Development Kit (SDK) allows developers to access AWS services from application code by providing APIs, libraries, and tools. The AWS Management Console is a web interface, AWS CodePipeline is a CI/CD service, and AWS Config is used for compliance and resource tracking, none of which are meant for direct application integration.",
+      "The AWS Software Development Kit (SDK) allows developers to access AWS services from application code by providing APIs, libraries, and tools. The AWS Management Console is a web interface, AWS CodePipeline is a CI/CD service, and AWS Config is used for compliance and resource tracking, none of which are meant for direct application integration. More info: https://aws.amazon.com/tools/",
   },
   {
-    id: uuidv5("aws-question-1134", uuidv5.URL),
+    id: uuidv5("aws-question-782", uuidv5.URL),
     text: "Which Amazon EC2 pricing model is the MOST cost efficient for an uninterruptible workload that runs once a year for 24 hours?",
     options: [
       "On-Demand Instances",
@@ -10024,10 +10024,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "On-Demand Instances allow users to pay for compute capacity without long-term commitments, making them ideal for short-term, unpredictable workloads. Reserved Instances require long-term commitments, Spot Instances can be interrupted, and Dedicated Instances are designed for specific compliance or regulatory needs, making them less cost-efficient for this use case.",
+      "On-Demand Instances allow users to pay for compute capacity without long-term commitments, making them ideal for short-term, unpredictable workloads. Reserved Instances require long-term commitments, Spot Instances can be interrupted, and Dedicated Instances are designed for specific compliance or regulatory needs, making them less cost-efficient for this use case. More info: https://aws.amazon.com/ec2/pricing/on-demand/",
   },
   {
-    id: uuidv5("aws-question-1135", uuidv5.URL),
+    id: uuidv5("aws-question-783", uuidv5.URL),
     text: "Which Amazon Virtual Private Cloud (Amazon VPC) feature enables users to connect two VPCs together?",
     options: [
       "Amazon VPC endpoints",
@@ -10037,10 +10037,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon VPC Peering allows private network communication between two VPCs, enabling them to act as a single network. VPC endpoints provide secure connections to AWS services, ClassicLink connects EC2-Classic instances to VPCs (but not between VPCs), and AWS Direct Connect establishes a dedicated network connection between on-premises and AWS, not between VPCs.",
+      "Amazon VPC Peering allows private network communication between two VPCs, enabling them to act as a single network. VPC endpoints provide secure connections to AWS services, ClassicLink connects EC2-Classic instances to VPCs (but not between VPCs), and AWS Direct Connect establishes a dedicated network connection between on-premises and AWS, not between VPCs. More info: https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
   },
   {
-    id: uuidv5("aws-question-1136", uuidv5.URL),
+    id: uuidv5("aws-question-784", uuidv5.URL),
     text: "Which service's PRIMARY purpose is software version control?",
     options: [
       "Amazon CodeStar",
@@ -10050,10 +10050,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS CodeCommit is a managed source control service that provides secure, private Git repositories. CodeStar is a development platform, AWS CLI is a command-line tool for managing AWS resources, and Amazon Cognito handles user authentication and authorization, making them unsuitable for version control.",
+      "AWS CodeCommit is a managed source control service that provides secure, private Git repositories. CodeStar is a development platform, AWS CLI is a command-line tool for managing AWS resources, and Amazon Cognito handles user authentication and authorization, making them unsuitable for version control. More info: https://aws.amazon.com/codecommit/",
   },
   {
-    id: uuidv5("aws-question-1137", uuidv5.URL),
+    id: uuidv5("aws-question-785", uuidv5.URL),
     text: "Which tool can be used to compare the cost of running workloads on-premises vs AWS?",
     options: [
       "AWS Simple Monthly Calculator",
@@ -10063,10 +10063,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "The AWS Total Cost of Ownership (TCO) Calculator helps estimate the cost savings of moving workloads to AWS. The Simple Monthly Calculator estimates AWS costs but does not compare with on-premises costs, Billing and Cost Management tracks expenses, and Cost Explorer helps analyze usage and cost trends.",
+      "The AWS Total Cost of Ownership (TCO) Calculator helps estimate the cost savings of moving workloads to AWS. The Simple Monthly Calculator estimates AWS costs but does not compare with on-premises costs, Billing and Cost Management tracks expenses, and Cost Explorer helps analyze usage and cost trends. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-1138", uuidv5.URL),
+    id: uuidv5("aws-question-786", uuidv5.URL),
     text: "Which AWS service provides a secure, fast, and cost-effective way to migrate or transport exabyte-scale datasets into AWS?",
     options: [
       "AWS Batch",
@@ -10076,10 +10076,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Snowmobile is designed for exabyte-scale data transfer using a secure, ruggedized container transported by truck. AWS Snowball is for petabyte-scale data, AWS Batch is for batch processing, and AWS Migration Hub helps track migration progress but does not handle direct data transfer.",
+      "AWS Snowmobile is designed for exabyte-scale data transfer using a secure, ruggedized container transported by truck. AWS Snowball is for petabyte-scale data, AWS Batch is for batch processing, and AWS Migration Hub helps track migration progress but does not handle direct data transfer. More info: https://aws.amazon.com/snowmobile/",
   },
   {
-    id: uuidv5("aws-question-1139", uuidv5.URL),
+    id: uuidv5("aws-question-787", uuidv5.URL),
     text: "Which of the following BEST describe the AWS pricing model? (Choose two.)",
     options: [
       "Fixed-term",
@@ -10090,10 +10090,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1, 4],
     explanation:
-      "AWS follows a pay-as-you-go model, where users only pay for the resources they consume. Pricing is also variable, meaning costs fluctuate based on usage. Fixed-term pricing applies to traditional data centers, colocation is a different hosting model, and planned pricing does not describe AWS’s flexible pricing approach.",
+      "AWS follows a pay-as-you-go model, where users only pay for the resources they consume. Pricing is also variable, meaning costs fluctuate based on usage. Fixed-term pricing applies to traditional data centers, colocation is a different hosting model, and planned pricing does not describe AWS’s flexible pricing approach. More info: https://aws.amazon.com/pricing/",
   },
   {
-    id: uuidv5("aws-question-1140", uuidv5.URL),
+    id: uuidv5("aws-question-788", uuidv5.URL),
     text: "Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose two.)",
     options: [
       "Public load balancers with AWS Application Auto Scaling capabilities",
@@ -10104,10 +10104,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "Elastic Load Balancing (ELB) supports Classic Load Balancers and Application Load Balancers, along with Network Load Balancers. The other options refer to third-party solutions or unrelated load-balancing features.",
+      "Elastic Load Balancing (ELB) supports Classic Load Balancers and Application Load Balancers, along with Network Load Balancers. The other options refer to third-party solutions or unrelated load-balancing features. More info: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
   },
   {
-    id: uuidv5("aws-question-1141", uuidv5.URL),
+    id: uuidv5("aws-question-789", uuidv5.URL),
     text: "Why should a company choose AWS instead of a traditional data center?",
     options: [
       "AWS provides users with full control over the underlying resources.",
@@ -10117,10 +10117,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS’s pay-as-you-go model eliminates long-term commitments, making it more flexible than traditional data centers. While AWS offers resource scalability, limits still exist, and full control over underlying resources applies more to on-premises solutions. Edge locations do not exist in every country.",
+      "AWS’s pay-as-you-go model eliminates long-term commitments, making it more flexible than traditional data centers. While AWS offers resource scalability, limits still exist, and full control over underlying resources applies more to on-premises solutions. Edge locations do not exist in every country. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-1142", uuidv5.URL),
+    id: uuidv5("aws-question-790", uuidv5.URL),
     text: "Which solution provides the FASTEST application response times to frequently accessed data to users in multiple AWS Regions?",
     options: [
       "AWS CloudTrail across multiple Availability Zones",
@@ -10130,10 +10130,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon CloudFront speeds up content delivery by leveraging its global network of edge locations. It caches content closer to users, reducing latency and improving response times. The other options do not serve the same purpose of accelerating content delivery.",
+      "Amazon CloudFront speeds up content delivery by leveraging its global network of edge locations. It caches content closer to users, reducing latency and improving response times. The other options do not serve the same purpose of accelerating content delivery. More info: https://aws.amazon.com/cloudfront/",
   },
   {
-    id: uuidv5("aws-question-1143", uuidv5.URL),
+    id: uuidv5("aws-question-791", uuidv5.URL),
     text: "Which AWS service provides a self-service portal for on-demand access to AWS compliance reports?",
     options: [
       "AWS Config",
@@ -10143,10 +10143,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Artifact provides on-demand access to AWS compliance reports and agreements, such as SOC reports and PCI certifications. The other services focus on security monitoring, configuration management, or certificate management, rather than compliance documentation.",
+      "AWS Artifact provides on-demand access to AWS compliance reports and agreements, such as SOC reports and PCI certifications. The other services focus on security monitoring, configuration management, or certificate management, rather than compliance documentation. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1144", uuidv5.URL),
+    id: uuidv5("aws-question-792", uuidv5.URL),
     text: "Which of the following AWS services can be used to run a self-managed database?",
     options: [
       "Amazon Route 53",
@@ -10156,10 +10156,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon EC2 provides virtual machines where users can install and manage their own databases. The other options do not support running self-managed databases: Route 53 is for DNS, X-Ray is for tracing, and Snowmobile is for large-scale data transfer.",
+      "Amazon EC2 provides virtual machines where users can install and manage their own databases. The other options do not support running self-managed databases: Route 53 is for DNS, X-Ray is for tracing, and Snowmobile is for large-scale data transfer. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-applications.html",
   },
   {
-    id: uuidv5("aws-question-1145", uuidv5.URL),
+    id: uuidv5("aws-question-793", uuidv5.URL),
     text: "What exclusive benefit is provided to users with Enterprise Support?",
     options: [
       "Access to a Technical Project Manager",
@@ -10169,10 +10169,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "The AWS Enterprise Support plan provides customers with a Technical Account Manager (TAM), which is a dedicated resource to help optimize and manage AWS environments. The other options are either available in lower support tiers or not part of Enterprise Support.",
+      "The AWS Enterprise Support plan provides customers with a Technical Account Manager (TAM), which is a dedicated resource to help optimize and manage AWS environments. The other options are either available in lower support tiers or not part of Enterprise Support. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-1146", uuidv5.URL),
+    id: uuidv5("aws-question-794", uuidv5.URL),
     text: "How can a user protect against AWS service disruptions if a natural disaster affects an entire geographic area?",
     options: [
       "Deploy applications across multiple Availability Zones within an AWS Region.",
@@ -10182,10 +10182,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Deploying applications across multiple AWS Regions provides the highest level of resilience against natural disasters, as entire regions can fail. Availability Zones provide redundancy within a region, but may not protect against region-wide failures.",
+      "Deploying applications across multiple AWS Regions provides the highest level of resilience against natural disasters, as entire regions can fail. Availability Zones provide redundancy within a region, but may not protect against region-wide failures. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-1147", uuidv5.URL),
+    id: uuidv5("aws-question-795", uuidv5.URL),
     text: "How does AWS MOST effectively reduce computing costs for a growing start-up company?",
     options: [
       "It provides on-demand resources for peak usage.",
@@ -10195,18 +10195,18 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS allows startups to scale cost-effectively by providing on-demand resources. This means they only pay for what they use, avoiding upfront costs. Other options do not directly address cost reduction.",
+      "AWS allows startups to scale cost-effectively by providing on-demand resources. This means they only pay for what they use, avoiding upfront costs. Other options do not directly address cost reduction. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-1148", uuidv5.URL),
+    id: uuidv5("aws-question-796", uuidv5.URL),
     text: "A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future. Which of the following is a characteristic of the AWS Cloud that would meet this specific need?",
     options: ["Elasticity", "Reliability", "Performance", "Agility"],
     correctAnswers: [3],
     explanation:
-      "Agility is a core advantage of the AWS Cloud, allowing businesses to iterate quickly, adjust resources, and deploy applications rapidly based on evolving needs.",
+      "Agility is a core advantage of the AWS Cloud, allowing businesses to iterate quickly, adjust resources, and deploy applications rapidly based on evolving needs. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-1149", uuidv5.URL),
+    id: uuidv5("aws-question-797", uuidv5.URL),
     text: "Which AWS Support plan provides a full set of AWS Trusted Advisor checks?",
     options: [
       "Business and Developer Support",
@@ -10216,10 +10216,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "The AWS Enterprise and Business Support plans provide access to all AWS Trusted Advisor checks. Lower-tier support plans have limited access to these checks.",
+      "The AWS Enterprise and Business Support plans provide access to all AWS Trusted Advisor checks. Lower-tier support plans have limited access to these checks. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-1150", uuidv5.URL),
+    id: uuidv5("aws-question-798", uuidv5.URL),
     text: "Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose two.)",
     options: [
       "AWS WAF",
@@ -10230,10 +10230,10 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS WAF and Amazon CloudFront help mitigate DDoS attacks. AWS WAF provides firewall protection against threats, while CloudFront helps absorb and distribute large-scale attacks. The other options do not have built-in DDoS mitigation capabilities.",
+      "AWS WAF and Amazon CloudFront help mitigate DDoS attacks. AWS WAF provides firewall protection against threats, while CloudFront helps absorb and distribute large-scale attacks. The other options do not have built-in DDoS mitigation capabilities. More info: https://aws.amazon.com/shield/ddos-protection/",
   },
   {
-    id: uuidv5("aws-question-1151", uuidv5.URL),
+    id: uuidv5("aws-question-799", uuidv5.URL),
     text: "When building a cloud Total Cost of Ownership (TCO) model, which cost elements should be considered for workloads running on AWS? (Choose three.)",
     options: [
       "Compute costs",
@@ -10245,7 +10245,7 @@ export const exam16: Question[] = [
     ],
     correctAnswers: [0, 2, 3],
     explanation:
-      "Key elements of AWS TCO include compute costs (e.g., EC2, Lambda), storage costs (e.g., S3, EBS), and data transfer costs (e.g., inter-region transfer fees). The other options are typically managed by AWS rather than the customer.",
+      "Key elements of AWS TCO include compute costs (e.g., EC2, Lambda), storage costs (e.g., S3, EBS), and data transfer costs (e.g., inter-region transfer fees). The other options are typically managed by AWS rather than the customer. More info: https://aws.amazon.com/tco-calculator/",
   },
 ];
 
