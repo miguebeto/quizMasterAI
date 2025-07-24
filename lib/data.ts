@@ -10054,6 +10054,19 @@ export const exam16: Question[] = [
   },
   {
     id: uuidv5("aws-question-785", uuidv5.URL),
+    text: "A company is considering migrating its applications to AWS. The company wants to compare the cost of running the workload on-premises to running the equivalent workload on the AWS platform. Which tool can be used to perform this comparison?",
+    options: [
+      "AWS Simple Monthly Calculator",
+      "AWS Total Cost of Ownership (TCO) Calculator",
+      "AWS Billing and Cost Management console.",
+      "Cost Explorer",
+    ],
+    correctAnswers: [1],
+    explanation:
+      "TCO calculator compare the cost of running your applications in an on-premises or colocation environment to AWS. More info: https://awstcocalculator.com",
+  },
+  {
+    id: uuidv5("aws-question-786", uuidv5.URL),
     text: "Which tool can be used to compare the cost of running workloads on-premises vs AWS?",
     options: [
       "AWS Simple Monthly Calculator",
@@ -10066,7 +10079,7 @@ export const exam16: Question[] = [
       "The AWS Total Cost of Ownership (TCO) Calculator helps estimate the cost savings of moving workloads to AWS. The Simple Monthly Calculator estimates AWS costs but does not compare with on-premises costs, Billing and Cost Management tracks expenses, and Cost Explorer helps analyze usage and cost trends. More info: https://aws.amazon.com/tco-calculator/",
   },
   {
-    id: uuidv5("aws-question-786", uuidv5.URL),
+    id: uuidv5("aws-question-787", uuidv5.URL),
     text: "Which AWS service provides a secure, fast, and cost-effective way to migrate or transport exabyte-scale datasets into AWS?",
     options: [
       "AWS Batch",
@@ -10079,7 +10092,7 @@ export const exam16: Question[] = [
       "AWS Snowmobile is designed for exabyte-scale data transfer using a secure, ruggedized container transported by truck. AWS Snowball is for petabyte-scale data, AWS Batch is for batch processing, and AWS Migration Hub helps track migration progress but does not handle direct data transfer. More info: https://aws.amazon.com/snowmobile/",
   },
   {
-    id: uuidv5("aws-question-787", uuidv5.URL),
+    id: uuidv5("aws-question-788", uuidv5.URL),
     text: "Which of the following BEST describe the AWS pricing model? (Choose two.)",
     options: [
       "Fixed-term",
@@ -10093,7 +10106,7 @@ export const exam16: Question[] = [
       "AWS follows a pay-as-you-go model, where users only pay for the resources they consume. Pricing is also variable, meaning costs fluctuate based on usage. Fixed-term pricing applies to traditional data centers, colocation is a different hosting model, and planned pricing does not describe AWS’s flexible pricing approach. More info: https://aws.amazon.com/pricing/",
   },
   {
-    id: uuidv5("aws-question-788", uuidv5.URL),
+    id: uuidv5("aws-question-789", uuidv5.URL),
     text: "Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose two.)",
     options: [
       "Public load balancers with AWS Application Auto Scaling capabilities",
@@ -10107,7 +10120,7 @@ export const exam16: Question[] = [
       "Elastic Load Balancing (ELB) supports Classic Load Balancers and Application Load Balancers, along with Network Load Balancers. The other options refer to third-party solutions or unrelated load-balancing features. More info: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
   },
   {
-    id: uuidv5("aws-question-789", uuidv5.URL),
+    id: uuidv5("aws-question-790", uuidv5.URL),
     text: "Why should a company choose AWS instead of a traditional data center?",
     options: [
       "AWS provides users with full control over the underlying resources.",
@@ -10120,7 +10133,7 @@ export const exam16: Question[] = [
       "AWS’s pay-as-you-go model eliminates long-term commitments, making it more flexible than traditional data centers. While AWS offers resource scalability, limits still exist, and full control over underlying resources applies more to on-premises solutions. Edge locations do not exist in every country. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-790", uuidv5.URL),
+    id: uuidv5("aws-question-791", uuidv5.URL),
     text: "Which solution provides the FASTEST application response times to frequently accessed data to users in multiple AWS Regions?",
     options: [
       "AWS CloudTrail across multiple Availability Zones",
@@ -10133,7 +10146,7 @@ export const exam16: Question[] = [
       "Amazon CloudFront speeds up content delivery by leveraging its global network of edge locations. It caches content closer to users, reducing latency and improving response times. The other options do not serve the same purpose of accelerating content delivery. More info: https://aws.amazon.com/cloudfront/",
   },
   {
-    id: uuidv5("aws-question-791", uuidv5.URL),
+    id: uuidv5("aws-question-792", uuidv5.URL),
     text: "Which AWS service provides a self-service portal for on-demand access to AWS compliance reports?",
     options: [
       "AWS Config",
@@ -10146,7 +10159,7 @@ export const exam16: Question[] = [
       "AWS Artifact provides on-demand access to AWS compliance reports and agreements, such as SOC reports and PCI certifications. The other services focus on security monitoring, configuration management, or certificate management, rather than compliance documentation. More info: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-792", uuidv5.URL),
+    id: uuidv5("aws-question-793", uuidv5.URL),
     text: "Which of the following AWS services can be used to run a self-managed database?",
     options: [
       "Amazon Route 53",
@@ -10159,7 +10172,7 @@ export const exam16: Question[] = [
       "Amazon EC2 provides virtual machines where users can install and manage their own databases. The other options do not support running self-managed databases: Route 53 is for DNS, X-Ray is for tracing, and Snowmobile is for large-scale data transfer. More info: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-applications.html",
   },
   {
-    id: uuidv5("aws-question-793", uuidv5.URL),
+    id: uuidv5("aws-question-794", uuidv5.URL),
     text: "What exclusive benefit is provided to users with Enterprise Support?",
     options: [
       "Access to a Technical Project Manager",
@@ -10172,7 +10185,7 @@ export const exam16: Question[] = [
       "The AWS Enterprise Support plan provides customers with a Technical Account Manager (TAM), which is a dedicated resource to help optimize and manage AWS environments. The other options are either available in lower support tiers or not part of Enterprise Support. More info: https://aws.amazon.com/premiumsupport/plans/",
   },
   {
-    id: uuidv5("aws-question-794", uuidv5.URL),
+    id: uuidv5("aws-question-795", uuidv5.URL),
     text: "How can a user protect against AWS service disruptions if a natural disaster affects an entire geographic area?",
     options: [
       "Deploy applications across multiple Availability Zones within an AWS Region.",
@@ -10185,7 +10198,7 @@ export const exam16: Question[] = [
       "Deploying applications across multiple AWS Regions provides the highest level of resilience against natural disasters, as entire regions can fail. Availability Zones provide redundancy within a region, but may not protect against region-wide failures. More info: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
   },
   {
-    id: uuidv5("aws-question-795", uuidv5.URL),
+    id: uuidv5("aws-question-796", uuidv5.URL),
     text: "How does AWS MOST effectively reduce computing costs for a growing start-up company?",
     options: [
       "It provides on-demand resources for peak usage.",
@@ -10198,7 +10211,7 @@ export const exam16: Question[] = [
       "AWS allows startups to scale cost-effectively by providing on-demand resources. This means they only pay for what they use, avoiding upfront costs. Other options do not directly address cost reduction. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-796", uuidv5.URL),
+    id: uuidv5("aws-question-797", uuidv5.URL),
     text: "A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future. Which of the following is a characteristic of the AWS Cloud that would meet this specific need?",
     options: ["Elasticity", "Reliability", "Performance", "Agility"],
     correctAnswers: [3],
@@ -10206,7 +10219,7 @@ export const exam16: Question[] = [
       "Agility is a core advantage of the AWS Cloud, allowing businesses to iterate quickly, adjust resources, and deploy applications rapidly based on evolving needs. More info: https://aws.amazon.com/benefits/",
   },
   {
-    id: uuidv5("aws-question-797", uuidv5.URL),
+    id: uuidv5("aws-question-798", uuidv5.URL),
     text: "Which AWS Support plan provides a full set of AWS Trusted Advisor checks?",
     options: [
       "Business and Developer Support",
@@ -10219,7 +10232,7 @@ export const exam16: Question[] = [
       "The AWS Enterprise and Business Support plans provide access to all AWS Trusted Advisor checks. Lower-tier support plans have limited access to these checks. More info: https://aws.amazon.com/premiumsupport/technology/trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-798", uuidv5.URL),
+    id: uuidv5("aws-question-799", uuidv5.URL),
     text: "Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose two.)",
     options: [
       "AWS WAF",
@@ -10233,7 +10246,7 @@ export const exam16: Question[] = [
       "AWS WAF and Amazon CloudFront help mitigate DDoS attacks. AWS WAF provides firewall protection against threats, while CloudFront helps absorb and distribute large-scale attacks. The other options do not have built-in DDoS mitigation capabilities. More info: https://aws.amazon.com/shield/ddos-protection/",
   },
   {
-    id: uuidv5("aws-question-799", uuidv5.URL),
+    id: uuidv5("aws-question-800", uuidv5.URL),
     text: "When building a cloud Total Cost of Ownership (TCO) model, which cost elements should be considered for workloads running on AWS? (Choose three.)",
     options: [
       "Compute costs",
