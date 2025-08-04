@@ -12353,7 +12353,7 @@ const exam20: Question[] = [
     explanation:
       "Maintaining an inventory of AWS resources with AWS Config (A) and recording API calls with AWS CloudTrail (C) are key change management steps for reliability. Service limits (B) restrict resource creation, not change management. AWS Certificate Manager (D) is for SSL/TLS certificates, not resource whitelisting. Amazon GuardDuty (E) is for threat detection, not configuration validation. More info: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
   },
-  {{
+  {
     id: uuidv5("aws-question-961", uuidv5.URL),
     text: "Which service can be used to monitor and receive alerts for AWS account root user AWS Management Console sign-in events?",
     options: [
