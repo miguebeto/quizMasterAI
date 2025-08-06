@@ -13536,18 +13536,18 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "The best way to separate invoices for different environments is by using multiple AWS accounts. AWS Organizations allows you to create and manage multiple AWS accounts under a single billing account. Reference: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
+      "Using multiple AWS accounts is the recommended way to generate separate invoices for different environments, as each account receives its own bill. Resource tagging (B) helps with cost allocation but does not create separate invoices. Multiple VPCs (C) do not affect billing separation. Cost Explorer (D) is for analyzing costs, not for generating invoices. Reference: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
   },
   {
-    id: uuidv5("aws-question-1413", uuidv5.URL),
+    id: uuidv5("aws-question-1052", uuidv5.URL),
     text: "Which AWS service can be used in the application deployment process?",
     options: ["AWS AppSync", "AWS Batch", "AWS CodePipeline", "AWS DataSync"],
     correctAnswers: [2],
     explanation:
-      "AWS CodePipeline is a fully managed continuous integration and continuous delivery (CI/CD) service that helps automate the application deployment process. Reference: https://aws.amazon.com/codepipeline/",
+      "AWS CodePipeline is a fully managed CI/CD service that automates the application deployment process. AWS AppSync (A) is for building GraphQL APIs, AWS Batch (B) is for batch computing, and AWS DataSync (D) is for data transfer, not deployment. Reference: https://aws.amazon.com/codepipeline/",
   },
   {
-    id: uuidv5("aws-question-1414", uuidv5.URL),
+    id: uuidv5("aws-question-1053", uuidv5.URL),
     text: "What can be used to reduce the cost of running Amazon EC2 instances? (Choose two.)",
     options: [
       "Spot Instances for stateless and flexible workloads",
@@ -13558,10 +13558,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "Spot Instances allow you to bid on unused EC2 capacity at a lower price, making them cost-effective for stateless workloads. Reserved Instances provide significant discounts for predictable, long-term workloads. Reference: https://aws.amazon.com/ec2/pricing/",
+      "Spot Instances (A) offer significant discounts for flexible workloads, and Reserved Instances (D) provide cost savings for predictable, long-term usage. Memory optimized instances (B) are for specific workloads, not cost reduction. On-Demand (C) is the most expensive for sustained workloads. AWS Budgets (E) helps monitor spending but does not reduce EC2 costs directly. Reference: https://aws.amazon.com/ec2/pricing/",
   },
   {
-    id: uuidv5("aws-question-1415", uuidv5.URL),
+    id: uuidv5("aws-question-1054", uuidv5.URL),
     text: "A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS compliance reports and AWS agreements. Which AWS service provides on-demand access to these items?",
     options: [
       "AWS Certificate Manager",
@@ -13571,10 +13571,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Artifact provides on-demand access to AWS compliance reports and security documentation. Reference: https://aws.amazon.com/artifact/",
+      "AWS Artifact provides on-demand access to AWS compliance reports and agreements. AWS Certificate Manager (A) manages SSL/TLS certificates, AWS Config (B) tracks resource configurations, and AWS CloudTrail (D) logs API calls, none of which provide compliance documentation. Reference: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1416", uuidv5.URL),
+    id: uuidv5("aws-question-1055", uuidv5.URL),
     text: "Which AWS service or feature allows the user to manage cross-region application traffic?",
     options: [
       "Amazon AppStream 2.0",
@@ -13584,10 +13584,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Amazon Route 53 is a scalable domain name system (DNS) web service that helps manage cross-region application traffic. Reference: https://aws.amazon.com/route53/",
+      "Amazon Route 53 is a DNS service that can route user requests to endpoints in multiple AWS Regions, enabling cross-region traffic management. AppStream 2.0 (A) is for application streaming, VPC (B) is for networking, and Elastic Load Balancer (C) is for distributing traffic within a region, not across regions. Reference: https://aws.amazon.com/route53/",
   },
   {
-    id: uuidv5("aws-question-1417", uuidv5.URL),
+    id: uuidv5("aws-question-1056", uuidv5.URL),
     text: "Which AWS service can be used to track unauthorized API calls?",
     options: [
       "AWS Config",
@@ -13597,10 +13597,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS CloudTrail logs all API calls made within an AWS account, allowing tracking of unauthorized access attempts. Reference: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+      "AWS CloudTrail records all API calls made within an AWS account, making it possible to track unauthorized access attempts. AWS Config (A) tracks resource configurations, Trusted Advisor (C) provides best practice checks, and Inspector (D) assesses security, but none log API calls. Reference: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
   },
   {
-    id: uuidv5("aws-question-1418", uuidv5.URL),
+    id: uuidv5("aws-question-1057", uuidv5.URL),
     text: "A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource changes. Which AWS service can be used to meet these requirements?",
     options: [
       "AWS Trusted Advisor",
@@ -13610,10 +13610,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Config continuously monitors and records AWS resource configurations, allowing users to audit and identify non-compliant configurations. Reference: https://aws.amazon.com/config/",
+      "AWS Config continuously monitors and records AWS resource configurations, supports compliance auditing, and can notify users of changes. Trusted Advisor (A) gives best practice recommendations, Resource Access Manager (C) shares resources, and Systems Manager (D) manages resources but does not audit compliance. Reference: https://aws.amazon.com/config/",
   },
   {
-    id: uuidv5("aws-question-1419", uuidv5.URL),
+    id: uuidv5("aws-question-1058", uuidv5.URL),
     text: "A user is planning to launch two additional Amazon EC2 instances to increase availability. Which action should the user take?",
     options: [
       "Launch the instances across multiple Availability Zones in a single AWS Region.",
@@ -13623,10 +13623,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Launching instances across multiple Availability Zones in the same AWS Region increases availability and fault tolerance. Reference: https://aws.amazon.com/ec2/faqs/",
+      "Launching instances across multiple Availability Zones in the same Region increases availability and fault tolerance. Reserved Instances (B) are for cost savings, not availability. Multiple Regions (C) complicate management and do not guarantee high availability. Spot Instances (D) are for cost savings, not specifically for availability. Reference: https://aws.amazon.com/ec2/faqs/",
   },
   {
-    id: uuidv5("aws-question-1420", uuidv5.URL),
+    id: uuidv5("aws-question-1059", uuidv5.URL),
     text: "A company must store critical business data in Amazon S3 with a backup to another AWS Region. How can this be achieved?",
     options: [
       "Use an Amazon CloudFront Content Delivery Network (CDN) to cache data globally",
@@ -13636,10 +13636,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon S3 cross-region replication (CRR) enables automatic copying of objects across AWS Regions for backup and compliance. Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html",
+      "Amazon S3 cross-region replication (CRR) automatically copies objects to a bucket in another AWS Region for backup and compliance. CloudFront (A) caches content but does not back up data. AWS Backup (C) does not natively back up S3 buckets. S3 does not support snapshots (D). Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html",
   },
   {
-    id: uuidv5("aws-question-1421", uuidv5.URL),
+    id: uuidv5("aws-question-1060", uuidv5.URL),
     text: "Which AWS Cloud service can send alerts to customers if custom spending thresholds are exceeded?",
     options: [
       "AWS Budgets",
@@ -13649,10 +13649,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Budgets allows users to set cost thresholds and receive alerts when spending exceeds defined limits. Reference: https://aws.amazon.com/aws-cost-management/aws-budgets/",
+      "AWS Budgets allows users to set custom cost thresholds and receive alerts when spending exceeds those limits. Cost Explorer (B) is for analyzing costs, Cost Allocation Tags (C) are for categorizing resources, and Organizations (D) is for account management, not for sending budget alerts. Reference: https://aws.amazon.com/aws-cost-management/aws-budgets/",
   },
   {
-    id: uuidv5("aws-question-1422", uuidv5.URL),
+    id: uuidv5("aws-question-1061", uuidv5.URL),
     text: "What is the recommended method to request penetration testing on AWS resources?",
     options: [
       "Open a support case",
@@ -13662,10 +13662,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS provides a Penetration Testing Request Form as the recommended way to request penetration testing on AWS resources. This ensures compliance with AWS security policies. More details: https://aws.amazon.com/security/penetration-testing/",
+      "Filling out the Penetration Testing Request Form is the recommended method to request penetration testing on AWS resources, ensuring compliance with AWS security policies. Opening a support case (A) is not the standard process, technical account managers (C) and sales representatives (D) do not handle penetration test requests. More details: https://aws.amazon.com/security/penetration-testing/",
   },
   {
-    id: uuidv5("aws-question-1423", uuidv5.URL),
+    id: uuidv5("aws-question-1062", uuidv5.URL),
     text: "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which AWS service can meet these requirements?",
     options: [
       "Amazon Inspector",
@@ -13675,10 +13675,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Macie uses machine learning to discover, classify, and protect sensitive data in Amazon S3. More details: https://aws.amazon.com/macie/",
+      "Amazon Macie uses machine learning to automatically discover, classify, and protect sensitive data in Amazon S3. Amazon Inspector (A) is for security assessments, GuardDuty (C) is for threat detection, and Secrets Manager (D) is for managing secrets, not S3 data classification. More details: https://aws.amazon.com/macie/",
   },
   {
-    id: uuidv5("aws-question-1424", uuidv5.URL),
+    id: uuidv5("aws-question-1063", uuidv5.URL),
     text: "Which components are required to build a successful site-to-site VPN connection on AWS? (Choose two.)",
     options: [
       "Internet gateway",
@@ -13689,10 +13689,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2, 4],
     explanation:
-      "A site-to-site VPN requires a Customer Gateway on the on-premises side and a Virtual Private Gateway on the AWS side. More details: https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
+      "A site-to-site VPN requires a Customer Gateway (on-premises) and a Virtual Private Gateway (on AWS). Internet gateway (A) is for internet access, NAT gateway (B) is for outbound internet traffic, and Transit Gateway (D) is for connecting VPCs, not for VPN termination. More details: https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html",
   },
   {
-    id: uuidv5("aws-question-1425", uuidv5.URL),
+    id: uuidv5("aws-question-1064", uuidv5.URL),
     text: "Which Amazon EC2 pricing option is best suited for applications with short-term, spiky, or unpredictable workloads that cannot be interrupted?",
     options: [
       "Spot Instances",
@@ -13702,10 +13702,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "On-Demand Instances are ideal for workloads with unpredictable traffic patterns that cannot tolerate interruptions. More details: https://aws.amazon.com/ec2/pricing/",
+      "On-Demand Instances are ideal for unpredictable workloads that cannot tolerate interruptions. Spot Instances (A) can be interrupted, Dedicated Hosts (B) are for compliance, and Reserved Instances (D) are for predictable, long-term workloads. More details: https://aws.amazon.com/ec2/pricing/",
   },
   {
-    id: uuidv5("aws-question-1426", uuidv5.URL),
+    id: uuidv5("aws-question-1065", uuidv5.URL),
     text: "Which AWS cloud architecture principle states that systems should reduce interdependencies?",
     options: [
       "Scalability",
@@ -13715,10 +13715,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "Loose coupling reduces interdependencies between components, improving scalability and fault tolerance. More details: https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
+      "Loose coupling is the principle that reduces interdependencies between system components, improving scalability and fault tolerance. Scalability (A) is about growth, services not servers (B) is about abstraction, and removing single points of failure (C) is about redundancy. More details: https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html",
   },
   {
-    id: uuidv5("aws-question-1427", uuidv5.URL),
+    id: uuidv5("aws-question-1066", uuidv5.URL),
     text: "What is the MOST effective resource for staying up to date on AWS security announcements?",
     options: [
       "AWS Personal Health Dashboard",
@@ -13728,10 +13728,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Security Bulletins provide updates on security-related issues and advisories. More details: https://aws.amazon.com/security/security-bulletins/",
+      "AWS Security Bulletins provide the latest updates on security issues and advisories. Personal Health Dashboard (A) is for account-specific health, Secrets Manager (B) is for managing secrets, and Inspector (D) is for security assessments. More details: https://aws.amazon.com/security/security-bulletins/",
   },
   {
-    id: uuidv5("aws-question-1428", uuidv5.URL),
+    id: uuidv5("aws-question-1067", uuidv5.URL),
     text: "Which AWS service offers persistent storage for a file system?",
     options: [
       "Amazon S3",
@@ -13741,10 +13741,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon EBS provides persistent block storage that can be attached to EC2 instances. More details: https://aws.amazon.com/ebs/",
+      "Amazon EBS provides persistent block storage for EC2 instances, suitable for file systems. S3 (A) is object storage, EC2 instance store (B) is ephemeral, and ElastiCache (D) is for in-memory caching. More details: https://aws.amazon.com/ebs/",
   },
   {
-    id: uuidv5("aws-question-1429", uuidv5.URL),
+    id: uuidv5("aws-question-1068", uuidv5.URL),
     text: "Which of the following allows AWS users to manage cost allocations for billing?",
     options: [
       "Tagging resources",
@@ -13754,10 +13754,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Tagging resources allows users to categorize AWS resources and track costs. More details: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+      "Tagging resources allows users to categorize and track costs for billing purposes. Limiting resource creation (B) is for access control, secondary payment methods (C) do not affect cost allocation, and using a single account (D) does not provide cost breakdowns. More details: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
   },
   {
-    id: uuidv5("aws-question-1430", uuidv5.URL),
+    id: uuidv5("aws-question-1069", uuidv5.URL),
     text: "Which AWS service allows users to download security and compliance reports about the AWS infrastructure on demand?",
     options: [
       "Amazon GuardDuty",
@@ -13767,10 +13767,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Artifact provides access to AWS compliance reports. More details: https://aws.amazon.com/artifact/",
+      "AWS Artifact provides on-demand access to AWS security and compliance reports. GuardDuty (A) is for threat detection, Security Hub (B) aggregates security findings, and Shield (D) is for DDoS protection. More details: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1431", uuidv5.URL),
+    id: uuidv5("aws-question-1070", uuidv5.URL),
     text: "Which of the following AWS services are serverless? (Choose two.)",
     options: [
       "AWS Lambda",
@@ -13781,10 +13781,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "AWS Lambda and Amazon DynamoDB are serverless services. More details: https://aws.amazon.com/serverless/",
+      "AWS Lambda and Amazon DynamoDB are serverless services, meaning you do not manage servers or infrastructure. Elasticsearch Service (B), Elastic Beanstalk (C), and Redshift (E) require some level of server or cluster management. More details: https://aws.amazon.com/serverless/",
   },
   {
-    id: uuidv5("aws-question-1432", uuidv5.URL),
+    id: uuidv5("aws-question-1071", uuidv5.URL),
     text: "Which AWS managed services can be used to extend an on-premises data center to the AWS network? (Choose two.)",
     options: [
       "AWS VPN",
@@ -13795,10 +13795,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 2],
     explanation:
-      "AWS VPN and AWS Direct Connect are the two services that allow extending an on-premises data center to the AWS network. AWS VPN provides a secure tunnel between on-premises and AWS, while AWS Direct Connect offers a dedicated network connection to AWS. More details: https://aws.amazon.com/directconnect/",
+      "AWS VPN and AWS Direct Connect both allow you to extend your on-premises data center to the AWS network. AWS VPN provides a secure encrypted tunnel, while Direct Connect offers a dedicated network connection. NAT gateway (B) is for outbound internet access, Amazon Connect (D) is a contact center service, and Route 53 (E) is DNS, not for network extension. More details: https://aws.amazon.com/directconnect/",
   },
   {
-    id: uuidv5("aws-question-1433", uuidv5.URL),
+    id: uuidv5("aws-question-1072", uuidv5.URL),
     text: "Which requirement must be met for a member account to be unlinked from an AWS Organizations account?",
     options: [
       "The linked account must be actively compliant with AWS System and Organization Controls (SOC).",
@@ -13808,18 +13808,18 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Before a member account can be removed from AWS Organizations, it must meet the requirements of a standalone account, including having its own payment method. Reference: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove.html",
+      "A member account must meet the requirements of a standalone account, including its own payment method, before it can be removed from AWS Organizations. SOC compliance (A) is not required, support cases (B) are not needed, and only the member account itself can complete the process, not just the payer (D). Reference: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove.html",
   },
   {
-    id: uuidv5("aws-question-1434", uuidv5.URL),
+    id: uuidv5("aws-question-1073", uuidv5.URL),
     text: "What AWS benefit refers to a customer's ability to deploy applications that scale up and down to meet variable demand?",
     options: ["Elasticity", "Agility", "Security", "Scalability"],
     correctAnswers: [3],
     explanation:
-      "Scalability is the ability of a system to handle growing amounts of work by adding resources. AWS enables automatic scaling of resources to accommodate demand. Reference: https://aws.amazon.com/what-is-cloud-computing/",
+      "Scalability is the AWS benefit that allows applications to handle increasing or decreasing workloads by adding or removing resources. Elasticity (A) is closely related but refers to the ability to automatically adjust resources. Agility (B) is about speed of change, and Security (C) is about protection. Reference: https://aws.amazon.com/what-is-cloud-computing/",
   },
   {
-    id: uuidv5("aws-question-1435", uuidv5.URL),
+    id: uuidv5("aws-question-1074", uuidv5.URL),
     text: "During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report. Which service should be used to submit this request?",
     options: [
       "AWS Personal Health Dashboard",
@@ -13829,10 +13829,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "AWS Artifact provides on-demand access to AWS compliance reports, including SOC 2. Reference: https://aws.amazon.com/artifact/",
+      "AWS Artifact provides on-demand access to AWS compliance reports, including SOC 2. Personal Health Dashboard (A) is for health events, Trusted Advisor (B) gives best practice checks, and S3 (D) is object storage. Reference: https://aws.amazon.com/artifact/",
   },
   {
-    id: uuidv5("aws-question-1436", uuidv5.URL),
+    id: uuidv5("aws-question-1075", uuidv5.URL),
     text: "A company wants to set up a highly available workload in AWS with a disaster recovery plan that will allow the company to recover in case of a regional service interruption. Which configuration will meet these requirements?",
     options: [
       "Run on two Availability Zones in one AWS Region, using the additional Availability Zones in the AWS Region for the disaster recovery site.",
@@ -13842,26 +13842,26 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1, 3],
     explanation:
-      "Running workloads across multiple AWS Regions ensures high availability and disaster recovery capabilities. Using another AWS Region as a disaster recovery site is a best practice. Reference: https://aws.amazon.com/blogs/startups/large-scale-disaster-recovery-using-aws-regions/",
+      "Running workloads across multiple AWS Regions, or using another AWS Region as a disaster recovery site, ensures high availability and disaster recovery. Using only Availability Zones within a single Region (A, C) does not protect against regional failures. Reference: https://aws.amazon.com/blogs/startups/large-scale-disaster-recovery-using-aws-regions/",
   },
   {
-    id: uuidv5("aws-question-1437", uuidv5.URL),
+    id: uuidv5("aws-question-1076", uuidv5.URL),
     text: "A company has a 500 TB image repository that needs to be transported to AWS for processing. Which AWS service can import this data MOST cost-effectively?",
     options: ["AWS Snowball", "AWS Direct Connect", "AWS VPN", "Amazon S3"],
     correctAnswers: [0],
     explanation:
-      "AWS Snowball is a cost-effective service for transferring large amounts of data to AWS. It is ideal for offline data transfer. Reference: https://aws.amazon.com/snowball/",
+      "AWS Snowball is designed for cost-effective, large-scale data transfer to AWS. Direct Connect (B) is for ongoing network connections, VPN (C) is not suitable for large data transfers, and S3 (D) is the storage destination, not a transfer service. Reference: https://aws.amazon.com/snowball/",
   },
   {
-    id: uuidv5("aws-question-1438", uuidv5.URL),
+    id: uuidv5("aws-question-1077", uuidv5.URL),
     text: "Which AWS service can run a managed PostgreSQL database that provides online transaction processing (OLTP)?",
     options: ["Amazon DynamoDB", "Amazon Athena", "Amazon RDS", "Amazon EMR"],
     correctAnswers: [2],
     explanation:
-      "Amazon RDS provides managed relational databases, including PostgreSQL, optimized for OLTP workloads. Reference: https://aws.amazon.com/rds/postgresql/",
+      "Amazon RDS provides managed relational databases, including PostgreSQL, optimized for OLTP workloads. DynamoDB (A) is NoSQL, Athena (B) is for querying data in S3, and EMR (D) is for big data processing. Reference: https://aws.amazon.com/rds/postgresql/",
   },
   {
-    id: uuidv5("aws-question-1439", uuidv5.URL),
+    id: uuidv5("aws-question-1078", uuidv5.URL),
     text: "Which of the following assist in identifying costs by department? (Choose two.)",
     options: [
       "Using tags on resources",
@@ -13872,18 +13872,18 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 1],
     explanation:
-      "Tagging resources and using multiple AWS accounts help allocate costs per department. AWS Organizations supports consolidated billing for multiple accounts. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-allocation-tags.html",
+      "Tagging resources and using multiple AWS accounts help allocate and identify costs by department. Account managers (C) and Trusted Advisor (D) do not directly allocate costs, and Consolidated Billing (E) aggregates costs but does not break them down by department. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-allocation-tags.html",
   },
   {
-    id: uuidv5("aws-question-1440", uuidv5.URL),
+    id: uuidv5("aws-question-1079", uuidv5.URL),
     text: "A company wants to allow full access to an Amazon S3 bucket for a particular user. Which element in the S3 bucket policy holds the user details that describe who needs access to the S3 bucket?",
     options: ["Principal", "Action", "Resource", "Statement"],
     correctAnswers: [0],
     explanation:
-      "In an S3 bucket policy, the 'Principal' element specifies the user, account, or service allowed to access the resource. Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazon-s3-policy-elements.html",
+      "The 'Principal' element in an S3 bucket policy specifies the user, account, or service allowed access. 'Action' (B) defines permitted operations, 'Resource' (C) specifies the object, and 'Statement' (D) is the policy block. Reference: https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazon-s3-policy-elements.html",
   },
   {
-    id: uuidv5("aws-question-1441", uuidv5.URL),
+    id: uuidv5("aws-question-1080", uuidv5.URL),
     text: "Which AWS service allows for effective cost management of multiple AWS accounts?",
     options: [
       "AWS Organizations",
@@ -13893,10 +13893,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "AWS Organizations enables policy-based management and consolidated billing for multiple AWS accounts, optimizing cost management. Reference: https://aws.amazon.com/organizations/",
+      "AWS Organizations enables consolidated billing and policy-based management for multiple AWS accounts, making cost management more effective. Trusted Advisor (B) provides recommendations, Direct Connect (C) is for networking, and Amazon Connect (D) is a contact center service. Reference: https://aws.amazon.com/organizations/",
   },
   {
-    id: uuidv5("aws-question-1442", uuidv5.URL),
+    id: uuidv5("aws-question-1081", uuidv5.URL),
     text: "A company is piloting a new customer-facing application on Amazon Elastic Compute Cloud (Amazon EC2) for one month. What pricing model is appropriate?",
     options: [
       "Reserved Instances",
@@ -13906,10 +13906,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "On-Demand Instances are the best choice for short-term, spiky, or unpredictable workloads that cannot be interrupted. Since the company is piloting the application for only one month, On-Demand pricing offers flexibility without long-term commitments. Reference: https://aws.amazon.com/ec2/pricing/",
+      "On-Demand Instances are ideal for short-term, unpredictable, or trial workloads that cannot be interrupted, such as a one-month pilot. Reserved Instances (A) require a long-term commitment, Spot Instances (B) can be interrupted, and Dedicated Hosts (D) are for compliance or licensing needs. Reference: https://aws.amazon.com/ec2/pricing/",
   },
   {
-    id: uuidv5("aws-question-1443", uuidv5.URL),
+    id: uuidv5("aws-question-1082", uuidv5.URL),
     text: "Which AWS tools automatically forecast future AWS costs?",
     options: [
       "AWS Support Center",
@@ -13919,10 +13919,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Cost Explorer provides forecasting capabilities that help users predict future AWS costs based on historical data. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-forecast.html",
+      "AWS Cost Explorer provides forecasting capabilities based on historical usage, helping users predict future AWS costs. Support Center (A) is for support cases, TCO Calculator (B) estimates migration costs, and Simple Monthly Calculator (C) is for manual cost estimation. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-forecast.html",
   },
   {
-    id: uuidv5("aws-question-1444", uuidv5.URL),
+    id: uuidv5("aws-question-1083", uuidv5.URL),
     text: "Under the AWS shared responsibility model, which of the following is a responsibility of AWS?",
     options: [
       "Enabling server-side encryption for objects stored in S3",
@@ -13932,10 +13932,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS is responsible for patching and updating the hypervisor as part of its infrastructure security. Customers are responsible for patching their own operating systems running on EC2 instances. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/?ref=wellarchitected",
+      "AWS is responsible for patching and updating the hypervisor as part of its infrastructure security. Customers are responsible for patching their own operating systems and managing encryption and IAM policies. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/?ref=wellarchitected",
   },
   {
-    id: uuidv5("aws-question-1445", uuidv5.URL),
+    id: uuidv5("aws-question-1084", uuidv5.URL),
     text: "A user is able to set up a master payer account to view consolidated billing reports through:",
     options: [
       "AWS Budgets",
@@ -13945,10 +13945,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Organizations allows the setup of a master payer account to consolidate billing across multiple AWS accounts. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
+      "AWS Organizations allows the setup of a master payer account to consolidate billing across multiple AWS accounts. Budgets (A) is for cost tracking, Macie (B) is for data security, and QuickSight (C) is for analytics. Reference: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
   },
   {
-    id: uuidv5("aws-question-1446", uuidv5.URL),
+    id: uuidv5("aws-question-1085", uuidv5.URL),
     text: "Performing operations as code is a design principle that supports which pillar of the AWS Well-Architected Framework?",
     options: [
       "Performance efficiency",
@@ -13958,10 +13958,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "The Operational Excellence pillar emphasizes performing operations as code to improve efficiency and reduce human error. Reference: https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/",
+      "The Operational Excellence pillar emphasizes performing operations as code to improve efficiency, consistency, and reduce human error. Performance efficiency (A), reliability (C), and security (D) are supported by other principles. Reference: https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/",
   },
   {
-    id: uuidv5("aws-question-1447", uuidv5.URL),
+    id: uuidv5("aws-question-1086", uuidv5.URL),
     text: "Which design principle is achieved by following the reliability pillar of the AWS Well-Architected Framework?",
     options: [
       "Vertical scaling",
@@ -13971,10 +13971,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Testing recovery procedures ensures that systems can recover from failures efficiently, which aligns with the reliability pillar. Reference: https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/",
+      "Testing recovery procedures ensures systems can recover from failures efficiently, which is a key aspect of the reliability pillar. Vertical scaling (A) is about performance, manual recovery (B) and manual changes (D) are not best practices. Reference: https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/",
   },
   {
-    id: uuidv5("aws-question-1448", uuidv5.URL),
+    id: uuidv5("aws-question-1087", uuidv5.URL),
     text: "What is a characteristic of Convertible Reserved Instances (RIs)?",
     options: [
       "Users can exchange Convertible RIs for other Convertible RIs from a different instance family with an equal or higher value than the Convertible Reserved Instances that you are exchanging.",
@@ -13984,10 +13984,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "Convertible Reserved Instances allow users to exchange them for other Convertible RIs of equal or greater value within the same region. Reference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-convertible-exchange.html",
+      "Convertible Reserved Instances can be exchanged for other Convertible RIs of equal or greater value within the same region and instance family. They cannot be exchanged across regions (B), sold on the Marketplace (C), or have their term shortened by merging (D). Reference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-convertible-exchange.html",
   },
   {
-    id: uuidv5("aws-question-1449", uuidv5.URL),
+    id: uuidv5("aws-question-1088", uuidv5.URL),
     text: "The user is fully responsible for which action when running workloads on AWS?",
     options: [
       "Patching the infrastructure components",
@@ -13997,10 +13997,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Under the shared responsibility model, users are responsible for application-level configurations, including traffic routing, while AWS manages the underlying infrastructure.",
+      "Users are responsible for application-level configurations, such as routing traffic. AWS manages the infrastructure, physical security, and patching of infrastructure components. Reference: https://aws.amazon.com/compliance/shared-responsibility-model/",
   },
   {
-    id: uuidv5("aws-question-1450", uuidv5.URL),
+    id: uuidv5("aws-question-1089", uuidv5.URL),
     text: "An architecture design includes Amazon EC2, an Elastic Load Balancer, and Amazon RDS. What is the BEST way to get a monthly cost estimation for this architecture?",
     options: [
       "Open an AWS Support case, provide the architecture proposal, and ask for a monthly cost estimation.",
@@ -14010,10 +14010,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "The AWS Simple Monthly Calculator helps estimate the monthly cost of an AWS architecture based on service usage. Reference: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/aws-pc.pdf",
+      "The AWS Simple Monthly Calculator is designed to estimate the monthly cost of AWS architectures based on service usage. Support cases (A) are not for cost estimation, manual calculation (B) is error-prone, and the TCO Calculator (D) is for migration comparisons. Reference: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/aws-pc.pdf",
   },
   {
-    id: uuidv5("aws-question-1451", uuidv5.URL),
+    id: uuidv5("aws-question-1090", uuidv5.URL),
     text: "Which are benefits of using Amazon RDS over Amazon EC2 when running relational databases on AWS? (Choose two.)",
     options: [
       "Automated backups",
@@ -14024,10 +14024,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 3],
     explanation:
-      "Amazon RDS provides automated backups and software patching, reducing administrative overhead. Reference: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+      "Amazon RDS provides automated backups and software patching, reducing administrative overhead. Schema management (B) and indexing (C) are database features, not RDS-specific benefits. ETL management (E) is not a core RDS feature. Reference: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
   },
   {
-    id: uuidv5("aws-question-1452", uuidv5.URL),
+    id: uuidv5("aws-question-1091", uuidv5.URL),
     text: "What does the Amazon S3 Intelligent-Tiering storage class offer?",
     options: [
       "Payment flexibility by reserving storage capacity",
@@ -14037,10 +14037,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2],
     explanation:
-      "Amazon S3 Intelligent-Tiering automatically moves objects between two access tiers when access patterns change, optimizing costs. Reference: https://aws.amazon.com/about-aws/whats-new/2018/11/s3-intelligent-tiering/",
+      "Amazon S3 Intelligent-Tiering automatically moves objects between access tiers based on changing access patterns, optimizing storage costs. Reserving storage capacity (A) is not a feature of S3 Intelligent-Tiering, copying to EBS (B) is not relevant, and archival storage (D) refers to S3 Glacier, not Intelligent-Tiering. Reference: https://aws.amazon.com/about-aws/whats-new/2018/11/s3-intelligent-tiering/",
   },
   {
-    id: uuidv5("aws-question-1453", uuidv5.URL),
+    id: uuidv5("aws-question-1092", uuidv5.URL),
     text: "A company has multiple data sources across the organization and wants to consolidate data into one data warehouse. Which AWS service can be used to meet this requirement?",
     options: [
       "Amazon DynamoDB",
@@ -14050,10 +14050,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Amazon Redshift is a fully managed data warehouse service that allows businesses to consolidate data from multiple sources for analytics. Reference: https://aws.amazon.com/redshift/faqs/",
+      "Amazon Redshift is a fully managed data warehouse service that consolidates data from multiple sources for analytics. DynamoDB (A) is a NoSQL database, Athena (C) is for querying data in S3, and QuickSight (D) is for data visualization. Reference: https://aws.amazon.com/redshift/faqs/",
   },
   {
-    id: uuidv5("aws-question-1454", uuidv5.URL),
+    id: uuidv5("aws-question-1093", uuidv5.URL),
     text: "Which AWS service can be used to track resource changes and establish compliance?",
     options: [
       "Amazon CloudWatch",
@@ -14063,18 +14063,18 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "AWS Config helps track configuration changes and evaluate compliance across AWS resources. Reference: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html",
+      "AWS Config tracks configuration changes and evaluates compliance across AWS resources. CloudWatch (A) is for monitoring, CloudTrail (C) logs API calls, and Trusted Advisor (D) provides best practice checks. Reference: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html",
   },
   {
-    id: uuidv5("aws-question-1455", uuidv5.URL),
+    id: uuidv5("aws-question-1094", uuidv5.URL),
     text: "A user has underutilized on-premises resources. Which AWS Cloud concept can BEST address this issue?",
     options: ["High availability", "Elasticity", "Security", "Loose coupling"],
     correctAnswers: [1],
     explanation:
-      "Elasticity in AWS allows resources to scale up or down based on demand, reducing waste from underutilized infrastructure. Reference: https://www.gremlin.com/blog/implementing-cost-saving-strategies-on-amazon-ec-2-with-chaos-engineering/",
+      "Elasticity allows AWS resources to scale up or down based on demand, reducing waste from underutilized infrastructure. High availability (A) is about uptime, security (C) is about protection, and loose coupling (D) is about system design. Reference: https://www.gremlin.com/blog/implementing-cost-saving-strategies-on-amazon-ec-2-with-chaos-engineering/",
   },
   {
-    id: uuidv5("aws-question-1456", uuidv5.URL),
+    id: uuidv5("aws-question-1095", uuidv5.URL),
     text: "A user has a stateful workload that will run on Amazon EC2 for the next 3 years. What is the MOST cost-effective pricing model for this workload?",
     options: [
       "On-Demand Instances",
@@ -14084,10 +14084,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [1],
     explanation:
-      "Reserved Instances provide a significant discount for long-term workloads that run continuously. This is the best option for a 3-year commitment.",
+      "Reserved Instances provide significant discounts for long-term, steady-state workloads. On-Demand (A) is more expensive for long-term use, Dedicated Instances (C) are for compliance, and Spot Instances (D) can be interrupted. Reference: https://aws.amazon.com/ec2/pricing/reserved-instances/",
   },
   {
-    id: uuidv5("aws-question-1457", uuidv5.URL),
+    id: uuidv5("aws-question-1096", uuidv5.URL),
     text: "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. What is the most suitable and cost-effective option for this task?",
     options: [
       "On-Demand Instance",
@@ -14097,10 +14097,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0],
     explanation:
-      "On-Demand Instances are the best choice for short-term, unpredictable workloads that require guaranteed availability.",
+      "On-Demand Instances are best for short-term, unpredictable workloads that require guaranteed availability. Reserved Instances (B) are for long-term use, Dedicated Hosts (C) are for compliance, and Spot Instances (D) can be interrupted. Reference: https://aws.amazon.com/ec2/pricing/on-demand/",
   },
   {
-    id: uuidv5("aws-question-1458", uuidv5.URL),
+    id: uuidv5("aws-question-1097", uuidv5.URL),
     text: "Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)",
     options: [
       "Providing high-performance container orchestration",
@@ -14111,10 +14111,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [2, 3],
     explanation:
-      "AWS Trusted Advisor helps optimize AWS usage by identifying underutilized resources and security vulnerabilities. Reference: https://aws.amazon.com/about-aws/whats-new/2016/06/aws-support-enables-tagging-capabilities-for-trusted-advisor/",
+      "AWS Trusted Advisor helps optimize AWS usage by identifying underutilized resources and security vulnerabilities. It does not provide container orchestration (A), manage encryption keys (B), or enforce tagging (E). Reference: https://aws.amazon.com/about-aws/whats-new/2016/06/aws-support-enables-tagging-capabilities-for-trusted-advisor/",
   },
   {
-    id: uuidv5("aws-question-1459", uuidv5.URL),
+    id: uuidv5("aws-question-1098", uuidv5.URL),
     text: "A developer has been hired by a large company and needs AWS credentials. Which are security best practices that should be followed? (Choose two.)",
     options: [
       "Grant the developer access to only the AWS resources needed to perform the job.",
@@ -14125,10 +14125,10 @@ const exam22: Question[] = [
     ],
     correctAnswers: [0, 4],
     explanation:
-      "Following the principle of least privilege and enforcing strong password policies are best practices for AWS security.",
+      "Following the principle of least privilege (A) and enforcing strong password policies (E) are AWS security best practices. Sharing root credentials (B) is never recommended, giving admin access (C) is not least privilege, and preventing password changes (D) is not secure. Reference: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
   },
   {
-    id: uuidv5("aws-question-1460", uuidv5.URL),
+    id: uuidv5("aws-question-1099", uuidv5.URL),
     text: "Which AWS storage service is designed to transfer petabytes of data in and out of the cloud?",
     options: [
       "AWS Storage Gateway",
@@ -14138,21 +14138,21 @@ const exam22: Question[] = [
     ],
     correctAnswers: [3],
     explanation:
-      "AWS Snowball is a data transfer service designed for large-scale data migrations. Reference: https://docs.aws.amazon.com/snowball/latest/ug/transfer-petabytes.html",
+      "AWS Snowball is designed for large-scale data migrations, capable of transferring petabytes of data. Storage Gateway (A) is for hybrid storage, Glacier Deep Archive (B) is for archival, and Lightsail (C) is for simple cloud hosting. Reference: https://docs.aws.amazon.com/snowball/latest/ug/transfer-petabytes.html",
   },
   {
-    id: uuidv5("aws-question-1461", uuidv5.URL),
+    id: uuidv5("aws-question-1100", uuidv5.URL),
     text: "Which service provides a user the ability to warehouse data in the AWS Cloud?",
     options: ["Amazon EFS", "Amazon Redshift", "Amazon RDS", "Amazon VPC"],
     correctAnswers: [1],
     explanation:
-      "Amazon Redshift is AWS's data warehousing solution that enables fast analytics on structured data. Reference: https://aws.amazon.com/redshift/",
+      "Amazon Redshift is AWS's data warehousing solution for fast analytics on structured data. EFS (A) is for file storage, RDS (C) is for relational databases, and VPC (D) is for networking. Reference: https://aws.amazon.com/redshift/",
   },
 ];
 
 const exam23: Question[] = [
   {
-    id: uuidv5("aws-question-1462", uuidv5.URL),
+    id: uuidv5("aws-question-1101", uuidv5.URL),
     text: "A user is planning to migrate an application workload to the AWS Cloud. Which control becomes the responsibility of AWS once the migration is complete?",
     options: [
       "Patching the guest operating system",
