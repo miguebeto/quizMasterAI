@@ -113,7 +113,7 @@ export default function QuizComponent({ quiz }: { quiz: Quiz }) {
               className={`flex items-center p-2 rounded ${
                 showResult
                   ? currentQuestion.correctAnswers.includes(index)
-                    ? "bg-green-100"
+                    ? "bg-green-100 text-green-700"
                     : selectedAnswers.includes(index)
                     ? "bg-red-100"
                     : ""
